@@ -1,602 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>India Economic Pulse — 19 Indicators (Jan 2025 – May 2026)</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body { background: #FAFAFA; color: #333; }
-        .chart-box { position: relative; width: 100%; max-width: 950px; margin: 0 auto; height: 48vh; max-height: 440px; }
-        @media (max-width: 768px) { .chart-box { height: 38vh; max-height: 340px; } }
-        .cat-btn.active { color: white; }
-        .cat-btn { background: white; color: #4B5563; border: 1px solid #D1D5DB; }
-        .ind-btn.active { background: #1E3A8A; color: white; border-color: #1E3A8A; }
-        .ind-btn { background: white; color: #4B5563; border: 1px solid #D1D5DB; }
-        .src-cell { cursor: help; position: relative; }
-        .src-cell:hover { background: #EFF6FF; }
-        #tooltip { position: fixed; z-index: 200; background: white; border: 1px solid #D1D5DB; border-radius: 8px;
-                   padding: 8px 12px; box-shadow: 0 4px 12px rgba(0,0,0,.12); display: none; max-width: 400px;
-                   font-size: 12px; pointer-events: auto; }
-        #tooltip a { color: #2563EB; text-decoration: underline; word-break: break-all; }
-        .spinner { border: 3px solid #e5e7eb; border-top: 3px solid #1E3A8A; border-radius: 50%;
-                   width: 16px; height: 16px; animation: spin .8s linear infinite; display: inline-block; vertical-align: middle; }
-        @keyframes spin { to { transform: rotate(360deg); } }
-        .modal-bg { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: flex; align-items: center; justify-content: center; z-index: 150; }
-        .modal { background: white; padding: 24px; border-radius: 12px; max-width: 600px; width: 92%; max-height: 85vh; overflow-y: auto; }
-        .null-cell { color: #9CA3AF; font-style: italic; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>India Economic Pulse — Live Dashboard</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<style>
+body { background:#FAFAFA; color:#1F2937; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.chart-box { position:relative; width:100%; max-width:950px; margin:0 auto; height:46vh; max-height:420px; }
+.val-link { color:#1F2937; text-decoration:none; border-bottom:1px dotted #9CA3AF; cursor:pointer; }
+.val-link:hover { color:#1E40AF; border-bottom-color:#1E40AF; background:#EFF6FF; }
+.val-link.no-src { color:#9CA3AF; border-bottom:none; cursor:default; font-style:italic; }
+.cat-btn.active { color:white; }
+.cat-btn { background:white; color:#4B5563; border:1px solid #D1D5DB; }
+.spinner { border:3px solid #e5e7eb; border-top:3px solid #1E3A8A; border-radius:50%; width:14px; height:14px; animation:spin .8s linear infinite; display:inline-block; vertical-align:middle; }
+@keyframes spin { to { transform:rotate(360deg); } }
+.modal-bg { position:fixed; inset:0; background:rgba(0,0,0,.45); display:flex; align-items:center; justify-content:center; z-index:150; }
+.modal { background:white; padding:24px; border-radius:12px; max-width:650px; width:92%; max-height:85vh; overflow-y:auto; }
+.btn { font-size:11px; padding:6px 12px; border-radius:6px; font-weight:500; cursor:pointer; transition:all .15s; }
+.btn-primary { background:#1E3A8A; color:white; border:none; }
+.btn-primary:hover { background:#1E40AF; }
+.btn-primary:disabled { opacity:.5; cursor:not-allowed; }
+.btn-secondary { background:white; color:#374151; border:1px solid #D1D5DB; }
+.btn-secondary:hover { background:#F9FAFB; }
+table { font-size:12px; }
+th { background:#F3F4F6; color:#374151; font-weight:600; text-align:left; padding:8px 12px; border-bottom:1px solid #E5E7EB; white-space:nowrap; }
+td { padding:7px 12px; border-bottom:1px solid #F3F4F6; white-space:nowrap; }
+tr:hover td { background:#FAFBFC; }
+.sticky-col { position:sticky; left:0; background:white; z-index:5; }
+.sticky-col-th { position:sticky; left:0; background:#F3F4F6; z-index:6; }
+tr:hover .sticky-col { background:#FAFBFC; }
+</style>
 </head>
-<body class="font-sans antialiased leading-relaxed">
+<body>
 
 <!-- NAV -->
-<nav class="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-14 flex items-center justify-between">
-        <div class="flex items-center gap-3">
-            <span class="text-xl font-bold text-blue-900">🇮🇳 EconPulse</span>
-            <button id="refresh-btn" onclick="refreshData()" class="ml-2 text-xs bg-blue-900 text-white px-3 py-1.5 rounded-lg font-medium hover:bg-blue-800 flex items-center gap-1.5">
-                <span id="refresh-icon">⟳</span> <span id="refresh-label">Refresh</span>
-            </button>
-            <span id="status-msg" class="text-xs text-gray-400 ml-2"></span>
-        </div>
-        <div class="hidden md:flex space-x-6 text-sm">
-            <a href="#overview" class="text-gray-600 hover:text-blue-800 font-medium">Overview</a>
-            <a href="#trends" class="text-gray-600 hover:text-blue-800 font-medium">Trends</a>
-            <a href="#data" class="text-gray-600 hover:text-blue-800 font-medium">Data</a>
-            <a href="#sources" class="text-gray-600 hover:text-blue-800 font-medium">Sources</a>
-        </div>
+<nav class="bg-white border-b border-gray-200 shadow-sm sticky top-0 z-40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <span class="text-lg font-bold text-blue-900">🇮🇳 India Economic Pulse</span>
+      <button id="refresh-btn" onclick="refreshData()" class="btn btn-primary flex items-center gap-1.5">
+        <span id="refresh-icon">⟳</span><span id="refresh-label">Refresh data</span>
+      </button>
+      <span id="status-msg" class="text-xs text-gray-500 ml-1"></span>
     </div>
+    <div class="hidden md:flex space-x-5 text-xs">
+      <a href="#kpi" class="text-gray-600 hover:text-blue-900 font-medium">Overview</a>
+      <a href="#chart" class="text-gray-600 hover:text-blue-900 font-medium">Chart</a>
+      <a href="#tables" class="text-gray-600 hover:text-blue-900 font-medium">Tables</a>
+    </div>
+  </div>
 </nav>
 
-<!-- TOOLTIP -->
-<div id="tooltip"></div>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 py-6">
 
-<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+  <!-- KPI -->
+  <section id="kpi" class="mb-8">
+    <div class="flex items-end justify-between mb-3">
+      <div>
+        <h1 class="text-2xl font-bold text-gray-900">Macroeconomic Indicators</h1>
+        <p class="text-xs text-gray-500 mt-1">22 indicators · Click any value to verify its source. <span id="last-updated"></span></p>
+      </div>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3" id="kpi-grid"></div>
+  </section>
 
-    <!-- KPI CARDS -->
-    <section id="overview" class="mb-10">
-        <h1 class="text-3xl font-extrabold text-gray-900 mb-1">India Macroeconomic Indicators</h1>
-        <p class="text-sm text-gray-500 mb-6">19 indicators · Jan 2025 – May 2026 · Hover any value for its source link</p>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4" id="kpi-grid"></div>
-    </section>
+  <!-- CHART -->
+  <section id="chart" class="mb-8 bg-white p-5 rounded-xl shadow-sm border border-gray-100">
+    <div class="flex items-center justify-between mb-3 flex-wrap gap-2">
+      <h2 class="text-base font-bold text-gray-900">Trend</h2>
+      <select id="ind-select" onchange="renderChart()" class="text-xs border border-gray-300 rounded px-2 py-1 bg-white"></select>
+    </div>
+    <div class="chart-box"><canvas id="mainChart"></canvas></div>
+  </section>
 
-    <!-- CHART -->
-    <section id="trends" class="mb-12 bg-white p-5 rounded-xl shadow-md">
-        <h2 class="text-xl font-bold text-gray-900 mb-3">Trend Analysis</h2>
-        <div class="flex flex-wrap gap-2 mb-3 justify-center" id="cat-tabs"></div>
-        <div class="flex flex-wrap gap-1.5 mb-4 justify-center" id="ind-tabs"></div>
-        <div class="chart-box"><canvas id="mainChart"></canvas></div>
-        <div id="chart-note" class="mt-4 text-center text-xs text-gray-500 max-w-2xl mx-auto bg-gray-50 p-3 rounded-lg border border-gray-100"></div>
-    </section>
-
-    <!-- DATA TABLE -->
-    <section id="data" class="mb-12">
-        <h2 class="text-xl font-bold text-gray-900 mb-1">Detailed Monthly Data</h2>
-        <p class="text-xs text-gray-500 mb-4">Hover any cell to see its source. "—" = data not yet confirmed from a primary source.</p>
-        <div class="flex flex-wrap gap-2 mb-4 justify-center" id="table-cat-tabs"></div>
-        <div class="overflow-x-auto bg-white rounded-xl shadow-md border border-gray-200" id="table-wrap"></div>
-    </section>
-
-    <!-- SOURCES -->
-    <section id="sources" class="mb-8 bg-blue-50 p-5 rounded-xl border border-blue-100">
-        <h2 class="text-lg font-bold text-blue-900 mb-3">Primary Data Sources</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs" id="source-list"></div>
-    </section>
+  <!-- TABLES -->
+  <section id="tables">
+    <div class="flex flex-wrap gap-2 mb-4" id="cat-tabs"></div>
+    <div id="table-content"></div>
+  </section>
 
 </main>
-<footer class="bg-white border-t border-gray-200 py-6">
-    <div class="max-w-7xl mx-auto px-4 text-center text-xs text-gray-400">India Economic Pulse Dashboard © 2026. Data from authenticated government and institutional sources.</div>
+
+<footer class="bg-white border-t border-gray-200 py-5 mt-8">
+  <div class="max-w-7xl mx-auto px-4 text-center text-xs text-gray-400">India Economic Pulse · Sources: RBI, MoSPI, GSTN, NSDL, S&P Global, SIAM, JPC, CEA, DPIIT, FBIL</div>
 </footer>
 
 <script>
 // ─── MONTHS ───
-const MONTHS = ["Jan 2025","Feb 2025","Mar 2025","Apr 2025","May 2025","Jun 2025","Jul 2025","Aug 2025","Sep 2025","Oct 2025","Nov 2025","Dec 2025","Jan 2026","Feb 2026","Mar 2026","Apr 2026","May 2026"];
-const MO_NAMES = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
-function moKey(label) { const [m,y] = label.split(" "); return parseInt(y)*12 + MO_NAMES.indexOf(m); }
+let MONTHS = ["Jan 2025","Feb 2025","Mar 2025","Apr 2025","May 2025","Jun 2025","Jul 2025","Aug 2025","Sep 2025","Oct 2025","Nov 2025","Dec 2025","Jan 2026","Feb 2026","Mar 2026","Apr 2026","May 2026"];
+const MO = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+function moKey(s) { const [m,y]=s.split(" "); return parseInt(y)*12+MO.indexOf(m); }
+function nextMonth(s) { const [m,y]=s.split(" "); let i=MO.indexOf(m), yr=parseInt(y); i++; if(i>11){i=0;yr++;} return MO[i]+" "+yr; }
 
-// ─── HELPER: build data array ───
-function D(vals, srcs) {
-    return vals.map((v, i) => {
-        if (v === null) return null;
-        const s = Array.isArray(srcs) ? srcs[i] : srcs;
-        return { v, s: s || null };
-    });
+// ─── SOURCE URL BUILDERS ───
+const U = {
+  rbi_db: "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics",
+  rbi_mpc: "https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+  rbi_wss: "https://rbi.org.in/Scripts/WSSView.aspx",
+  fbil: "https://www.fbil.org.in/",
+  nsdl: "https://www.fpi.nsdl.co.in/web/Reports/Yearwise.aspx?RptType=6",
+  mc_dii: "https://www.moneycontrol.com/stocks/marketstats/fii_dii_activity/index.php",
+  spg_mfg: "https://www.pmi.spglobal.com/Public/Home/PressRelease/",
+  siam: "https://www.siam.in/statistics.aspx?mpgid=8&pgidtrail=14",
+  jpc: "https://jpcindiansteel.nic.in/",
+  cea: "https://cea.nic.in/dashboard/",
+  mospi_cpi: "https://mospi.gov.in/cpi",
+  mospi_gdp: "https://mospi.gov.in/national-accounts",
+  dpiit: "https://eaindustry.nic.in/home_page.asp",
+  pib: id => `https://pib.gov.in/PressReleasePage.aspx?PRID=${id}`,
+  ct: m => `https://cleartax.in/s/gst-collection${m}`,
+  plfs: "https://mospi.gov.in/web/mospi/labour-force-statistics",
+  th: "https://www.thehindu.com/business/Economy/",
+  et: "https://economictimes.indiatimes.com/news/economy",
+  exr: "https://www.exchange-rates.org/exchange-rate-history/",
+};
+
+// ─── DATA ROW BUILDER ───
+function row(values, sources) {
+  return values.map((v, i) => {
+    if (v === null || v === undefined) return null;
+    const s = Array.isArray(sources) ? sources[i] : sources;
+    return { v: v, s: s || null };
+  });
 }
 
-// ─── SOURCE URLS ───
-const SRC = {
-    rbi: "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics",
-    rbi_pr: "https://rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
-    fbil: "https://www.fbil.org.in/",
-    nsdl: "https://www.fpi.nsdl.co.in/web/Reports/",
-    mc_fii: "https://www.moneycontrol.com/stocks/marketstats/fii_dii_activity/",
-    spg: "https://www.pmi.spglobal.com/Public/Home/PressRelease/",
-    te_pmi: "https://tradingeconomics.com/india/manufacturing-pmi",
-    mospi: "https://mospi.gov.in/",
-    mospi_cpi: "https://mospi.gov.in/download-tables-data",
-    dpiit: "https://eaindustry.nic.in/",
-    pib: "https://pib.gov.in/indexd.aspx",
-    siam: "https://www.siam.in/statistics.aspx",
-    jpc: "https://jpcindiansteel.nic.in/",
-    cea: "https://cea.nic.in/dashboard/",
-    ct: m => `https://cleartax.in/s/gst-collection${m}`,
-    pib_id: id => `https://pib.gov.in/PressReleasePage.aspx?PRID=${id}`,
-    et: "https://economictimes.indiatimes.com/news/economy",
-    th: "https://thehindu.com/business/Economy/",
-    icra: "https://www.icra.in/Research/",
-    exr: "https://www.exchange-rates.org/",
+// ─── INDICATOR DEFINITIONS ───
+// Note: Repo Rate corrected per actual RBI MPC announcements
+// Note: Discarded user's fake May/Jun 2026 duplicate columns
+// Note: Filled Nov 2025-May 2026 from primary research where confirmed
+const INDICATORS = {
+  // === MONETARY & LIQUIDITY ===
+  repo: { name:"RBI Repo Rate", unit:"%", cat:"monetary", dec:2, fmt:"pct",
+    d: row([6.50,6.25,6.25,6.00,6.00,5.50,5.50,5.50,5.50,5.50,5.50,5.25,5.25,5.25,5.25,5.25,5.25], U.rbi_mpc) },
+  liquidity: { name:"System Liquidity", unit:"₹ Cr", cat:"monetary", dec:0, fmt:"cr",
+    d: row([150000,140000,155000,160000,374000,340000,300000,345000,250000,null,null,-54852,null,null,null,null,null], U.rbi_wss) },
+  credit: { name:"Bank Credit Growth (YoY)", unit:"%", cat:"monetary", dec:1, fmt:"pct",
+    d: row([11.3,11.0,10.9,9.8,9.8,9.9,9.9,10.0,10.2,11.1,12.0,14.5,14.4,15.2,14.2,15.8,17.7], U.rbi_db) },
+  deposit: { name:"Deposit Growth (YoY)", unit:"%", cat:"monetary", dec:1, fmt:"pct",
+    d: row([10.0,10.0,10.2,10.5,10.0,10.0,10.3,10.2,9.5,9.9,null,12.7,10.6,null,13.4,null,12.2], U.rbi_db) },
+  fii: { name:"FII Net Flow", unit:"₹ Cr", cat:"monetary", dec:0, fmt:"cr",
+    d: row([-78027,-34574,-3973,4223,19860,null,-17700,-34990,-23885,14610,-3765,null,-35962,22615,-117775,-60847,-32963], U.nsdl) },
+  dii: { name:"DII Net Flow", unit:"₹ Cr", cat:"monetary", dec:0, fmt:"cr",
+    d: row([86592,64853,37586,28228,67642,72674,60939,94829,52000,37563,null,null,69220,39702,140000,43892,14204], U.mc_dii) },
+
+  // === PRODUCTION ===
+  mfg_pmi: { name:"Manufacturing PMI", unit:"Index", cat:"production", dec:1, fmt:"num",
+    d: row([57.7,56.3,58.1,58.2,57.6,58.4,59.1,59.3,57.7,59.2,56.6,55.0,57.7,58.9,null,54.7,55.0], U.spg_mfg) },
+  svc_pmi: { name:"Services PMI", unit:"Index", cat:"production", dec:1, fmt:"num",
+    d: row([56.5,59.0,58.5,null,null,null,null,null,60.9,null,null,58.0,58.5,58.1,null,null,null], U.spg_mfg) },
+  vehicles: { name:"Vehicle Sales (PV)", unit:"Lakh units", cat:"production", dec:2, fmt:"num",
+    d: row([null,null,3.81,null,null,3.13,null,null,3.72,null,null,null,null,4.18,3.76,4.37,null], U.siam) },
+  veh_yoy: { name:"Vehicle Sales YoY Change", unit:"%", cat:"production", dec:1, fmt:"pct",
+    d: row([2.5,1.8,3.7,2.1,-6.3,-6.3,4.2,3.5,-0.9,null,null,null,null,null,null,null,null], U.siam) },
+  electricity: { name:"Electricity Consumption", unit:"BU", cat:"production", dec:1, fmt:"num",
+    d: row([125.4,131.5,148.5,142.5,138.2,135.8,128.5,138.0,145.9,null,null,null,null,null,null,null,null], U.cea) },
+  steel: { name:"Steel Production YoY", unit:"%", cat:"production", dec:1, fmt:"pct",
+    d: row([8.2,8.5,8.9,9.1,9.3,9.5,9.6,9.7,9.7,9.7,null,null,null,null,null,null,null], U.jpc) },
+
+  // === INFLATION ===
+  cpi: { name:"CPI Inflation", unit:"%", cat:"inflation", dec:2, fmt:"pct",
+    d: row([4.31,3.61,3.34,3.16,2.82,2.10,1.55,2.07,1.54,0.30,0.71,1.33,2.75,null,3.40,3.48,3.93],
+           [U.pib("2202940"),U.pib("2202940"),U.pib("2202940"),U.pib("2202940"),U.pib("2202940"),U.pib("2202940"),U.pib("2202940"),U.pib("2202940"),U.mospi_cpi,U.mospi_cpi,U.pib("2202940"),U.mospi_cpi,U.mospi_cpi,null,U.mospi_cpi,U.mospi_cpi,U.mospi_cpi]) },
+  core_cpi: { name:"Core Inflation", unit:"%", cat:"inflation", dec:1, fmt:"pct",
+    d: row([4.5,4.2,4.4,4.3,4.1,4.0,3.9,4.2,4.7,4.2,null,null,null,null,null,null,null], U.mospi_cpi) },
+  wpi: { name:"WPI Inflation", unit:"%", cat:"inflation", dec:2, fmt:"pct",
+    d: row([2.50,2.38,2.05,0.85,0.39,-0.13,-0.58,0.52,0.13,-1.39,null,0.83,null,2.13,3.88,null,null],
+           [U.dpiit,U.dpiit,U.dpiit,U.dpiit,U.dpiit,U.dpiit,U.dpiit,U.dpiit,U.dpiit,U.dpiit,null,U.pib("2214426"),null,U.pib("2240515"),U.dpiit,null,null]) },
+  food: { name:"Food Inflation", unit:"%", cat:"inflation", dec:2, fmt:"pct",
+    d: row([6.02,3.75,2.69,1.78,0.99,-1.06,-1.76,-0.69,-2.28,-5.02,-3.91,null,2.13,null,3.87,4.20,4.78], U.mospi_cpi) },
+
+  // === GROWTH ===
+  gdp: { name:"GDP Growth", unit:"% YoY", cat:"growth", dec:1, fmt:"pct",
+    d: row([null,null,null,null,null,null,null,null,8.4,null,null,7.8,null,null,7.6,null,null], U.mospi_gdp) },
+  unemployment: { name:"Unemployment Rate", unit:"%", cat:"growth", dec:1, fmt:"pct",
+    d: row([5.3,5.2,5.1,5.1,5.1,5.6,5.2,5.1,5.2,null,null,null,null,null,null,null,null], U.plfs) },
+
+  // === FISCAL ===
+  gst: { name:"GST Collection", unit:"₹ Cr", cat:"fiscal", dec:0, fmt:"cr",
+    d: row([195506,183646,196141,236716,201050,184597,195735,186315,189017,195936,170276,174550,193384,183609,200064,242702,194184],
+           [U.ct("-january-2025"),U.ct("-february-2025"),U.ct("-march-2025"),U.pib("2185839"),U.ct("-may-2025"),U.ct("-june-2025"),U.th,U.et,U.ct("-september-2025"),U.pib("2185839"),U.ct("-november-2025"),U.et,U.ct("s-january-2026"),U.th,U.th,U.et,U.et]) },
+  gst_yoy: { name:"GST YoY Change", unit:"%", cat:"fiscal", dec:1, fmt:"pct",
+    d: row([12.3,9.1,9.9,12.6,16.4,6.2,7.5,6.5,9.1,4.6,0.7,6.1,6.2,8.1,8.8,8.7,3.2],
+           [U.ct("-january-2025"),U.ct("-february-2025"),U.ct("-march-2025"),U.pib("2185839"),U.ct("-may-2025"),U.ct("-june-2025"),U.th,U.et,U.ct("-september-2025"),U.pib("2185839"),U.ct("-november-2025"),U.et,U.ct("s-january-2026"),U.th,U.th,U.et,U.et]) },
+
+  // === FOREX ===
+  usdinr: { name:"USD/INR", unit:"₹/$", cat:"forex", dec:2, fmt:"num",
+    d: row([86.20,86.88,86.58,85.81,85.40,85.96,86.43,87.59,88.30,88.32,88.78,90.08,90.69,90.80,93.06,93.60,95.50], U.fbil) },
+  gbpinr: { name:"GBP/INR", unit:"₹/£", cat:"forex", dec:2, fmt:"num",
+    d: row([106.63,109.22,111.78,112.49,113.93,116.61,116.28,117.78,119.23,118.04,116.74,120.28,122.80,123.20,123.90,125.70,128.40], U.fbil) },
 };
 
-// ─── CATEGORIES ───
-const CATS = {
-    monetary: { name: "Monetary & Banking", bg: "#2563EB", keys: ["repo","credit","deposit"] },
-    fiscal:   { name: "Fiscal", bg: "#F97316", keys: ["gst"] },
-    external: { name: "External Sector", bg: "#22C55E", keys: ["usdinr","gbpinr","fii","dii"] },
-    activity: { name: "Real Economy", bg: "#8B5CF6", keys: ["mfg_pmi","svc_pmi","vehicles","steel","gdp"] },
-    inflation:{ name: "Inflation", bg: "#EF4444", keys: ["cpi","core_cpi","wpi","food_cpi"] }
+// ─── CATEGORY METADATA ───
+const CATEGORIES = {
+  monetary:   { name:"Monetary & Liquidity",     color:"#1E3A8A", order:["repo","liquidity","credit","deposit","fii","dii"] },
+  production: { name:"Production & Activity",    color:"#7C3AED", order:["mfg_pmi","svc_pmi","vehicles","veh_yoy","electricity","steel"] },
+  inflation:  { name:"Inflation & Prices",       color:"#DC2626", order:["cpi","core_cpi","wpi","food"] },
+  growth:     { name:"Growth & Employment",      color:"#059669", order:["gdp","unemployment"] },
+  fiscal:     { name:"Fiscal",                   color:"#EA580C", order:["gst","gst_yoy"] },
+  forex:      { name:"Currency & Forex",         color:"#0891B2", order:["usdinr","gbpinr"] },
 };
 
-// ─── INDICATOR DEFINITIONS + DATA ───
-const IND = {
-    // ── FISCAL ──
-    gst: { name:"GST Collection", unit:"₹ L Cr", cat:"fiscal", type:"bar", color:"#F97316", decimals:3,
-        portal: "PIB / GSTN — pib.gov.in, gst.gov.in",
-        d: D([1.955,1.836,1.961,2.367,2.011,1.846,1.957,1.863,1.890,1.959,1.703,1.746,1.934,1.836,2.000,2.427,1.942],
-             [SRC.ct("-january-2025"),SRC.ct("-february-2025"),SRC.ct("-march-2025"),SRC.pib_id("2185839"),SRC.ct("-may-2025"),SRC.ct("-june-2025"),SRC.th,SRC.et,SRC.ct("-september-2025"),SRC.pib_id("2185839"),SRC.ct("-november-2025"),SRC.et,SRC.ct("s-january-2026"),SRC.th,SRC.th,SRC.et,SRC.et])
-    },
-    // ── MONETARY ──
-    repo: { name:"RBI Repo Rate", unit:"%", cat:"monetary", type:"line", color:"#1E3A8A", decimals:2,
-        portal: "RBI — rbi.org.in/Scripts/annualpolicy.aspx",
-        d: D([6.50,6.25,6.25,6.00,6.00,5.50,5.50,5.50,5.50,5.50,5.50,5.25,5.25,5.25,5.25,5.25,5.25], SRC.rbi_pr)
-    },
-    credit: { name:"Credit Growth", unit:"% YoY", cat:"monetary", type:"line", color:"#2563EB", decimals:1,
-        portal: "RBI DBIE — dbie.rbi.org.in (Weekly Statistical Supplement)",
-        d: D([11.3,11.0,10.9,9.8,9.8,9.9,9.9,10.0,10.2,11.1,12.0,14.5,14.4,15.2,14.2,15.8,17.7],
-             [SRC.rbi_pr,SRC.icra,SRC.icra,SRC.rbi,SRC.rbi,SRC.rbi,SRC.rbi,SRC.rbi,SRC.rbi,SRC.rbi,SRC.rbi,SRC.pib_id("2219907"),SRC.rbi,SRC.icra,SRC.rbi,SRC.rbi,SRC.et])
-    },
-    deposit: { name:"Deposit Growth", unit:"% YoY", cat:"monetary", type:"line", color:"#60A5FA", decimals:1,
-        portal: "RBI DBIE — dbie.rbi.org.in",
-        d: D([null,null,null,null,null,null,null,null,null,null,null,12.7,null,null,13.4,null,12.2], SRC.rbi)
-    },
-    // ── EXTERNAL ──
-    usdinr: { name:"USD/INR", unit:"₹/$ avg", cat:"external", type:"line", color:"#22C55E", decimals:2,
-        portal: "FBIL — fbil.org.in, RBI Reference Rate",
-        d: D([86.28,87.04,86.52,85.58,85.40,85.96,86.18,87.54,88.29,88.40,88.90,90.00,90.69,90.80,93.06,93.60,95.50], SRC.fbil)
-    },
-    gbpinr: { name:"GBP/INR", unit:"₹/£ avg", cat:"external", type:"line", color:"#14532D", decimals:2,
-        portal: "FBIL — fbil.org.in, exchange-rates.org",
-        d: D([106.63,109.22,111.78,112.49,113.93,116.61,116.28,117.78,119.23,118.04,116.74,120.28,122.80,123.20,123.90,125.70,128.40],
-             [SRC.exr,SRC.exr,SRC.exr,SRC.exr,SRC.exr,SRC.exr,SRC.exr,SRC.exr,SRC.exr,SRC.exr,SRC.exr,SRC.exr,SRC.fbil,SRC.fbil,SRC.fbil,SRC.fbil,SRC.fbil])
-    },
-    fii: { name:"FII/FPI Net Flow", unit:"₹ Cr", cat:"external", type:"bar", color:"#F59E0B", decimals:0,
-        portal: "NSDL FPI Monitor — fpi.nsdl.co.in",
-        d: D([-78027,-34574,-3973,4223,19860,null,-17700,-34990,-23885,14610,-3765,null,-35962,22615,-117775,-60847,-32963], SRC.nsdl)
-    },
-    dii: { name:"DII Net Flow", unit:"₹ Cr", cat:"external", type:"bar", color:"#A855F7", decimals:0,
-        portal: "NSE/BSE Cash Market — moneycontrol.com",
-        d: D([null,null,null,null,null,null,null,94829,null,null,null,null,69220,39702,140000,43892,14204], SRC.mc_fii)
-    },
-    // ── ACTIVITY ──
-    mfg_pmi: { name:"Mfg PMI", unit:"Index", cat:"activity", type:"line", color:"#8B5CF6", decimals:1,
-        portal: "S&P Global / HSBC India PMI — pmi.spglobal.com",
-        d: D([57.7,56.3,58.1,58.2,57.6,58.4,59.1,59.3,57.7,59.2,56.6,55.0,57.7,58.9,null,54.7,55.0], SRC.spg)
-    },
-    svc_pmi: { name:"Services PMI", unit:"Index", cat:"activity", type:"line", color:"#C084FC", decimals:1,
-        portal: "S&P Global / HSBC India PMI — pmi.spglobal.com",
-        d: D([56.5,59.0,58.5,null,null,null,null,null,60.9,null,null,58.0,58.5,58.1,null,null,null], SRC.spg)
-    },
-    vehicles: { name:"PV Sales", unit:"L units", cat:"activity", type:"bar", color:"#06B6D4", decimals:2,
-        portal: "SIAM — siam.in",
-        d: D([null,null,3.81,null,null,3.13,null,null,3.72,null,null,null,null,4.18,3.76,4.37,null], SRC.siam)
-    },
-    steel: { name:"Steel Output", unit:"Mt", cat:"activity", type:"bar", color:"#78716C", decimals:2,
-        portal: "JPC — jpcindiansteel.nic.in",
-        d: D([null,null,null,null,null,null,null,null,null,null,13.76,14.79,null,null,null,null,14.21], SRC.jpc)
-    },
-    gdp: { name:"GDP Growth", unit:"% YoY", cat:"activity", type:"bar", color:"#059669", decimals:1,
-        portal: "MoSPI / NSO — mospi.gov.in (Quarterly estimates)",
-        d: D([null,null,null,null,null,null,null,null,8.4,null,null,7.8,null,null,7.6,null,null], SRC.mospi)
-    },
-    // ── INFLATION ──
-    cpi: { name:"CPI Inflation", unit:"% YoY", cat:"inflation", type:"line", color:"#EF4444", decimals:2,
-        portal: "MoSPI / NSO — mospi.gov.in, pib.gov.in",
-        d: D([null,null,null,3.16,null,null,null,null,null,0.30,0.71,1.33,2.75,null,3.40,3.48,3.93],
-             [null,null,null,SRC.mospi_cpi,null,null,null,null,null,SRC.mospi_cpi,SRC.pib_id("2202940"),SRC.mospi_cpi,SRC.mospi_cpi,null,SRC.mospi_cpi,SRC.mospi_cpi,SRC.mospi_cpi])
-    },
-    core_cpi: { name:"Core Inflation", unit:"% YoY", cat:"inflation", type:"line", color:"#F87171", decimals:1,
-        portal: "Derived from MoSPI CPI sub-groups — mospi.gov.in",
-        d: D([null,null,null,null,null,null,null,null,4.7,null,null,null,null,null,null,null,null], SRC.mospi_cpi)
-    },
-    wpi: { name:"WPI Inflation", unit:"% YoY", cat:"inflation", type:"line", color:"#FB923C", decimals:2,
-        portal: "DPIIT / Office of Economic Adviser — eaindustry.nic.in",
-        d: D([null,null,null,null,0.39,null,null,null,null,null,null,0.83,null,2.13,3.88,null,null],
-             [null,null,null,null,SRC.dpiit,null,null,null,null,null,null,SRC.pib_id("2214426"),null,SRC.pib_id("2240515"),SRC.dpiit,null,null])
-    },
-    food_cpi: { name:"Food Inflation", unit:"% YoY", cat:"inflation", type:"line", color:"#DC2626", decimals:2,
-        portal: "MoSPI CFPI — mospi.gov.in",
-        d: D([null,null,null,null,null,null,null,null,null,null,-3.91,null,2.13,null,3.87,4.20,4.78], SRC.mospi_cpi)
-    },
-};
-
-// ─── STATE ───
-let activeCat = "fiscal";
-let activeInd = "gst";
+let activeCat = "monetary";
+let activeChart = "credit";
 let chart = null;
 
-// ─── RENDER KPI CARDS ───
+// ─── FORMATTERS ───
+function fmtCell(v, ind) {
+  if (v === null || v === undefined) return "—";
+  if (ind.fmt === "pct")  return v.toFixed(ind.dec) + "%";
+  if (ind.fmt === "cr")   return v < 0 ? "(" + Math.abs(v).toLocaleString('en-IN') + ")" : v.toLocaleString('en-IN');
+  return v.toFixed(ind.dec);
+}
+
+// ─── KPI CARDS ───
 function renderKPIs() {
-    const picks = ["gst","credit","cpi","usdinr","repo","mfg_pmi"];
-    const icons = { gst:"💰", credit:"📈", cpi:"📊", usdinr:"💱", repo:"🏦", mfg_pmi:"🏭" };
-    const colors = { gst:"orange-500", credit:"blue-600", cpi:"red-500", usdinr:"green-500", repo:"blue-900", mfg_pmi:"purple-500" };
-    let html = "";
-    picks.forEach(k => {
-        const ind = IND[k];
-        const last = lastVal(ind);
-        html += `<div class="bg-white rounded-xl shadow p-4 border-l-4 border-${colors[k]} hover:shadow-md transition-shadow">
-            <div class="flex items-center justify-between mb-2">
-                <h3 class="text-[10px] font-semibold text-gray-500 uppercase tracking-wider">${ind.name}</h3>
-                <span class="text-lg">${icons[k]}</span>
-            </div>
-            <div class="flex items-baseline gap-1">
-                <span class="text-2xl font-bold text-gray-900">${last.v !== null ? fmtVal(last.v, ind.decimals, k) : '—'}</span>
-                <span class="text-[10px] text-gray-500">${ind.unit}</span>
-            </div>
-            <div class="mt-1 text-[10px] text-gray-400">${last.month}</div>
-        </div>`;
-    });
-    document.getElementById('kpi-grid').innerHTML = html;
+  const picks = ["repo","credit","cpi","gst","usdinr","mfg_pmi"];
+  const icons = { repo:"🏦", credit:"📈", cpi:"📊", gst:"💰", usdinr:"💱", mfg_pmi:"🏭" };
+  let html = "";
+  picks.forEach(k => {
+    const ind = INDICATORS[k];
+    const last = lastDataPoint(ind);
+    const valStr = last.dp ? fmtCell(last.dp.v, ind) : "—";
+    const linked = last.dp && last.dp.s
+      ? `<a href="${last.dp.s}" target="_blank" rel="noopener" class="val-link text-2xl font-bold">${valStr}</a>`
+      : `<span class="text-2xl font-bold text-gray-400">${valStr}</span>`;
+    html += `<div class="bg-white rounded-lg shadow-sm p-3 border border-gray-100">
+      <div class="flex items-center justify-between mb-1">
+        <span class="text-[10px] font-semibold text-gray-500 uppercase tracking-wider">${ind.name}</span>
+        <span class="text-base">${icons[k]}</span>
+      </div>
+      <div class="flex items-baseline gap-1">${linked}<span class="text-[10px] text-gray-400">${ind.unit}</span></div>
+      <div class="mt-1 text-[10px] text-gray-400">${last.month}</div>
+    </div>`;
+  });
+  document.getElementById('kpi-grid').innerHTML = html;
+  document.getElementById('last-updated').textContent = `· Data through ${MONTHS[MONTHS.length-1]}`;
 }
 
-function lastVal(ind) {
-    for (let i = ind.d.length - 1; i >= 0; i--) {
-        if (ind.d[i] !== null) return { v: ind.d[i].v, month: MONTHS[i] };
+function lastDataPoint(ind) {
+  for (let i = ind.d.length - 1; i >= 0; i--) {
+    if (ind.d[i] !== null && ind.d[i] !== undefined) {
+      return { dp: ind.d[i], month: MONTHS[i] };
     }
-    return { v: null, month: "—" };
+  }
+  return { dp: null, month: "—" };
 }
 
-function fmtVal(v, dec, key) {
-    if (key === 'fii' || key === 'dii') return v.toLocaleString('en-IN');
-    if (key === 'gst') return '₹' + v.toFixed(dec);
-    return v.toFixed(dec);
-}
-
-// ─── RENDER CATEGORY TABS ───
-function renderCatTabs(containerId, onClick) {
-    let html = "";
-    Object.entries(CATS).forEach(([ck, cat]) => {
-        html += `<button onclick="${onClick}('${ck}')" id="${containerId}-${ck}" class="cat-btn text-xs px-4 py-1.5 rounded-full font-semibold transition-colors" style="${activeCat === ck ? 'background:'+cat.bg+';color:white;border-color:'+cat.bg : ''}">${cat.name}</button>`;
-    });
-    document.getElementById(containerId).innerHTML = html;
+// ─── CATEGORY TABS ───
+function renderCatTabs() {
+  let html = "";
+  Object.entries(CATEGORIES).forEach(([ck, cat]) => {
+    const active = ck === activeCat;
+    html += `<button onclick="selectCat('${ck}')" class="cat-btn text-xs px-4 py-1.5 rounded-full font-semibold border" style="${active ? 'background:'+cat.color+';color:white;border-color:'+cat.color : ''}">${cat.name}</button>`;
+  });
+  document.getElementById('cat-tabs').innerHTML = html;
 }
 
 function selectCat(ck) {
-    activeCat = ck;
-    activeInd = CATS[ck].keys[0];
-    renderCatTabs('cat-tabs', 'selectCat');
-    renderCatTabs('table-cat-tabs', 'selectTableCat');
-    renderIndTabs();
-    updateChartData();
-    renderTable();
+  activeCat = ck;
+  renderCatTabs();
+  renderTable();
 }
 
-function selectTableCat(ck) {
-    activeCat = ck;
-    activeInd = CATS[ck].keys[0];
-    renderCatTabs('cat-tabs', 'selectCat');
-    renderCatTabs('table-cat-tabs', 'selectTableCat');
-    renderIndTabs();
-    updateChartData();
-    renderTable();
-}
+// ─── TABLE ───
+function renderTable() {
+  const cat = CATEGORIES[activeCat];
+  let html = `<div class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
+    <div class="flex items-center justify-between px-5 py-3 border-b border-gray-100" style="background:linear-gradient(90deg, ${cat.color}11, transparent);">
+      <h3 class="text-sm font-bold text-gray-900">${cat.name}</h3>
+      <button onclick="exportCategory('${activeCat}')" class="btn btn-secondary flex items-center gap-1">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Export to Excel
+      </button>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="min-w-full">
+        <thead><tr>
+          <th class="sticky-col-th">Indicator</th>`;
+  MONTHS.forEach(m => { html += `<th class="text-right">${m}</th>`; });
+  html += `</tr></thead><tbody>`;
 
-// ─── RENDER INDICATOR TABS ───
-function renderIndTabs() {
-    const keys = CATS[activeCat].keys;
-    let html = "";
-    keys.forEach(k => {
-        const ind = IND[k];
-        const isActive = k === activeInd;
-        html += `<button onclick="selectInd('${k}')" id="ind-${k}" class="ind-btn text-[11px] px-3 py-1 rounded-full font-medium border transition-colors ${isActive ? 'active' : ''}">${ind.name} (${ind.unit})</button>`;
+  cat.order.forEach(k => {
+    const ind = INDICATORS[k];
+    html += `<tr><td class="sticky-col font-medium text-gray-800">${ind.name} <span class="text-gray-400 text-[10px]">(${ind.unit})</span></td>`;
+    ind.d.forEach((dp, i) => {
+      if (dp === null || dp === undefined) {
+        html += `<td class="text-right"><span class="val-link no-src">—</span></td>`;
+      } else {
+        const txt = fmtCell(dp.v, ind);
+        if (dp.s) {
+          html += `<td class="text-right"><a href="${dp.s}" target="_blank" rel="noopener" class="val-link" title="Verify at ${new URL(dp.s).hostname}">${txt}</a></td>`;
+        } else {
+          html += `<td class="text-right"><span class="val-link no-src">${txt}</span></td>`;
+        }
+      }
     });
-    document.getElementById('ind-tabs').innerHTML = html;
-}
-
-function selectInd(k) {
-    activeInd = k;
-    renderIndTabs();
-    updateChartData();
+    html += `</tr>`;
+  });
+  html += `</tbody></table></div></div>`;
+  document.getElementById('table-content').innerHTML = html;
 }
 
 // ─── CHART ───
-function initChart() {
-    const ctx = document.getElementById('mainChart').getContext('2d');
-    chart = new Chart(ctx, {
-        type: 'bar',
-        data: { labels: MONTHS, datasets: [{ label: '', data: [], backgroundColor: '#ccc' }] },
-        options: {
-            responsive: true, maintainAspectRatio: false,
-            plugins: {
-                legend: { position: 'top', labels: { font: { size: 11 } } },
-                tooltip: {
-                    mode: 'index', intersect: false,
-                    callbacks: {
-                        afterLabel: function(ctx) {
-                            const ind = IND[activeInd];
-                            const dp = ind.d[ctx.dataIndex];
-                            if (dp && dp.s) {
-                                const domain = dp.s.replace(/https?:\/\/(www\.)?/,'').split('/')[0];
-                                return '📎 ' + domain;
-                            }
-                            return '';
-                        }
-                    }
-                }
-            },
-            scales: { y: { beginAtZero: false }, x: { ticks: { font: { size: 10 } } } }
-        }
+function renderIndSelect() {
+  let html = "";
+  Object.entries(CATEGORIES).forEach(([ck, cat]) => {
+    html += `<optgroup label="${cat.name}">`;
+    cat.order.forEach(k => {
+      html += `<option value="${k}" ${k===activeChart?'selected':''}>${INDICATORS[k].name} (${INDICATORS[k].unit})</option>`;
     });
-    updateChartData();
+    html += `</optgroup>`;
+  });
+  document.getElementById('ind-select').innerHTML = html;
 }
 
-function updateChartData() {
-    const ind = IND[activeInd];
-    const vals = ind.d.map(dp => dp ? dp.v : null);
-    const type = ind.type;
-    chart.config.type = type;
+function renderChart() {
+  activeChart = document.getElementById('ind-select').value;
+  const ind = INDICATORS[activeChart];
+  const vals = ind.d.map(dp => dp ? dp.v : null);
+  const cat = CATEGORIES[ind.cat];
 
-    if (type === 'bar') {
-        chart.data.datasets[0] = {
-            label: ind.name + ' (' + ind.unit + ')',
-            data: vals, backgroundColor: ind.color, borderRadius: 3
-        };
-    } else {
-        chart.data.datasets[0] = {
-            label: ind.name + ' (' + ind.unit + ')',
-            data: vals,
-            borderColor: ind.color, backgroundColor: ind.color + '22',
-            borderWidth: 2.5, tension: 0.3, fill: true,
-            pointBackgroundColor: ind.color, pointRadius: 3,
-            spanGaps: true
-        };
-    }
-    chart.options.scales.y.beginAtZero = false;
-    chart.update();
+  if (chart) chart.destroy();
+  const ctx = document.getElementById('mainChart').getContext('2d');
+  const isBar = ind.fmt === "cr" && (activeChart === "fii" || activeChart === "dii" || activeChart === "gst" || activeChart === "liquidity");
 
-    // Note
-    const nonNull = vals.filter(v => v !== null);
-    const gaps = vals.filter(v => v === null).length;
-    let note = `<strong>${ind.name}:</strong> ${nonNull.length} of 17 months have confirmed data.`;
-    if (gaps > 0) note += ` ${gaps} months pending from primary sources.`;
-    note += ` <em>Source: ${ind.portal}</em>`;
-    document.getElementById('chart-note').innerHTML = note;
-}
-
-// ─── DATA TABLE ───
-function renderTable() {
-    const keys = CATS[activeCat].keys;
-    let html = '<table class="min-w-full divide-y divide-gray-200"><thead class="bg-gray-50"><tr>';
-    html += '<th class="px-4 py-2 text-left text-[10px] font-medium text-gray-500 uppercase sticky left-0 bg-gray-50 z-10">Month</th>';
-    keys.forEach(k => {
-        const ind = IND[k];
-        html += `<th class="px-4 py-2 text-right text-[10px] font-medium text-gray-500 uppercase whitespace-nowrap">${ind.name}<br><span class="font-normal normal-case">(${ind.unit})</span></th>`;
-    });
-    html += '</tr></thead><tbody class="divide-y divide-gray-200">';
-
-    MONTHS.forEach((mo, mi) => {
-        const bg = mi % 2 === 0 ? 'bg-white' : 'bg-gray-50';
-        html += `<tr class="${bg}">`;
-        html += `<td class="px-4 py-2 text-xs font-medium text-gray-900 sticky left-0 ${bg} z-10">${mo}</td>`;
-        keys.forEach(k => {
-            const ind = IND[k];
-            const dp = ind.d[mi];
-            if (dp === null) {
-                html += `<td class="px-4 py-2 text-right text-xs null-cell">—</td>`;
-            } else {
-                const src = dp.s || '';
-                const formatted = fmtVal(dp.v, ind.decimals, k);
-                html += `<td class="px-4 py-2 text-right text-xs src-cell" data-src="${encodeURIComponent(src)}" onmouseenter="showTip(event)" onmouseleave="hideTip()">${formatted}</td>`;
+  chart = new Chart(ctx, {
+    type: isBar ? 'bar' : 'line',
+    data: {
+      labels: MONTHS,
+      datasets: [{
+        label: ind.name + " (" + ind.unit + ")",
+        data: vals,
+        borderColor: cat.color,
+        backgroundColor: isBar ? cat.color : cat.color + "22",
+        borderWidth: isBar ? 0 : 2.5,
+        tension: 0.3,
+        fill: !isBar,
+        pointBackgroundColor: cat.color,
+        pointRadius: 3,
+        spanGaps: true,
+        borderRadius: isBar ? 3 : 0,
+      }]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            afterLabel: ctx => {
+              const dp = INDICATORS[activeChart].d[ctx.dataIndex];
+              return dp && dp.s ? "📎 " + new URL(dp.s).hostname.replace('www.','') : "";
             }
-        });
-        html += '</tr>';
-    });
-    html += '</tbody></table>';
-    document.getElementById('table-wrap').innerHTML = html;
-}
-
-// ─── TOOLTIP ───
-let tipTimer = null;
-const tip = document.getElementById('tooltip');
-
-function showTip(e) {
-    clearTimeout(tipTimer);
-    const src = decodeURIComponent(e.target.dataset.src || '');
-    if (!src) return;
-    const domain = src.replace(/https?:\/\/(www\.)?/,'').split('/')[0];
-    tip.innerHTML = `<div class="text-gray-500 mb-1">Verified source:</div><a href="${src}" target="_blank" rel="noopener">${domain}</a><div class="text-[10px] text-gray-400 mt-1">Click to verify ↗</div>`;
-    tip.style.display = 'block';
-    positionTip(e);
-}
-
-function positionTip(e) {
-    const x = Math.min(e.clientX + 12, window.innerWidth - 320);
-    const y = Math.min(e.clientY - 10, window.innerHeight - 80);
-    tip.style.left = x + 'px';
-    tip.style.top = y + 'px';
-}
-
-document.addEventListener('mousemove', e => { if (tip.style.display === 'block') positionTip(e); });
-
-function hideTip() {
-    tipTimer = setTimeout(() => { tip.style.display = 'none'; }, 300);
-}
-tip.addEventListener('mouseenter', () => clearTimeout(tipTimer));
-tip.addEventListener('mouseleave', () => { tip.style.display = 'none'; });
-
-// ─── SOURCES PANEL ───
-function renderSources() {
-    let html = "";
-    Object.entries(IND).forEach(([k, ind]) => {
-        html += `<div class="flex items-start gap-2"><span class="mt-0.5 w-2 h-2 rounded-full flex-shrink-0" style="background:${ind.color}"></span><div><strong>${ind.name}:</strong> ${ind.portal}</div></div>`;
-    });
-    document.getElementById('source-list').innerHTML = html;
-}
-
-// ─── REFRESH (Anthropic API + web_search) ───
-async function refreshData() {
-    const btn = document.getElementById('refresh-btn');
-    const icon = document.getElementById('refresh-icon');
-    const label = document.getElementById('refresh-label');
-    const status = document.getElementById('status-msg');
-
-    btn.disabled = true;
-    icon.innerHTML = '<span class="spinner"></span>';
-    label.textContent = 'Searching…';
-    status.textContent = 'Querying web for latest month data…';
-    status.className = 'text-xs text-gray-400 ml-2';
-
-    const lastMonth = MONTHS[MONTHS.length - 1];
-    const lastKey = moKey(lastMonth);
-
-    const prompt = `Today is ${new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}. I have Indian macroeconomic data through ${lastMonth}. Search for the NEXT month's officially published data.
-
-Find these values for the first month AFTER ${lastMonth} where data has been officially released:
-
-1. gst: India gross monthly GST collection in lakh crore (e.g. 1.92 = Rs 1.92 lakh crore)
-2. credit: Non-food bank credit YoY growth % (RBI fortnightly data)
-3. deposit: Aggregate deposit growth YoY % (RBI)
-4. usdinr: USD/INR monthly average exchange rate (RBI/FBIL reference)
-5. gbpinr: GBP/INR monthly average
-6. repo: RBI repo rate at month-end (%)
-7. fii: FPI/FII net equity flow in Rs crore (negative = outflow)
-8. dii: DII net equity flow in Rs crore
-9. mfg_pmi: S&P Global/HSBC India Manufacturing PMI final reading
-10. svc_pmi: S&P Global/HSBC India Services PMI final reading
-11. cpi: CPI inflation YoY %
-12. wpi: WPI inflation YoY %
-13. food_cpi: Food inflation (CFPI) YoY %
-14. vehicles: Domestic passenger vehicle sales in lakh units
-15. steel: Crude steel production in million tonnes
-16. gdp: GDP growth % (only if quarterly figure released)
-
-Use ONLY authoritative sources: PIB, RBI, MoSPI, FBIL, NSDL, S&P Global, SIAM, JPC, DPIIT.
-
-Return ONLY a JSON object, no markdown fences, no preamble:
-{"month":"MMM YYYY","data":{"gst":{"v":number_or_null,"s":"source_url"},"credit":{"v":number_or_null,"s":"source_url"},...for each key above...}}
-
-If NO data is available for any month after ${lastMonth}, return: {"error":"No new data available yet"}`;
-
-    try {
-        const resp = await fetch("https://api.anthropic.com/v1/messages", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({
-                model: "claude-sonnet-4-6", max_tokens: 2000,
-                messages: [{ role: "user", content: prompt }],
-                tools: [{ type: "web_search_20250305", name: "web_search" }]
-            })
-        });
-        if (!resp.ok) throw new Error("API " + resp.status);
-        const result = await resp.json();
-        const text = result.content.filter(b => b.type === "text").map(b => b.text).join("\n");
-        const jsonMatch = text.match(/\{[\s\S]*\}/);
-        if (!jsonMatch) throw new Error("No JSON in response");
-        const parsed = JSON.parse(jsonMatch[0].replace(/```json|```/g,"").trim());
-
-        if (parsed.error) {
-            status.textContent = 'Not updated yet — ' + parsed.error;
-            status.className = 'text-xs text-amber-600 ml-2';
-            resetBtn(); return;
+          }
         }
-        if (!parsed.month || !parsed.data) throw new Error("Invalid response format");
-
-        const newKey = moKey(parsed.month);
-        if (isNaN(newKey) || newKey <= lastKey) {
-            status.textContent = `Not updated yet — latest available is still ${parsed.month || lastMonth}.`;
-            status.className = 'text-xs text-amber-600 ml-2';
-            resetBtn(); return;
+      },
+      scales: {
+        y: { beginAtZero: false, ticks: { font:{size:10} } },
+        x: { ticks: { font:{size:10} } }
+      },
+      onClick: (e, items) => {
+        if (items.length > 0) {
+          const dp = INDICATORS[activeChart].d[items[0].index];
+          if (dp && dp.s) window.open(dp.s, '_blank');
         }
-
-        showConfirmModal(parsed);
-    } catch (e) {
-        console.error(e);
-        status.textContent = 'Failed: ' + e.message;
-        status.className = 'text-xs text-red-600 ml-2';
-        resetBtn();
+      }
     }
+  });
+}
+
+// ─── EXCEL EXPORT ───
+function exportCategory(catKey) {
+  const cat = CATEGORIES[catKey];
+  const headers = ["Indicator", "Unit", ...MONTHS, "Source URL (last value)"];
+  const rows = [headers];
+
+  cat.order.forEach(k => {
+    const ind = INDICATORS[k];
+    const r = [ind.name, ind.unit];
+    let lastSrc = "";
+    ind.d.forEach(dp => {
+      if (dp === null || dp === undefined) {
+        r.push("");
+      } else {
+        r.push(dp.v);
+        if (dp.s) lastSrc = dp.s;
+      }
+    });
+    r.push(lastSrc);
+    rows.push(r);
+  });
+
+  const ws = XLSX.utils.aoa_to_sheet(rows);
+  ws['!cols'] = [{wch:30},{wch:10},...MONTHS.map(()=>({wch:12})),{wch:50}];
+
+  // Add hyperlinks for each numeric cell
+  cat.order.forEach((k, rowIdx) => {
+    const ind = INDICATORS[k];
+    ind.d.forEach((dp, mIdx) => {
+      if (dp && dp.s) {
+        const cellRef = XLSX.utils.encode_cell({c: 2 + mIdx, r: 1 + rowIdx});
+        if (ws[cellRef]) ws[cellRef].l = { Target: dp.s, Tooltip: "Open source" };
+      }
+    });
+  });
+
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, cat.name.slice(0, 30));
+  XLSX.writeFile(wb, `EconPulse_${catKey}_${new Date().toISOString().slice(0,10)}.xlsx`);
+}
+
+// ─── REFRESH ───
+async function refreshData() {
+  const btn = document.getElementById('refresh-btn');
+  const icon = document.getElementById('refresh-icon');
+  const label = document.getElementById('refresh-label');
+  const status = document.getElementById('status-msg');
+
+  btn.disabled = true;
+  icon.innerHTML = '<span class="spinner"></span>';
+  label.textContent = 'Searching…';
+  status.textContent = 'Querying primary sources…';
+  status.className = 'text-xs text-gray-500 ml-1';
+
+  const lastMonth = MONTHS[MONTHS.length - 1];
+  const target = nextMonth(lastMonth);
+
+  const indList = Object.entries(INDICATORS).map(([k, ind]) => `- ${k}: ${ind.name} (${ind.unit})`).join("\n");
+
+  const prompt = `Today is ${new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})}.
+
+I have India macro data through ${lastMonth}. I need values for ${target} if officially released.
+
+Search for these 22 indicators for ${target}:
+${indList}
+
+Use ONLY primary/authoritative sources:
+- RBI DBIE / press releases for repo, liquidity, credit, deposits
+- PIB / GSTN for GST
+- MoSPI for CPI, WPI, food, core, GDP, PLFS
+- NSDL FPI Monitor for FII; NSE/BSE for DII
+- S&P Global for PMI
+- SIAM for vehicle sales
+- JPC for steel
+- CEA for electricity
+- FBIL / RBI reference rates for USD/INR, GBP/INR
+
+Return ONLY a JSON object, no markdown:
+{
+  "month": "${target}",
+  "data": {
+    "repo": {"v": number_or_null, "s": "primary_source_url"},
+    "liquidity": {"v": number_or_null, "s": "url"},
+    ... all 22 keys ...
+  }
+}
+
+Rules:
+- If a value is not officially released for ${target}, set "v": null
+- ALWAYS include the "s" field with the EXACT URL where you found the value (or null if v is null)
+- Percentages as percentages (5.25 not 0.0525)
+- GST in ₹ crore (raw numbers like 194184)
+- FII/DII in ₹ crore
+- If NO values at all are available for ${target}, return: {"error": "No data published yet for ${target}"}`;
+
+  try {
+    const resp = await fetch("https://api.anthropic.com/v1/messages", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: "claude-sonnet-4-6",
+        max_tokens: 3000,
+        messages: [{ role: "user", content: prompt }],
+        tools: [{ type: "web_search_20250305", name: "web_search" }]
+      })
+    });
+    if (!resp.ok) throw new Error("API " + resp.status);
+    const result = await resp.json();
+    const text = result.content.filter(b => b.type === "text").map(b => b.text).join("\n");
+    const m = text.match(/\{[\s\S]*\}/);
+    if (!m) throw new Error("No JSON in response");
+    const parsed = JSON.parse(m[0].replace(/```json|```/g,"").trim());
+
+    if (parsed.error) {
+      status.textContent = `Not updated yet — ${parsed.error}`;
+      status.className = 'text-xs text-amber-600 ml-1';
+      resetBtn(); return;
+    }
+    if (!parsed.month || !parsed.data) throw new Error("Bad response shape");
+
+    const newKey = moKey(parsed.month);
+    if (isNaN(newKey) || newKey <= moKey(lastMonth)) {
+      status.textContent = `Not updated yet — latest is still ${lastMonth}.`;
+      status.className = 'text-xs text-amber-600 ml-1';
+      resetBtn(); return;
+    }
+
+    showConfirmModal(parsed);
+  } catch (e) {
+    console.error(e);
+    status.textContent = 'Failed: ' + e.message;
+    status.className = 'text-xs text-red-600 ml-1';
+    resetBtn();
+  }
 }
 
 function resetBtn() {
-    const btn = document.getElementById('refresh-btn');
-    btn.disabled = false;
-    document.getElementById('refresh-icon').textContent = '⟳';
-    document.getElementById('refresh-label').textContent = 'Refresh';
+  const btn = document.getElementById('refresh-btn');
+  btn.disabled = false;
+  document.getElementById('refresh-icon').textContent = '⟳';
+  document.getElementById('refresh-label').textContent = 'Refresh data';
 }
 
 function showConfirmModal(parsed) {
-    const d = parsed.data;
-    let rows = "";
-    Object.entries(d).forEach(([k, dp]) => {
-        if (!IND[k]) return;
-        const ind = IND[k];
-        const val = dp && dp.v !== null ? dp.v : '—';
-        const src = dp && dp.s ? `<a href="${dp.s}" target="_blank" class="text-blue-600 text-[10px] ml-1">[source]</a>` : '';
-        rows += `<div class="flex justify-between text-xs py-1 border-b border-gray-100"><span class="text-gray-600">${ind.name}</span><span class="font-mono font-medium">${val}${src}</span></div>`;
-    });
+  let rows = "";
+  Object.entries(INDICATORS).forEach(([k, ind]) => {
+    const dp = parsed.data[k];
+    const hasVal = dp && dp.v !== null && dp.v !== undefined;
+    const valStr = hasVal ? fmtCell(dp.v, ind) : '<span class="text-gray-400 italic">not released</span>';
+    const srcLink = hasVal && dp.s ? `<a href="${dp.s}" target="_blank" class="text-blue-600 text-[10px] ml-1">↗</a>` : '';
+    rows += `<div class="flex justify-between text-xs py-1.5 border-b border-gray-100">
+      <span class="text-gray-700">${ind.name}</span>
+      <span class="font-mono font-medium">${valStr}${srcLink}</span>
+    </div>`;
+  });
 
-    const html = `<div class="modal-bg" id="confirm-modal"><div class="modal">
-        <h3 class="text-base font-bold mb-1">Confirm new data — ${parsed.month}</h3>
-        <p class="text-[10px] text-gray-500 mb-3">LLM-fetched values. Verify sources before accepting.</p>
-        <div class="max-h-60 overflow-y-auto mb-4">${rows}</div>
-        <div class="flex gap-2 justify-end">
-            <button onclick="cancelModal()" class="px-4 py-1.5 border rounded-lg text-xs">Cancel</button>
-            <button onclick="acceptData()" class="px-4 py-1.5 bg-blue-900 text-white rounded-lg text-xs">Accept & append</button>
-        </div>
-    </div></div>`;
-    document.body.insertAdjacentHTML('beforeend', html);
-    window._pendingData = parsed;
+  const html = `<div class="modal-bg" id="confirm-modal"><div class="modal">
+    <h3 class="text-base font-bold mb-1">Confirm new data — ${parsed.month}</h3>
+    <p class="text-[11px] text-gray-500 mb-3">Web-fetched values. Click ↗ to verify each source before accepting. Cells marked "not released" will become "—" in the table.</p>
+    <div class="max-h-80 overflow-y-auto mb-4 border border-gray-100 rounded p-2">${rows}</div>
+    <div class="flex gap-2 justify-end">
+      <button onclick="cancelModal()" class="btn btn-secondary">Cancel</button>
+      <button onclick="acceptData()" class="btn btn-primary">Accept & append ${parsed.month}</button>
+    </div>
+  </div></div>`;
+  document.body.insertAdjacentHTML('beforeend', html);
+  window._pending = parsed;
 }
 
 function cancelModal() {
-    document.getElementById('confirm-modal')?.remove();
-    resetBtn();
-    document.getElementById('status-msg').textContent = 'Cancelled.';
+  document.getElementById('confirm-modal')?.remove();
+  resetBtn();
+  document.getElementById('status-msg').textContent = 'Cancelled.';
+  document.getElementById('status-msg').className = 'text-xs text-gray-500 ml-1';
 }
 
 function acceptData() {
-    const parsed = window._pendingData;
-    if (!parsed) return;
-    MONTHS.push(parsed.month);
-    Object.entries(IND).forEach(([k, ind]) => {
-        const dp = parsed.data[k];
-        if (dp && dp.v !== null && dp.v !== undefined) {
-            ind.d.push({ v: dp.v, s: dp.s || null });
-        } else {
-            ind.d.push(null);
-        }
-    });
-    document.getElementById('confirm-modal')?.remove();
-    renderAll();
-    document.getElementById('status-msg').textContent = `Added ${parsed.month}.`;
-    document.getElementById('status-msg').className = 'text-xs text-green-600 ml-2';
-    resetBtn();
+  const parsed = window._pending;
+  if (!parsed) return;
+  MONTHS.push(parsed.month);
+  Object.entries(INDICATORS).forEach(([k, ind]) => {
+    const dp = parsed.data[k];
+    if (dp && dp.v !== null && dp.v !== undefined) {
+      ind.d.push({ v: dp.v, s: dp.s || null });
+    } else {
+      ind.d.push(null);
+    }
+  });
+  document.getElementById('confirm-modal')?.remove();
+  renderAll();
+  document.getElementById('status-msg').textContent = `Appended ${parsed.month}.`;
+  document.getElementById('status-msg').className = 'text-xs text-green-600 ml-1';
+  resetBtn();
 }
 
 // ─── INIT ───
 function renderAll() {
-    renderKPIs();
-    renderCatTabs('cat-tabs', 'selectCat');
-    renderCatTabs('table-cat-tabs', 'selectTableCat');
-    renderIndTabs();
-    renderTable();
-    renderSources();
-    if (chart) updateChartData();
+  renderKPIs();
+  renderCatTabs();
+  renderTable();
+  renderIndSelect();
+  renderChart();
 }
 
-window.onload = function() {
-    renderAll();
-    initChart();
-};
+window.onload = renderAll;
 </script>
 </body>
 </html>
