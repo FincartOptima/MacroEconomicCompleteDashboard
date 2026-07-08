@@ -1,0 +1,17 @@
+# Only track essential dashboard files
+# Ignore everything by default, then whitelist
+*
+
+# Whitelist dashboard files
+!.gitignore
+!dashboard/
+!dashboard/index.html
+!dashboard/data.json
+!SOP_Dashboard_Setup.html
+!SOURCES.md
+
+# Ignore backups and working copies inside dashboard
+dashboard/backup/
+dashboard/by chatgpt codex/
+dashboard/*.backup
+dashboard/data- Old*

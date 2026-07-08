@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SOP — India Economic Pulse Dashboard</title>
+<style>
+  @page { size: A4; margin: 20mm 18mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', -apple-system, sans-serif; color: #1a1a1a; line-height: 1.6; max-width: 780px; margin: 0 auto; padding: 40px 24px; }
+  h1 { font-size: 22px; color: #14532d; border-bottom: 3px solid #15803d; padding-bottom: 8px; margin-bottom: 6px; }
+  .subtitle { font-size: 12px; color: #666; margin-bottom: 30px; }
+  h2 { font-size: 16px; color: #15803d; margin: 28px 0 10px; padding: 6px 10px; background: #F0FDF4; border-left: 4px solid #15803d; }
+  h3 { font-size: 14px; color: #166534; margin: 18px 0 8px; }
+  h4 { font-size: 13px; color: #166534; margin: 14px 0 6px; }
+  p, li { font-size: 13px; }
+  p { margin-bottom: 10px; }
+  ol, ul { margin: 8px 0 14px 24px; }
+  li { margin-bottom: 6px; }
+  code { background: #F0FDF4; color: #14532d; padding: 1px 5px; border-radius: 3px; font-size: 12px; font-family: 'Cascadia Code', 'Consolas', monospace; }
+  pre { background: #1a1a1a; color: #e0e0e0; padding: 12px 16px; border-radius: 6px; font-size: 12px; overflow-x: auto; margin: 10px 0 14px; line-height: 1.5; font-family: 'Cascadia Code', 'Consolas', monospace; }
+  pre .cmd { color: #86efac; }
+  pre .comment { color: #6b7280; }
+  .callout { background: #FEF9C3; border: 1px solid #EAB308; border-radius: 6px; padding: 10px 14px; margin: 12px 0; font-size: 12px; }
+  .callout-blue { background: #EFF6FF; border-color: #3B82F6; }
+  .callout-red { background: #FEF2F2; border-color: #EF4444; }
+  .callout strong { color: #92400e; }
+  .callout-blue strong { color: #1e40af; }
+  .callout-red strong { color: #991b1b; }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0 16px; font-size: 12px; }
+  th { background: #ECFDF5; color: #166534; text-align: left; padding: 8px 10px; border: 1px solid #BBF7D0; }
+  td { padding: 7px 10px; border: 1px solid #e5e7eb; vertical-align: top; }
+  .step-num { display: inline-block; background: #15803d; color: white; width: 22px; height: 22px; border-radius: 50%; text-align: center; line-height: 22px; font-size: 11px; font-weight: 700; margin-right: 6px; }
+  .page-break { page-break-before: always; }
+  .footer { margin-top: 40px; padding-top: 12px; border-top: 1px solid #ddd; font-size: 10px; color: #999; text-align: center; }
+  .toc { background: #F8FAFC; border: 1px solid #E2E8F0; border-radius: 8px; padding: 16px 20px; margin: 16px 0 24px; }
+  .toc h3 { margin: 0 0 8px; font-size: 13px; }
+  .toc ol { margin: 0 0 0 20px; }
+  .toc li { font-size: 12px; margin-bottom: 3px; }
+  .toc a { color: #15803d; text-decoration: none; }
+  .signal-table td:first-child { font-weight: 600; white-space: nowrap; }
+</style>
+</head>
+<body>
+
+<h1>Standard Operating Procedure</h1>
+<p style="font-size:18px; color:#166534; font-weight:600; margin-bottom:4px;">India Economic Pulse Dashboard</p>
+<p class="subtitle">Purpose, Interpretation, Usage Guide, Update Workflow & Future Scope &nbsp;|&nbsp; Version 2.0 &nbsp;|&nbsp; July 2026</p>
+
+<div class="toc">
+  <h3>Table of Contents</h3>
+  <ol>
+    <li><a href="#s1">What This Dashboard Is For</a></li>
+    <li><a href="#s2">Dashboard Architecture</a></li>
+    <li><a href="#s3">How to Use the Dashboard</a></li>
+    <li><a href="#s4">How to Interpret the Data</a></li>
+    <li><a href="#s5">How to Analyze & Draw Inferences</a></li>
+    <li><a href="#s6">Limitations & Caveats</a></li>
+    <li><a href="#s7">One-Time Setup: GitHub Pages</a></li>
+    <li><a href="#s8">Monthly Update Workflow</a></li>
+    <li><a href="#s9">Editing Values & Admin Mode</a></li>
+    <li><a href="#s10">Refresh Button: Auto-Fetch + New Month</a></li>
+    <li><a href="#s11">Changing the Admin Password</a></li>
+    <li><a href="#s12">Local Development (Advanced)</a></li>
+    <li><a href="#s13">Troubleshooting</a></li>
+    <li><a href="#s14">Indicator Reference</a></li>
+    <li><a href="#s15">Future Scope</a></li>
+  </ol>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s1">1. What This Dashboard Is For</h2>
+
+<h3>Purpose</h3>
+<p>The India Economic Pulse dashboard is an <strong>internal macroeconomic monitoring tool</strong> built for the Fincart research team. It consolidates 35 key economic indicator series across 8 categories into a single, interactive view — replacing the need to visit dozens of government websites, RBI bulletins, and AMFI reports each month.</p>
+
+<p>It serves three primary functions:</p>
+<ol>
+  <li><strong>Monthly macro tracking:</strong> At-a-glance KPI cards show the latest values for the six most critical indicators (Repo Rate, Credit Growth, CPI, GST, USD/INR, PMI), so you know the economic pulse in under 10 seconds.</li>
+  <li><strong>Trend analysis:</strong> Interactive line/bar charts let you spot multi-month trends, inflection points, and divergences across indicators.</li>
+  <li><strong>Data repository:</strong> Detailed tables with 21+ months of history, source URLs, and data tiers provide an auditable single source of truth for investment committee discussions, client presentations, and research reports.</li>
+</ol>
+
+<h3>Who Should Use It</h3>
+<ul>
+  <li><strong>Investment team:</strong> For monthly macro reviews, portfolio positioning, and sector allocation decisions</li>
+  <li><strong>Research analysts:</strong> For sourcing data points for reports, screening macro themes, and back-testing narratives</li>
+  <li><strong>Client-facing advisors:</strong> For quickly referencing current macro data during client meetings</li>
+  <li><strong>Leadership:</strong> For a high-level economic snapshot without wading through raw data</li>
+</ul>
+
+<h3>The 8 Categories at a Glance</h3>
+<table>
+  <tr><th>Category</th><th>What It Covers</th><th>Key Indicators</th></tr>
+  <tr><td>Monetary & Liquidity</td><td>RBI policy stance, banking system health</td><td>Repo Rate, System Liquidity, Credit Growth, Deposit Growth, CD Ratio</td></tr>
+  <tr><td>Institutional Flows</td><td>Where money is flowing in/out of equities</td><td>FII Flow, DII Flow, SIP Contribution, Lumpsum Inflow, Redemptions</td></tr>
+  <tr><td>Production & Activity</td><td>Real economy momentum</td><td>PMI (Mfg/Services), Vehicle Sales, Electricity, Steel, Fuel</td></tr>
+  <tr><td>Inflation & Prices</td><td>Price stability and RBI target compliance</td><td>CPI, Core CPI, WPI, Food Inflation</td></tr>
+  <tr><td>Growth & Employment</td><td>GDP trajectory and labor market</td><td>GDP Growth YoY, Unemployment Rate</td></tr>
+  <tr><td>Fiscal</td><td>Government revenue and spending</td><td>GST Collection, GST YoY, CapEx Outlay, Current Account Deficit</td></tr>
+  <tr><td>Money Market & Yields</td><td>Short- and long-term rate expectations</td><td>91-Day T-Bill, 364-Day T-Bill, 10Y G-Sec Yield</td></tr>
+  <tr><td>Currency & Forex</td><td>External sector stability</td><td>USD/INR, GBP/INR, Forex Reserves</td></tr>
+</table>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s2">2. Dashboard Architecture</h2>
+
+<p>The dashboard is a <strong>static website</strong> — two files, no server, no database.</p>
+
+<table>
+  <tr><th style="width:30%">Component</th><th>Role</th></tr>
+  <tr><td><code>index.html</code></td><td>The complete dashboard — HTML, CSS, and JavaScript in one file. Contains all chart rendering, table layout, admin mode, refresh logic, and download functionality. Uses Tailwind CSS and Chart.js via CDN.</td></tr>
+  <tr><td><code>data.json</code></td><td>The single source of truth for all indicator data. Contains 34 raw indicators (35 display rows, since fuel splits into petrol and diesel) across 21+ months, with values, source URLs, data tiers, and notes.</td></tr>
+</table>
+
+<p><strong>How it works:</strong> When a visitor opens the page, <code>index.html</code> fetches <code>data.json</code> via the browser's <code>fetch()</code> API, processes it client-side using embedded indicator metadata, and renders KPI cards, trend charts, and data tables. No Python, no build step, no server.</p>
+
+<p><strong>Data flow:</strong></p>
+<pre><span class="comment">data.json (on disk / GitHub)</span>
+    ↓  <span class="cmd">fetch()</span>
+<span class="comment">rawData (in-memory JS object)</span>
+    ↓  <span class="cmd">processRawData()</span>
+<span class="comment">INDICATORS / CATEGORIES / MONTHS (display arrays)</span>
+    ↓  <span class="cmd">renderAll()</span>
+<span class="comment">KPI Cards + Charts + Tables (DOM)</span></pre>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s3" class="page-break">3. How to Use the Dashboard</h2>
+
+<h3>Viewing Mode (Default)</h3>
+<p>Anyone with the URL can view the dashboard. No login required for read-only access.</p>
+
+<h4>KPI Cards (Top Section)</h4>
+<p>Six summary cards show the latest available value for the most watched indicators: RBI Repo Rate, Bank Credit Growth, CPI Inflation, GST Collection, USD/INR, and Manufacturing PMI. Each card shows the value, its unit, and the month it corresponds to. Click any value to open the source URL in a new tab.</p>
+
+<h4>Trend Chart (Middle Section)</h4>
+<p>A dropdown selector lets you plot any of the 35 indicator series as a time-series chart. Line charts are used for rates and percentages; bar charts for absolute volumes (flows, collections, consumption). Hover over data points to see exact values.</p>
+
+<h4>Data Tables (Bottom Section)</h4>
+<p>Eight category tabs display detailed monthly data in scrollable tables. Each row is one indicator, each column is one month (Oct 2024 onward). Click any cell value to open its source URL. Tables can be exported to Excel using the <strong>Export to Excel</strong> button on each category header.</p>
+
+<h3>Navigation</h3>
+<ul>
+  <li><strong>Category tabs:</strong> Click any of the 8 category buttons to jump to that section</li>
+  <li><strong>Scrolling:</strong> Tables scroll horizontally for months beyond the viewport</li>
+  <li><strong>Source verification:</strong> Every cell value is a clickable link to the original data source</li>
+</ul>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s4">4. How to Interpret the Data</h2>
+
+<h3>Reading the KPI Cards</h3>
+<p>Each KPI card shows the <strong>most recent available value</strong>, not necessarily the current month. If June CPI hasn't been released yet, the card shows May CPI. Always check the small month label below the value to know which period you're looking at.</p>
+
+<h3>Data Tiers</h3>
+<p>Each data point in <code>data.json</code> has a <strong>tier</strong> field indicating source reliability:</p>
+<table>
+  <tr><th>Tier</th><th>Meaning</th><th>Example Sources</th></tr>
+  <tr><td>Tier 1</td><td>Official/primary source — directly from the issuing authority</td><td>RBI bulletin, MOSPI press release, PPAC official data</td></tr>
+  <tr><td>Tier 2</td><td>Reliable secondary — reputable aggregators or live APIs</td><td>Trading Economics, open.er-api.com, news reports citing official data</td></tr>
+  <tr><td>Tier 3</td><td>Estimated or manually computed</td><td>Derived calculations, preliminary estimates, media reports</td></tr>
+</table>
+
+<h3>Understanding Each Category</h3>
+
+<h4>Monetary & Liquidity</h4>
+<ul>
+  <li><strong>Repo Rate:</strong> RBI's benchmark lending rate. Changes signal policy tightening (rate hike) or easing (rate cut). Updated on RBI MPC meeting dates (6 times/year).</li>
+  <li><strong>System Liquidity:</strong> Net liquidity surplus/deficit in the banking system (₹ Lakh Crore). Positive = surplus (easy money), negative = deficit (tight money).</li>
+  <li><strong>Credit Growth YoY:</strong> Year-on-year growth in bank lending. 12-15% is considered healthy; above 18% may signal overheating.</li>
+  <li><strong>Deposit Growth YoY:</strong> Year-on-year growth in bank deposits. If credit growth significantly exceeds deposit growth, banks face funding pressure.</li>
+  <li><strong>Credit-Deposit (CD) Ratio:</strong> Ratio of loans to deposits. Above 78% signals banks are stretched; below 72% suggests room for lending.</li>
+</ul>
+
+<h4>Institutional Flows</h4>
+<ul>
+  <li><strong>FII Net Flow:</strong> Foreign Institutional Investor buying/selling in Indian equities (₹ Cr). Positive = net buying (bullish signal), negative = net selling.</li>
+  <li><strong>DII Net Flow:</strong> Domestic Institutional Investor flows. Often counter-cyclical to FII — DIIs buy when FIIs sell, providing market stability.</li>
+  <li><strong>SIP Contribution:</strong> Monthly Systematic Investment Plan inflows into mutual funds. A measure of retail investor confidence and savings discipline.</li>
+  <li><strong>Lumpsum Inflow:</strong> One-time mutual fund investments. Tends to spike when markets are perceived as cheap.</li>
+  <li><strong>Redemption (Equity+Hybrid):</strong> Mutual fund outflows. Rising redemptions combined with falling SIPs can signal retail panic.</li>
+</ul>
+
+<h4>Production & Activity</h4>
+<ul>
+  <li><strong>PMI (Manufacturing/Services):</strong> Purchasing Managers' Index. Above 50 = expansion, below 50 = contraction. Above 55 = strong expansion.</li>
+  <li><strong>Vehicle Sales:</strong> A proxy for consumer demand and credit availability. PV (passenger vehicle) sales reflect urban consumption.</li>
+  <li><strong>Electricity Consumption:</strong> A real-time economic activity proxy — correlated with industrial output and GDP.</li>
+  <li><strong>Steel Production YoY:</strong> Signals infrastructure and construction activity.</li>
+  <li><strong>Fuel Consumption (Petrol/Diesel):</strong> Petrol reflects urban mobility/consumer activity; diesel reflects industrial, freight, and agricultural activity.</li>
+</ul>
+
+<h4>Inflation & Prices</h4>
+<ul>
+  <li><strong>CPI Inflation:</strong> The headline consumer inflation number. RBI's target is 4% (with ±2% tolerance band of 2-6%).</li>
+  <li><strong>Core Inflation:</strong> CPI excluding food and fuel — shows underlying price pressure. More relevant for monetary policy than headline CPI.</li>
+  <li><strong>WPI Inflation:</strong> Wholesale price index — a leading indicator for CPI. Divergence between WPI and CPI signals margin pressure on producers.</li>
+  <li><strong>Food Inflation:</strong> Most volatile component of CPI. Driven by monsoon, supply disruptions, and global commodity prices.</li>
+</ul>
+
+<h4>Growth & Employment</h4>
+<ul>
+  <li><strong>GDP Growth YoY:</strong> Quarterly figure (not monthly) — only updates 4 times a year with a 2-month lag. The most comprehensive measure of economic health.</li>
+  <li><strong>Unemployment Rate:</strong> CMIE monthly estimate. Below 7% is considered healthy for India. Watch the trend, not single-month readings.</li>
+</ul>
+
+<h4>Fiscal</h4>
+<ul>
+  <li><strong>GST Collection:</strong> Monthly gross GST revenue (₹ Cr). Reflects consumption activity and tax compliance. Crossing ₹2 lakh crore/month is considered strong.</li>
+  <li><strong>GST YoY:</strong> Year-on-year growth in GST. Adjusts for the base effect — more meaningful than absolute numbers.</li>
+  <li><strong>CapEx Outlay:</strong> Government capital expenditure. Higher CapEx = infrastructure investment and multiplier effects on GDP.</li>
+  <li><strong>Current Account Deficit (% GDP):</strong> Trade balance indicator. Below -2.5% GDP is comfortable; beyond -3% raises funding concerns.</li>
+</ul>
+
+<h4>Money Market & Yields</h4>
+<ul>
+  <li><strong>91-Day T-Bill:</strong> Short-term risk-free rate. Reflects near-term RBI policy expectations and liquidity conditions.</li>
+  <li><strong>364-Day T-Bill:</strong> Medium-term rate. Gap between 91D and 364D signals yield curve shape.</li>
+  <li><strong>10Y G-Sec Yield:</strong> The benchmark long-term rate. Rising yield = tightening financial conditions or inflation fears. Falling yield = rate cut expectations.</li>
+</ul>
+
+<h4>Currency & Forex</h4>
+<ul>
+  <li><strong>USD/INR:</strong> Exchange rate. Rising = rupee depreciation. Watch absolute level and rate of change.</li>
+  <li><strong>GBP/INR:</strong> Relevant for UK-linked trade and NRI flows.</li>
+  <li><strong>Forex Reserves:</strong> India's foreign currency reserves (USD Bn). Above $600Bn is considered comfortable. Declining reserves may signal RBI intervention to defend the rupee.</li>
+</ul>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s5" class="page-break">5. How to Analyze & Draw Inferences</h2>
+
+<h3>Framework: Three-Layer Analysis</h3>
+<p>Use the dashboard in three passes, each building on the previous:</p>
+
+<h4>Pass 1 — Monthly Health Check (2 minutes)</h4>
+<p>Look at the 6 KPI cards for the latest readings. Ask: "Is anything flashing a warning?"</p>
+<table class="signal-table">
+  <tr><th>Signal</th><th>What to Watch</th><th>Interpretation</th></tr>
+  <tr><td>CPI &gt; 6%</td><td>Above RBI upper band</td><td>Rate hike risk; debt funds vulnerable; equity multiples compress</td></tr>
+  <tr><td>CPI &lt; 4%</td><td>Below RBI target</td><td>Room for rate cuts; positive for duration trades and equity valuations</td></tr>
+  <tr><td>PMI &lt; 50</td><td>Contraction territory</td><td>Earnings downgrades likely; defensive sectors outperform</td></tr>
+  <tr><td>FII Net Flow deeply negative</td><td>Sustained selling (&gt;₹10K Cr/month)</td><td>Rupee pressure, large-cap drag, but DII counter-buying limits damage</td></tr>
+  <tr><td>USD/INR sharp move (&gt;2% in a month)</td><td>Rapid depreciation</td><td>Import-heavy sectors hurt; IT/pharma benefit; RBI may intervene</td></tr>
+  <tr><td>GST YoY &lt; 5%</td><td>Slowing consumption</td><td>Consumer discretionary and FMCG earnings at risk</td></tr>
+</table>
+
+<h4>Pass 2 — Trend Spotting (5 minutes)</h4>
+<p>Use the trend chart dropdown to plot 3-6 month trajectories. Look for:</p>
+<ul>
+  <li><strong>Inflection points:</strong> Is an indicator reversing direction? E.g., CPI turning up after months of decline = potential hawkish RBI pivot.</li>
+  <li><strong>Divergences:</strong> Manufacturing PMI rising but vehicle sales falling = inventory build-up, not genuine demand. Credit growth rising but deposit growth stagnant = funding stress ahead.</li>
+  <li><strong>Breakouts from range:</strong> 10Y G-Sec yield moving above its 6-month range = market pricing in tightening. GST collections consistently above ₹1.8L Cr = structural improvement in tax base.</li>
+</ul>
+
+<h4>Pass 3 — Cross-Category Narratives (10 minutes)</h4>
+<p>The highest-value analysis comes from connecting dots across categories. Here are key cross-reads:</p>
+
+<table>
+  <tr><th>Combine These</th><th>To Answer</th><th>Example Narrative</th></tr>
+  <tr>
+    <td>Repo Rate + CPI + 10Y Yield</td>
+    <td>Where is monetary policy headed?</td>
+    <td>If CPI is falling toward 4%, repo rate is at 6%+, and 10Y yield is declining → market expects rate cuts. Position for duration.</td>
+  </tr>
+  <tr>
+    <td>FII Flow + USD/INR + Forex Reserves</td>
+    <td>Is the external sector stable?</td>
+    <td>FII selling + rupee weakening + reserves declining → triple stress. If reserves are still above $600Bn, RBI has room to manage.</td>
+  </tr>
+  <tr>
+    <td>Credit Growth + CD Ratio + System Liquidity</td>
+    <td>Can the credit cycle sustain?</td>
+    <td>Credit growth at 16%, CD ratio at 80%, liquidity deficit → banks may slow lending. Watch for NBFC stress.</td>
+  </tr>
+  <tr>
+    <td>SIP + Lumpsum + Redemption</td>
+    <td>What is retail sentiment?</td>
+    <td>SIPs steady + lumpsum rising + redemptions falling = retail is confident. Good for mid/small-cap flows.</td>
+  </tr>
+  <tr>
+    <td>GST + Vehicle Sales + Electricity + Fuel</td>
+    <td>How strong is domestic demand?</td>
+    <td>All four rising together = broad-based demand recovery. GST rising but vehicle sales flat = services-led growth, not goods.</td>
+  </tr>
+  <tr>
+    <td>GDP + Unemployment + CapEx</td>
+    <td>Is growth translating to jobs?</td>
+    <td>GDP at 7%+ but unemployment rising = jobless growth, often driven by capital-intensive sectors. CapEx rising supports future job creation.</td>
+  </tr>
+</table>
+
+<div class="callout-blue callout">
+  <strong>Analyst tip:</strong> The most actionable insight usually comes from a <em>disagreement</em> between related indicators. When everything points the same direction, markets have already priced it in. When two related indicators diverge, something is about to break one way — that's where the alpha is.
+</div>
+
+<h3>Seasonality to Keep in Mind</h3>
+<ul>
+  <li><strong>April GST:</strong> Typically elevated (year-end advance tax settlements). Don't mistake it for a trend.</li>
+  <li><strong>Monsoon months (Jun–Sep):</strong> Food inflation can spike; fuel (diesel) demand for agriculture rises.</li>
+  <li><strong>October–December:</strong> Festive season boosts vehicle sales, consumption, and GST. Compare YoY, not month-on-month.</li>
+  <li><strong>March:</strong> Government CapEx spikes as ministries rush to exhaust budget allocations.</li>
+  <li><strong>GDP:</strong> Q1 (Apr-Jun) often has base-effect distortions. Q3 (Oct-Dec) is the festive quarter.</li>
+</ul>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s6" class="page-break">6. Limitations & Caveats</h2>
+
+<h3>Data Limitations</h3>
+<table>
+  <tr><th style="width:35%">Limitation</th><th>Impact</th></tr>
+  <tr>
+    <td><strong>No real-time data</strong></td>
+    <td>Values are entered manually (except FX rates). The dashboard shows data as of the last update, not live feeds. Most macro indicators are released with a 2-4 week lag after month-end.</td>
+  </tr>
+  <tr>
+    <td><strong>GDP is quarterly, not monthly</strong></td>
+    <td>GDP Growth only updates 4 times a year with a ~2 month lag. Empty cells for non-release months are expected, not errors.</td>
+  </tr>
+  <tr>
+    <td><strong>CAD is quarterly</strong></td>
+    <td>Current Account Deficit data is released quarterly by RBI, similar to GDP.</td>
+  </tr>
+  <tr>
+    <td><strong>Preliminary vs. revised numbers</strong></td>
+    <td>Some indicators (GDP, IIP, trade deficit) get revised weeks or months after the initial release. The dashboard stores the value at the time of entry — it does not auto-update with revisions.</td>
+  </tr>
+  <tr>
+    <td><strong>No intra-month granularity</strong></td>
+    <td>Each indicator has one value per month. For daily/weekly series (FII flows, forex), the dashboard shows the monthly aggregate or end-of-month snapshot.</td>
+  </tr>
+  <tr>
+    <td><strong>Source variability</strong></td>
+    <td>Different sources may report slightly different values for the same indicator (e.g., SIAM vs. media for vehicle sales). The data tier field helps assess reliability.</td>
+  </tr>
+</table>
+
+<h3>Technical Limitations</h3>
+<table>
+  <tr><th style="width:35%">Limitation</th><th>Impact</th></tr>
+  <tr>
+    <td><strong>Manual update process</strong></td>
+    <td>Data freshness depends on someone updating the dashboard each month. There is no automated pipeline from source to dashboard (except FX rates via the Refresh button).</td>
+  </tr>
+  <tr>
+    <td><strong>Single-user editing</strong></td>
+    <td>If two people edit simultaneously, whoever uploads last wins. There is no merge or conflict resolution.</td>
+  </tr>
+  <tr>
+    <td><strong>No historical versioning in the UI</strong></td>
+    <td>Overwritten values are gone. GitHub's commit history serves as the audit trail, but the dashboard itself doesn't show past revisions.</td>
+  </tr>
+  <tr>
+    <td><strong>Browser-only</strong></td>
+    <td>Charts don't render in email or PDF exports. For presentations, use screenshots or the Export to Excel feature.</td>
+  </tr>
+  <tr>
+    <td><strong>Admin password is a UI gate, not true security</strong></td>
+    <td>The password hash is visible in the HTML source code. Real security comes from GitHub push access — only people with commit access can publish changes.</td>
+  </tr>
+  <tr>
+    <td><strong>FX auto-fetch only</strong></td>
+    <td>The Refresh button can only auto-fetch USD/INR and GBP/INR (via open.er-api.com). All 32 other indicators must be entered manually due to CORS restrictions or paywall issues on data sources.</td>
+  </tr>
+</table>
+
+<h3>Analytical Limitations</h3>
+<ul>
+  <li><strong>No forecasting or modeling:</strong> The dashboard shows actuals only. It does not project, forecast, or compute derived metrics (e.g., real interest rates, output gaps).</li>
+  <li><strong>No adjustments:</strong> Values are nominal (not seasonally adjusted, not inflation-adjusted). Be careful comparing months with known seasonal patterns.</li>
+  <li><strong>Correlation ≠ causation:</strong> Cross-category analysis can reveal relationships, but the dashboard provides no statistical testing. Treat observed patterns as hypotheses to investigate, not conclusions.</li>
+  <li><strong>21+ months of history:</strong> Not enough for cycle-level analysis (interest rate cycles, credit cycles). Use external databases for multi-year trends.</li>
+</ul>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s7" class="page-break">7. One-Time Setup: GitHub Pages</h2>
+<p>Follow these steps once to get your dashboard live on the internet.</p>
+
+<h3><span class="step-num">1</span> Create a GitHub Repository</h3>
+<ol type="a">
+  <li>Go to <code>github.com</code> → click the <strong>+</strong> button (top right) → <strong>New repository</strong></li>
+  <li>Name it something like <code>india-economic-pulse</code></li>
+  <li>Set visibility to <strong>Public</strong> (required for free GitHub Pages)</li>
+  <li>Check <strong>"Add a README file"</strong></li>
+  <li>Click <strong>Create repository</strong></li>
+</ol>
+
+<h3><span class="step-num">2</span> Upload Dashboard Files</h3>
+<ol type="a">
+  <li>In your new repo, click <strong>Add file</strong> → <strong>Upload files</strong></li>
+  <li>Drag and drop these two files:
+    <ul>
+      <li><code>dashboard\index.html</code></li>
+      <li><code>dashboard\data.json</code></li>
+    </ul>
+  </li>
+  <li>Write a commit message like "Initial dashboard upload"</li>
+  <li>Click <strong>Commit changes</strong></li>
+</ol>
+
+<div class="callout">
+  <strong>Important:</strong> Both files must be at the <strong>root</strong> of the repository (not inside a subfolder). When uploading, make sure the files appear as <code>index.html</code> and <code>data.json</code> in the repo root, not <code>dashboard/index.html</code>.
+</div>
+
+<h3><span class="step-num">3</span> Enable GitHub Pages</h3>
+<ol type="a">
+  <li>Go to your repo → <strong>Settings</strong> (gear icon)</li>
+  <li>In the left sidebar, click <strong>Pages</strong></li>
+  <li>Under <strong>"Build and deployment"</strong>:
+    <ul>
+      <li>Source: <strong>Deploy from a branch</strong></li>
+      <li>Branch: <strong>main</strong></li>
+      <li>Folder: <strong>/ (root)</strong></li>
+    </ul>
+  </li>
+  <li>Click <strong>Save</strong></li>
+  <li>Wait 1–2 minutes. Your dashboard will be live at:<br>
+    <code>https://&lt;your-username&gt;.github.io/india-economic-pulse/</code></li>
+</ol>
+
+<h3><span class="step-num">4</span> Verify</h3>
+<p>Open the URL in your browser. You should see the full dashboard with all data loaded. If you see a loading error, check that both files are in the <strong>root</strong> of the repository.</p>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s8">8. Monthly Update Workflow</h2>
+<p>Repeat these steps each month when new data becomes available (typically 1st–10th of each month).</p>
+
+<h3><span class="step-num">1</span> Open Dashboard & Enter Admin Mode</h3>
+<ol type="a">
+  <li>Open your live dashboard URL in a browser</li>
+  <li>Click the <strong>lock icon</strong> (🔒) in the top-right corner</li>
+  <li>Enter the admin password: <code>Fincart@2026</code> (default)</li>
+  <li>A green toolbar appears at the bottom — you're now in Admin Mode</li>
+</ol>
+
+<h3><span class="step-num">2</span> Add the New Month (if needed)</h3>
+<p>Two options:</p>
+<ul>
+  <li><strong>Option A — Refresh button:</strong> Click <strong>⟳ Refresh data</strong> in the top nav. This auto-adds the current month, fetches FX rates, and enters Admin Mode. See <a href="#s10">Section 10</a> for details.</li>
+  <li><strong>Option B — Manual:</strong> Click <strong>+ Add Month</strong> in the admin toolbar → enter <code>YYYY-MM</code> format (e.g., <code>2026-08</code>).</li>
+</ul>
+
+<h3><span class="step-num">3</span> Edit Values</h3>
+<p>See <a href="#s9">Section 9</a> for detailed editing instructions.</p>
+
+<h3><span class="step-num">4</span> Download Updated JSON</h3>
+<ol type="a">
+  <li>Click <strong>⬇ Download JSON</strong> in the admin toolbar</li>
+  <li>A file named <code>data.json</code> downloads to your computer</li>
+  <li>This file contains ALL data (not just your changes)</li>
+</ol>
+
+<div class="callout-red callout">
+  <strong>Warning:</strong> Edits exist only in your browser's memory. If you refresh or close the page before downloading, all edits are lost. Always download first.
+</div>
+
+<h3><span class="step-num">5</span> Upload to GitHub</h3>
+<ol type="a">
+  <li>Go to your GitHub repo</li>
+  <li>Click <strong>Add file</strong> → <strong>Upload files</strong></li>
+  <li>Drag and drop the downloaded <code>data.json</code></li>
+  <li>It will show as <strong>"modified"</strong> (replacing the old file)</li>
+  <li>Write a commit message, e.g.: <code>Update data: Aug 2026 CPI, GST, PMI</code></li>
+  <li>Click <strong>Commit changes</strong></li>
+</ol>
+
+<h3><span class="step-num">6</span> Verify</h3>
+<ol type="a">
+  <li>Wait ~60 seconds for GitHub Pages to redeploy</li>
+  <li>Open your dashboard URL and hard-refresh (<code>Ctrl + Shift + R</code>)</li>
+  <li>Confirm the new values appear in the tables and KPI cards</li>
+</ol>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s9" class="page-break">9. Editing Values & Admin Mode</h2>
+
+<h3>Entering Admin Mode</h3>
+<p>Click the 🔒 lock icon in the top-right nav bar and enter the password (<code>Fincart@2026</code> by default). When admin mode is active:</p>
+<ul>
+  <li>A green toolbar appears at the bottom with edit count, Download JSON, and Add Month buttons</li>
+  <li>Table cells become clickable for editing</li>
+  <li>An "Exit admin mode" button appears in the top-right</li>
+</ul>
+
+<h3>Editing a Cell</h3>
+<ol>
+  <li>Navigate to the category tab containing the indicator</li>
+  <li><strong>Click any table cell</strong> — an edit dialog opens</li>
+  <li>Enter the new <strong>value</strong> (numeric only — the dashboard handles formatting)</li>
+  <li>Paste the <strong>source URL</strong> where you found the data (optional but strongly recommended for audit trail)</li>
+  <li>Click <strong>Save</strong> (or press Enter)</li>
+  <li>The cell updates immediately and gets a <span style="background:#FEF9C3; padding:1px 4px; border-radius:2px;">yellow highlight</span></li>
+  <li>The change counter in the admin toolbar increments</li>
+</ol>
+
+<h3>Tips for Editing</h3>
+<ul>
+  <li>Enter raw numbers — no commas, no currency symbols, no percent signs. E.g., enter <code>197000</code> not <code>1,97,000</code>; enter <code>3.94</code> not <code>3.94%</code>.</li>
+  <li>Leave the value field empty to clear a data point (the cell will show "—").</li>
+  <li>You can edit any month, not just the latest. Useful for correcting past values when revised data is released.</li>
+  <li>The chart re-renders automatically after each save.</li>
+</ul>
+
+<div class="callout-blue callout">
+  <strong>Remember:</strong> All edits are in-memory only. You <strong>must</strong> click <strong>⬇ Download JSON</strong> and upload to GitHub to make changes permanent.
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s10">10. Refresh Button: Auto-Fetch + New Month</h2>
+
+<p>The <strong>⟳ Refresh data</strong> button (top-left, next to the title) performs the following in one click:</p>
+<ol>
+  <li><strong>Adds the current month</strong> to all indicators (if not already present). Safe to click multiple times — it won't add duplicate months.</li>
+  <li><strong>Auto-fetches USD/INR and GBP/INR</strong> exchange rates from the open.er-api.com API and fills them in.</li>
+  <li><strong>Lists all other indicators as "pending"</strong> in a result modal, so you know exactly what needs manual entry.</li>
+  <li><strong>Auto-enters Admin Mode</strong> so you can immediately start clicking cells to fill values.</li>
+</ol>
+
+<div class="callout-blue callout">
+  <strong>Note:</strong> Only FX rates are auto-fetched because open.er-api.com is the only CORS-friendly, free API available. All other indicators (CPI, GST, PMI, etc.) come from government sources that don't provide CORS-enabled APIs, so they must be entered manually.
+</div>
+
+<p><strong>Typical monthly workflow:</strong> Click Refresh → review the fetched FX rates → click cells for CPI, PMI, GST, etc. → Download JSON → Upload to GitHub.</p>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s11">11. Changing the Admin Password</h2>
+<p>The default admin password is <code>Fincart@2026</code>. To change it:</p>
+<ol>
+  <li>Choose your new password</li>
+  <li>Compute its SHA-256 hash:
+    <ul>
+      <li><strong>Online:</strong> Go to <code>emn178.github.io/online-tools/sha256.html</code>, type your password, copy the hash</li>
+      <li><strong>Python:</strong> <code>python -c "import hashlib; print(hashlib.sha256('YourNewPassword'.encode()).hexdigest())"</code></li>
+      <li><strong>PowerShell:</strong></li>
+    </ul>
+    <pre><span class="cmd">$bytes</span> = [System.Text.Encoding]::UTF8.GetBytes("YourNewPassword")
+<span class="cmd">$hash</span> = [System.Security.Cryptography.SHA256]::Create().ComputeHash($bytes)
+(<span class="cmd">$hash</span> | ForEach-Object { $_.ToString("x2") }) -join ""</pre>
+  </li>
+  <li>Open <code>index.html</code> in a text editor</li>
+  <li>Find this line near the top of the <code>&lt;script&gt;</code> block:
+    <pre>const ADMIN_HASH = "ea04253a...c67b";</pre>
+  </li>
+  <li>Replace the hash string with your new hash</li>
+  <li>Upload the updated <code>index.html</code> to GitHub</li>
+</ol>
+
+<div class="callout-blue callout">
+  <strong>Security note:</strong> The admin password is a <em>UI convenience gate</em>, not true security. The real protection is GitHub push access — only repo collaborators can publish changes. Even if someone guesses the password, they can only edit in their own browser session.
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s12">12. Local Development (Advanced)</h2>
+<p>To run the dashboard locally for testing before pushing to GitHub:</p>
+
+<h3>Prerequisites</h3>
+<ul>
+  <li>Python 3.9+ installed</li>
+</ul>
+
+<h3>Run Locally</h3>
+<pre><span class="comment"># Open a terminal and run:</span>
+<span class="cmd">cd</span> "C:\Users\Dev Singhal\Desktop\MacroEconomic Dashboard"
+<span class="cmd">python</span> -m http.server 5050 --directory dashboard</pre>
+<p>Then open <code>http://localhost:5050</code>. The dashboard loads <code>data.json</code> from the <code>dashboard/</code> folder. All features work identically to the live GitHub Pages version.</p>
+
+<h3>Local File Layout</h3>
+<pre><span class="comment">MacroEconomic Dashboard/</span>
+├── dashboard/
+│   ├── index.html             <span class="comment"># Dashboard page (self-contained)</span>
+│   └── data.json              <span class="comment"># Indicator data (source of truth)</span>
+├── scripts/                   <span class="comment"># Data collection scripts (optional)</span>
+├── research_log/              <span class="comment"># Research notes (optional)</span>
+├── SOP_Dashboard_Setup.html   <span class="comment"># This document</span>
+└── SOURCES.md                 <span class="comment"># Data source documentation</span></pre>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s13" class="page-break">13. Troubleshooting</h2>
+
+<table>
+  <tr><th style="width:35%">Problem</th><th>Solution</th></tr>
+  <tr>
+    <td>Dashboard shows "Failed to load data"</td>
+    <td>Check that <code>data.json</code> is in the <strong>same directory</strong> as <code>index.html</code> in the GitHub repo (both at root level). Also verify the file isn't corrupted — open it in a text editor and check that it starts with <code>{</code>.</td>
+  </tr>
+  <tr>
+    <td>GitHub Pages not updating after commit</td>
+    <td>Go to repo → <strong>Actions</strong> tab → check if deployment is running or failed. Hard-refresh the page with <code>Ctrl+Shift+R</code>. Wait up to 2 minutes.</td>
+  </tr>
+  <tr>
+    <td>Admin password not working</td>
+    <td>The password is case-sensitive. Default is <code>Fincart@2026</code>. If changed, verify the hash matches using methods in Section 11.</td>
+  </tr>
+  <tr>
+    <td>Chart shows wrong/missing data after edit</td>
+    <td>Make sure you entered a valid number (not text with commas or symbols). Leave the value field empty to clear a cell. The chart re-renders automatically after each save.</td>
+  </tr>
+  <tr>
+    <td>Refresh button shows "fetch failed"</td>
+    <td>The FX API (open.er-api.com) may be temporarily down or your network may block the request. The Refresh still adds the new month — just enter FX rates manually along with everything else.</td>
+  </tr>
+  <tr>
+    <td>Downloaded JSON seems unchanged</td>
+    <td>Edits are in-memory only. If you refreshed the page before downloading, your edits were lost. Always download <em>before</em> refreshing or closing.</td>
+  </tr>
+  <tr>
+    <td>New month not appearing after upload</td>
+    <td>Verify the month key format in data.json is <code>YYYY-MM</code> (e.g., <code>2026-08</code>, not <code>2026-8</code> or <code>Aug-2026</code>).</td>
+  </tr>
+  <tr>
+    <td>Clicking Refresh multiple times</td>
+    <td>Safe — it won't create duplicate months. It will re-fetch and update FX rates with the latest values, leaving all other manually-entered data untouched.</td>
+  </tr>
+</table>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s14">14. Indicator Reference</h2>
+<p>Each indicator in <code>data.json</code> uses a specific value field name. When editing via Admin Mode you don't need to know these (the UI handles it), but for manual JSON edits:</p>
+
+<table>
+  <tr><th>Indicator</th><th>Value Field</th><th>Unit</th><th>Typical Release</th></tr>
+  <tr><td>RBI Repo Rate</td><td><code>value_pct</code></td><td>%</td><td>Bi-monthly (MPC dates)</td></tr>
+  <tr><td>System Liquidity</td><td><code>value_lakh_crore</code></td><td>₹ Lakh Cr</td><td>Daily (use month-end)</td></tr>
+  <tr><td>Bank Credit / Deposit Growth</td><td><code>value_pct</code></td><td>%</td><td>Monthly (RBI bulletin, ~3 week lag)</td></tr>
+  <tr><td>Credit-Deposit Ratio</td><td><code>value_pct</code></td><td>%</td><td>Monthly (derived)</td></tr>
+  <tr><td>FII / DII Net Flow</td><td><code>value_inr_cr</code></td><td>₹ Cr</td><td>Daily (use monthly aggregate)</td></tr>
+  <tr><td>SIP Contribution</td><td><code>value_crore</code></td><td>₹ Cr</td><td>Monthly (AMFI, ~10th of next month)</td></tr>
+  <tr><td>Lumpsum Inflow / Redemption</td><td><code>value_crore</code></td><td>₹ Cr</td><td>Monthly (AMFI)</td></tr>
+  <tr><td>Manufacturing / Services PMI</td><td><code>pmi_value</code></td><td>Index</td><td>1st–3rd of next month</td></tr>
+  <tr><td>PV Vehicle Sales</td><td><code>units</code></td><td>Units</td><td>1st week of next month (SIAM)</td></tr>
+  <tr><td>Vehicle Sales YoY / Steel YoY / PV YoY</td><td><code>yoy_pct</code></td><td>%</td><td>With respective absolute data</td></tr>
+  <tr><td>Electricity Consumption</td><td><code>consumption_bu</code></td><td>BU</td><td>Monthly (CEA)</td></tr>
+  <tr><td>Fuel Consumption</td><td><code>petrol_tmt</code>, <code>diesel_tmt</code></td><td>TMT</td><td>Monthly (PPAC, ~2 week lag)</td></tr>
+  <tr><td>CPI Inflation</td><td><code>cpi_yoy_pct</code></td><td>%</td><td>12th of next month (MOSPI)</td></tr>
+  <tr><td>Core Inflation</td><td><code>core_cpi_yoy_pct</code></td><td>%</td><td>Derived from CPI sub-indices</td></tr>
+  <tr><td>WPI Inflation</td><td><code>wpi_yoy_pct</code></td><td>%</td><td>14th of next month (DPIIT)</td></tr>
+  <tr><td>Food Inflation</td><td><code>food_cpi_yoy_pct</code></td><td>%</td><td>With CPI release</td></tr>
+  <tr><td>GDP Growth</td><td><code>gdp_growth_pct</code></td><td>% YoY</td><td>Quarterly (~2 month lag)</td></tr>
+  <tr><td>Unemployment Rate</td><td><code>unemployment_pct</code></td><td>%</td><td>Monthly (CMIE)</td></tr>
+  <tr><td>GST Collection</td><td><code>collection_cr</code></td><td>₹ Cr</td><td>1st of next month (PIB)</td></tr>
+  <tr><td>GST YoY Change</td><td><code>yoy_pct</code></td><td>%</td><td>With GST collection</td></tr>
+  <tr><td>CapEx Outlay</td><td><code>capex_crore</code></td><td>₹ Cr</td><td>Monthly (CGA, ~6 week lag)</td></tr>
+  <tr><td>Current Account Deficit</td><td><code>cad_pct_gdp</code></td><td>% GDP</td><td>Quarterly (RBI, ~3 month lag)</td></tr>
+  <tr><td>T-Bill / G-Sec Yields</td><td><code>yield_pct</code></td><td>%</td><td>Daily (use month-end cut-off)</td></tr>
+  <tr><td>USD/INR</td><td><code>inr_per_usd</code></td><td>₹/$</td><td>Auto-fetched via Refresh</td></tr>
+  <tr><td>GBP/INR</td><td><code>inr_per_gbp</code></td><td>₹/£</td><td>Auto-fetched via Refresh</td></tr>
+  <tr><td>Forex Reserves</td><td><code>value_usd_bn</code></td><td>USD Bn</td><td>Weekly (RBI, use month-end)</td></tr>
+</table>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h2 id="s15" class="page-break">15. Future Scope</h2>
+<p>The dashboard is designed to be extended incrementally. Below are potential enhancements, ordered by feasibility:</p>
+
+<h3>Near-Term (Low Effort)</h3>
+<table>
+  <tr><th>Enhancement</th><th>What It Would Do</th></tr>
+  <tr>
+    <td><strong>More auto-fetch sources</strong></td>
+    <td>Add CORS proxy or serverless function to auto-fetch PMI (from S&P Global RSS), CPI (MOSPI API), and GST (PIB scraper) during Refresh. Reduces manual entry to ~15 indicators.</td>
+  </tr>
+  <tr>
+    <td><strong>Month-on-month change indicators</strong></td>
+    <td>Show MoM % change alongside absolute values in the tables. Helps spot acceleration/deceleration without mental math.</td>
+  </tr>
+  <tr>
+    <td><strong>Color-coded cells</strong></td>
+    <td>Green/red/amber heatmap in tables based on thresholds (e.g., CPI &gt; 6% = red, &lt; 4% = green). Instant visual signal.</td>
+  </tr>
+  <tr>
+    <td><strong>Dark mode</strong></td>
+    <td>CSS toggle for dark theme. Useful for analysts working late or presenting on dark backgrounds.</td>
+  </tr>
+</table>
+
+<h3>Medium-Term (Moderate Effort)</h3>
+<table>
+  <tr><th>Enhancement</th><th>What It Would Do</th></tr>
+  <tr>
+    <td><strong>Multi-indicator overlay charts</strong></td>
+    <td>Plot 2-3 indicators on the same chart (dual Y-axis) for correlation analysis. E.g., CPI vs Repo Rate, FII vs USD/INR.</td>
+  </tr>
+  <tr>
+    <td><strong>Automated data pipeline</strong></td>
+    <td>GitHub Actions cron job that runs a Python script on the 1st and 15th of each month, fetching data from APIs and committing updated data.json automatically.</td>
+  </tr>
+  <tr>
+    <td><strong>Commentary / notes per month</strong></td>
+    <td>Free-text notes field for each month — "RBI held rates despite CPI uptick" — providing narrative context alongside raw data.</td>
+  </tr>
+  <tr>
+    <td><strong>PDF/PowerPoint export</strong></td>
+    <td>One-click export of KPI cards + selected charts as a formatted report for investment committee presentations.</td>
+  </tr>
+  <tr>
+    <td><strong>Additional indicators</strong></td>
+    <td>IIP (Industrial Production), trade deficit, crude oil prices, Nifty 50 returns, India VIX — extending coverage to ~50 indicators.</td>
+  </tr>
+</table>
+
+<h3>Long-Term (Significant Effort)</h3>
+<table>
+  <tr><th>Enhancement</th><th>What It Would Do</th></tr>
+  <tr>
+    <td><strong>Database backend</strong></td>
+    <td>Replace data.json with a database (Supabase / Firebase). Enables multi-user editing, revision history, role-based access, and real-time sync.</td>
+  </tr>
+  <tr>
+    <td><strong>Alert system</strong></td>
+    <td>Email or Slack notifications when key indicators breach thresholds (e.g., CPI &gt; 6%, FII selling &gt; ₹20K Cr). Requires a backend.</td>
+  </tr>
+  <tr>
+    <td><strong>Macro scoring model</strong></td>
+    <td>Composite macro health score (0–100) aggregating all indicators with weighted signals. Useful for systematic asset allocation.</td>
+  </tr>
+  <tr>
+    <td><strong>Sector impact mapping</strong></td>
+    <td>Link macro indicators to sector performance — "which sectors benefit when CPI falls and credit growth rises?" — creating an investable output layer.</td>
+  </tr>
+</table>
+
+
+<!-- ═══════════════════════════════════════════════════════════════ -->
+<h3>Quick Workflow Summary (Cheat Sheet)</h3>
+<table>
+  <tr><th>Step</th><th>Action</th><th>Where</th></tr>
+  <tr><td>1</td><td>Click <strong>⟳ Refresh data</strong> (adds month + fetches FX)</td><td>Dashboard top nav</td></tr>
+  <tr><td>2</td><td>Or: Click 🔒 → enter password → <strong>+ Add Month</strong></td><td>Dashboard nav + admin toolbar</td></tr>
+  <tr><td>3</td><td>Click cell → enter value + source URL → Save</td><td>Data tables</td></tr>
+  <tr><td>4</td><td>Click <strong>⬇ Download JSON</strong></td><td>Admin toolbar</td></tr>
+  <tr><td>5</td><td><strong>Add file → Upload files</strong> → drag <code>data.json</code> → Commit</td><td>GitHub repo</td></tr>
+  <tr><td>6</td><td>Wait 60s → hard-refresh dashboard (<code>Ctrl+Shift+R</code>)</td><td>Browser</td></tr>
+</table>
+
+<div class="footer">
+  India Economic Pulse — SOP v2.0 — Updated July 2026<br>
+  For questions or issues, contact: singhal.dev@fincart.com
+</div>
+
+</body>
+</html>
