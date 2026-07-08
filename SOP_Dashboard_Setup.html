@@ -44,7 +44,7 @@
 
 <h1>Standard Operating Procedure</h1>
 <p style="font-size:18px; color:#166534; font-weight:600; margin-bottom:4px;">India Economic Pulse Dashboard</p>
-<p class="subtitle">Purpose, Interpretation, Usage Guide, Update Workflow & Future Scope &nbsp;|&nbsp; Version 2.0 &nbsp;|&nbsp; July 2026</p>
+<p class="subtitle">Purpose, Interpretation, Usage Guide, Update Workflow & Future Scope &nbsp;|&nbsp; Version 2.1 &nbsp;|&nbsp; July 2026</p>
 
 <div class="toc">
   <h3>Table of Contents</h3>
@@ -132,7 +132,7 @@
 <p>Anyone with the URL can view the dashboard. No login required for read-only access.</p>
 
 <h4>KPI Cards (Top Section)</h4>
-<p>Six summary cards show the latest available value for the most watched indicators: RBI Repo Rate, Bank Credit Growth, CPI Inflation, GST Collection, USD/INR, and Manufacturing PMI. Each card shows the value, its unit, and the month it corresponds to. Click any value to open the source URL in a new tab.</p>
+<p>Six summary cards show the latest available value for the most watched indicators: RBI Repo Rate, Bank Credit Growth, CPI Inflation, GST Collection, USD/INR, and Manufacturing PMI. Each card shows the value, its unit, and the month it corresponds to. Click any value to open the source URL in a new tab. Click the indicator name itself to open the detail drawer (see below).</p>
 
 <h4>Trend Chart (Middle Section)</h4>
 <p>A dropdown selector lets you plot any of the 35 indicator series as a time-series chart. Line charts are used for rates and percentages; bar charts for absolute volumes (flows, collections, consumption). Hover over data points to see exact values.</p>
@@ -140,11 +140,14 @@
 <h4>Data Tables (Bottom Section)</h4>
 <p>Eight category tabs display detailed monthly data in scrollable tables. Each row is one indicator, each column is one month (Oct 2024 onward). Click any cell value to open its source URL. Tables can be exported to Excel using the <strong>Export to Excel</strong> button on each category header.</p>
 
+<h4>Indicator Detail Drawer</h4>
+<p>Click any <strong>indicator name</strong> (in a KPI card or the first column of a table) to slide out a detail panel showing: definition, release frequency, whether the measure is YoY/MoM/level, the latest value, source status, the full source URL, and the last-verified date. Press <code>Esc</code> or click outside the panel to close it.</p>
+
 <h3>Navigation</h3>
 <ul>
   <li><strong>Category tabs:</strong> Click any of the 8 category buttons to jump to that section</li>
   <li><strong>Scrolling:</strong> Tables scroll horizontally for months beyond the viewport</li>
-  <li><strong>Source verification:</strong> Every cell value is a clickable link to the original data source</li>
+  <li><strong>Source verification:</strong> Every cell value is a clickable link to the original data source, color-coded by verification status — see <a href="#s4">Section 4</a></li>
 </ul>
 
 
@@ -153,6 +156,35 @@
 
 <h3>Reading the KPI Cards</h3>
 <p>Each KPI card shows the <strong>most recent available value</strong>, not necessarily the current month. If June CPI hasn't been released yet, the card shows May CPI. Always check the small month label below the value to know which period you're looking at.</p>
+
+<h3>Source Status Color Coding</h3>
+<p>Every value in the dashboard is a link, and its color tells you how trustworthy the source is. A legend is shown just above the KPI cards. The four states are:</p>
+<table>
+  <tr><th style="width:20%">Appearance</th><th>Meaning</th><th>What to do</th></tr>
+  <tr>
+    <td><strong style="color:#000000">Dark black, bold</strong></td>
+    <td><strong>Confirmed source.</strong> Someone has checked that the linked URL shows this exact value for this exact month.</td>
+    <td>Trust it. Safe to cite directly in reports or client conversations.</td>
+  </tr>
+  <tr>
+    <td><span style="color:#f87171">Light red, normal weight</span></td>
+    <td><strong>Broken or weak link.</strong> A source URL exists, but it points to a generic page (e.g. a portal homepage) rather than the specific release, or it hasn't been verified yet.</td>
+    <td>Click through and check. If it's correct, mark it confirmed (see <a href="#s9">Section 9</a>). If it's wrong, find the right page and update it.</td>
+  </tr>
+  <tr>
+    <td><span style="color:#f97316">Orange, normal weight</span></td>
+    <td><strong>No source.</strong> A value exists but no source URL was ever attached.</td>
+    <td>Find the original release and add the source URL via Admin Mode.</td>
+  </tr>
+  <tr>
+    <td><span style="color:#9CA3AF; font-style:italic">Gray, italic, shown as "—"</span></td>
+    <td><strong>No value.</strong> This indicator has not been released yet for this month, or the data point was intentionally cleared.</td>
+    <td>Nothing to do until the data is released. Not an error.</td>
+  </tr>
+</table>
+<div class="callout-blue callout">
+  <strong>Tip:</strong> Hover over any value to see a tooltip confirming its status, or click the indicator name to open the detail drawer, which shows the full source status, source URL, and last-verified date for the latest month.
+</div>
 
 <h3>Data Tiers</h3>
 <p>Each data point in <code>data.json</code> has a <strong>tier</strong> field indicating source reliability:</p>
@@ -511,6 +543,41 @@
   <strong>Remember:</strong> All edits are in-memory only. You <strong>must</strong> click <strong>⬇ Download JSON</strong> and upload to GitHub to make changes permanent.
 </div>
 
+<h3>How Newly Entered Values Are Colored</h3>
+<p>When you type a new value into a cell through Admin Mode, the dashboard does <strong>not</strong> automatically mark it "Confirmed" (black) — even if you paste a source URL. New entries always appear as:</p>
+<ul>
+  <li><span style="color:#f87171">Light red</span> if you entered a source URL (status: not yet verified)</li>
+  <li><span style="color:#f97316">Orange</span> if you left the source URL blank</li>
+</ul>
+<p>This is intentional — it keeps "someone typed this in" visually distinct from "someone confirmed the link shows the exact figure," so nothing gets silently trusted.</p>
+
+<h3>Marking a Source as Confirmed (Turning it Black)</h3>
+<p>To promote an entry from red/orange to <strong style="color:#000000">confirmed black</strong>, you edit the underlying <code>data.json</code> directly (this is a JSON field, not something exposed in the Admin Mode UI):</p>
+<ol>
+  <li>Download the current <code>data.json</code> (or open the one you're about to upload) in a text editor</li>
+  <li>Find the indicator and month, e.g.:
+    <pre>"cpi_inflation": {
+  "2026-07": {
+    "cpi_yoy_pct": 3.9,
+    "source": "https://pib.gov.in/PressReleasePage.aspx?PRID=XXXXXXX",
+    "source_status": "fixed",
+    "last_verified": "2026-08-05"
+  }
+}</pre>
+  </li>
+  <li>Open the <code>source</code> URL yourself and confirm it shows this exact value for this exact month</li>
+  <li>Add or update two fields on that month's entry:
+    <ul>
+      <li><code>"source_status": "fixed"</code> — turns the cell black and bold</li>
+      <li><code>"last_verified": "YYYY-MM-DD"</code> — today's date, shown in the detail drawer</li>
+    </ul>
+  </li>
+  <li>Save the file and upload it via <strong>Add file → Upload files</strong> on GitHub (Section 8, Step 5)</li>
+</ol>
+<div class="callout">
+  <strong>Note:</strong> If you never set <code>source_status</code>, the cell defaults to red (has a link) or orange (no link) — it will never silently become black. This is a manual, deliberate action by design.
+</div>
+
 
 <!-- ═══════════════════════════════════════════════════════════════ -->
 <h2 id="s10">10. Refresh Button: Auto-Fetch + New Month</h2>
@@ -744,7 +811,7 @@
 </table>
 
 <div class="footer">
-  India Economic Pulse — SOP v2.0 — Updated July 2026<br>
+  India Economic Pulse — SOP v2.1 — Updated July 2026<br>
   For questions or issues, contact: singhal.dev@fincart.com
 </div>
 
