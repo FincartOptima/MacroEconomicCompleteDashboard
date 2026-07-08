@@ -424,10 +424,10 @@
 <h3><span class="step-num">2</span> Upload Dashboard Files</h3>
 <ol type="a">
   <li>In your new repo, click <strong>Add file</strong> → <strong>Upload files</strong></li>
-  <li>Drag and drop these two files:
+  <li>Drag and drop these two files from the project folder (they live at the project root, not in a subfolder):
     <ul>
-      <li><code>dashboard\index.html</code></li>
-      <li><code>dashboard\data.json</code></li>
+      <li><code>index.html</code></li>
+      <li><code>data.json</code></li>
     </ul>
   </li>
   <li>Write a commit message like "Initial dashboard upload"</li>
@@ -435,7 +435,7 @@
 </ol>
 
 <div class="callout">
-  <strong>Important:</strong> Both files must be at the <strong>root</strong> of the repository (not inside a subfolder). When uploading, make sure the files appear as <code>index.html</code> and <code>data.json</code> in the repo root, not <code>dashboard/index.html</code>.
+  <strong>Important:</strong> Both files must be at the <strong>root</strong> of the repository (not inside a subfolder). Confirm they appear as <code>index.html</code> and <code>data.json</code> directly in the repo file listing, not nested under a folder.
 </div>
 
 <h3><span class="step-num">3</span> Enable GitHub Pages</h3>
@@ -637,14 +637,14 @@
 <h3>Run Locally</h3>
 <pre><span class="comment"># Open a terminal and run:</span>
 <span class="cmd">cd</span> "C:\Users\Dev Singhal\Desktop\MacroEconomic Dashboard"
-<span class="cmd">python</span> -m http.server 5050 --directory dashboard</pre>
-<p>Then open <code>http://localhost:5050</code>. The dashboard loads <code>data.json</code> from the <code>dashboard/</code> folder. All features work identically to the live GitHub Pages version.</p>
+<span class="cmd">python</span> -m http.server 5050</pre>
+<p>Then open <code>http://localhost:5050</code>. The dashboard loads <code>data.json</code> from the same folder as <code>index.html</code>. All features work identically to the live GitHub Pages version.</p>
 
 <h3>Local File Layout</h3>
 <pre><span class="comment">MacroEconomic Dashboard/</span>
-├── dashboard/
-│   ├── index.html             <span class="comment"># Dashboard page (self-contained)</span>
-│   └── data.json              <span class="comment"># Indicator data (source of truth)</span>
+├── index.html                 <span class="comment"># Dashboard page (self-contained)</span>
+├── data.json                  <span class="comment"># Indicator data (source of truth)</span>
+├── .gitignore                 <span class="comment"># Whitelists only these tracked files</span>
 ├── scripts/                   <span class="comment"># Data collection scripts (optional)</span>
 ├── research_log/              <span class="comment"># Research notes (optional)</span>
 ├── SOP_Dashboard_Setup.html   <span class="comment"># This document</span>
