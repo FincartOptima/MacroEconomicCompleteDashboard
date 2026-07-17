@@ -156,169 +156,169 @@
     "mutual_fund_aum": {
       "2024-10": {
         "value_lakh_crore": 67.26,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_October2024.pdf",
+        "source": "https://portal.amfiindia.com/spages/amoct2024repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹67.26 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Oct 24'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 67.26 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2024-11": {
         "value_lakh_crore": 68.08,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_November2024.pdf",
+        "source": "https://portal.amfiindia.com/spages/amnov2024repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹68.08 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Nov 24'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 68.08 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2024-12": {
         "value_lakh_crore": 66.93,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_December2024.pdf",
+        "source": "https://portal.amfiindia.com/spages/amdec2024repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹66.93 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Dec 24'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 66.93 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-01": {
         "value_lakh_crore": 67.25,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_January2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/amjan2025repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹67.25 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Jan 25'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 67.25 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-02": {
         "value_lakh_crore": 64.53,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_February2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/amfeb2025repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹64.53 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Feb 25'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 64.53 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-03": {
         "value_lakh_crore": 65.74,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_March2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/ammar2025repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹65.74 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Mar 25'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 65.74 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-04": {
         "value_lakh_crore": 69.99,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_April2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/amapr2025repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹69.99 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Apr 25'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 69.99 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-05": {
         "value_lakh_crore": 72.2,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_May2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/ammay2025repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹72.2 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'May 25'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 72.2 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-06": {
         "value_lakh_crore": 74.41,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_June2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/amjun2025repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹74.41 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Jun 25'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 74.41 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-07": {
         "value_lakh_crore": 75.36,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_July2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/amjul2025repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹75.36 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Jul 25'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 75.36 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-08": {
         "value_lakh_crore": 75.19,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_August2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/amaug2025repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹75.19 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Aug 25'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 75.19 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-09": {
         "value_lakh_crore": 77.14,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_September2025_414d6bb2c3.pdf",
+        "source": "https://portal.amfiindia.com/spages/amsep2025repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹77.14 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Sep 25'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 77.14 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-10": {
         "value_lakh_crore": 79.87,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Oct_2025_Final_8b27c12107.pdf",
+        "source": "https://portal.amfiindia.com/spages/amoct2025repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹79.87 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Oct 25'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 79.87 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-11": {
         "value_lakh_crore": 80.55,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_November_2025_5ace781e32.pdf",
+        "source": "https://portal.amfiindia.com/spages/amnov2025repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹80.55 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Nov 25'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 80.55 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-12": {
         "value_lakh_crore": 80.23,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Dec_2025_4fce34b885.pdf",
+        "source": "https://portal.amfiindia.com/spages/amdec2025repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹80.23 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Dec 25'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 80.23 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2026-01": {
         "value_lakh_crore": 81.01,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Jan_2026_f26466f98a.pdf",
+        "source": "https://portal.amfiindia.com/spages/amjan2026repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹81.01 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Jan 26'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 81.01 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2026-02": {
         "value_lakh_crore": 82.03,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Feb2026_07ce65814b.pdf",
+        "source": "https://portal.amfiindia.com/spages/amfeb2026repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹82.03 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Feb 26'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 82.03 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2026-03": {
         "value_lakh_crore": 73.73,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Mar_2026_1f0a1f5c48.pdf",
+        "source": "https://portal.amfiindia.com/spages/ammar2026repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹73.73 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Mar 26'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 73.73 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2026-04": {
         "value_lakh_crore": 81.92,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Apr2026_782ed81775.pdf",
+        "source": "https://portal.amfiindia.com/spages/amapr2026repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹81.92 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'Apr 26'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 81.92 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2026-05": {
         "value_lakh_crore": 81.58,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_May2026_9b756042c5.pdf",
+        "source": "https://portal.amfiindia.com/spages/ammay2026repo.xls",
         "tier": 1,
-        "notes": "Total MF industry AUM at end of month: ₹81.58 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
+        "notes": "AMFI portal Excel (Sheet 'May 26'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 81.58 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2026-06": {
         "value_lakh_crore": 82.22,
-        "source": "https://www.amfiindia.com/articles/indian-mutual",
+        "source": "https://portal.amfiindia.com/spages/amjun2026repo.xls",
         "tier": 1,
-        "notes": "AMFI official: 'AUM of Indian Mutual Fund Industry as on June 30, 2026 stood at ₹ 82,22,480 crore'. See amfiindia.com/articles/indian-mutual.",
+        "notes": "AMFI portal Excel (Sheet 'Jun 26'): Row 'Grand Total', column 'Net Assets Under Management'. Value = Rs 82.22 lakh crore.",
         "source_status": "fixed",
         "last_verified": "2026-07-17"
       }
@@ -5695,170 +5695,170 @@
     "redemption_equity_hybrid": {
       "2024-10": {
         "value_crore": 61915,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_October2024.pdf",
+        "source": "https://portal.amfiindia.com/spages/amoct2024repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹61,915 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Oct 24'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 61,915 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2024-11": {
         "value_crore": 50910,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_November2024.pdf",
+        "source": "https://portal.amfiindia.com/spages/amnov2024repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹50,910 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Nov 24'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 50,910 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2024-12": {
         "value_crore": 59592,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_December2024.pdf",
+        "source": "https://portal.amfiindia.com/spages/amdec2024repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹59,592 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Dec 24'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 59,592 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-01": {
         "value_crore": 53144,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_January2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/amjan2025repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹53,144 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Jan 25'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 53,144 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-02": {
         "value_crore": 46783,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_February2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/amfeb2025repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹46,783 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Feb 25'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 46,783 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-03": {
         "value_crore": 64856,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_March2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/ammar2025repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹64,856 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Mar 25'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 64,856 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-04": {
         "value_crore": 57078,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_April2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/amapr2025repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹57,078 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Apr 25'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 57,078 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-05": {
         "value_crore": 60363,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_May2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/ammay2025repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹60,363 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'May 25'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 60,363 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-06": {
         "value_crore": 59826,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_June2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/amjun2025repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹59,826 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Jun 25'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 59,826 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-07": {
         "value_crore": 63345,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_July2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/amjul2025repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹63,345 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Jul 25'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 63,345 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-08": {
         "value_crore": 55965,
-        "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_August2025.pdf",
+        "source": "https://portal.amfiindia.com/spages/amaug2025repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹55,965 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Aug 25'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 55,965 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-09": {
         "value_crore": 75421,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_September2025_414d6bb2c3.pdf",
+        "source": "https://portal.amfiindia.com/spages/amsep2025repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹75,421 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Sep 25'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 75,421 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-10": {
         "value_crore": 70677,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Oct_2025_Final_8b27c12107.pdf",
+        "source": "https://portal.amfiindia.com/spages/amoct2025repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹70,677 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Oct 25'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 70,677 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-11": {
         "value_crore": 61153,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_November_2025_5ace781e32.pdf",
+        "source": "https://portal.amfiindia.com/spages/amnov2025repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹61,153 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Nov 25'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 61,153 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2025-12": {
         "value_crore": 77083,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Dec_2025_4fce34b885.pdf",
+        "source": "https://portal.amfiindia.com/spages/amdec2025repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹77,083 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Dec 25'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 77,083 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2026-01": {
         "value_crore": 75899,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Jan_2026_f26466f98a.pdf",
+        "source": "https://portal.amfiindia.com/spages/amjan2026repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹75,899 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Jan 26'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 75,899 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2026-02": {
         "value_crore": 64981,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Feb2026_07ce65814b.pdf",
+        "source": "https://portal.amfiindia.com/spages/amfeb2026repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹64,981 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Feb 26'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 64,981 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2026-03": {
         "value_crore": 97954,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Mar_2026_1f0a1f5c48.pdf",
+        "source": "https://portal.amfiindia.com/spages/ammar2026repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹97,954 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Mar 26'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 97,954 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2026-04": {
         "value_crore": 61507,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Apr2026_782ed81775.pdf",
+        "source": "https://portal.amfiindia.com/spages/amapr2026repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹61,507 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'Apr 26'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 61,507 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2026-05": {
         "value_crore": 64450,
-        "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_May2026_9b756042c5.pdf",
+        "source": "https://portal.amfiindia.com/spages/ammay2026repo.xls",
         "tier": 1,
-        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹64,450 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
-        "source_status": "needs_confirmation",
+        "notes": "AMFI portal Excel (Sheet 'May 26'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 64,450 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       },
       "2026-06": {
-        "value_crore": null,
-        "source": null,
-        "tier": null,
-        "notes": "Not yet released.",
-        "source_status": "needs_confirmation",
+        "value_crore": 75428,
+        "source": "https://portal.amfiindia.com/spages/amjun2026repo.xls",
+        "tier": 1,
+        "notes": "AMFI portal Excel (Sheet 'Jun 26'): Row 'Sub Total - II' (Equity) + Row 'Sub Total - III' (Hybrid), column 'Repurchase/Redemption for the month'. Sum = Rs 75,428 Cr.",
+        "source_status": "fixed",
         "last_verified": "2026-07-17"
       }
     },
