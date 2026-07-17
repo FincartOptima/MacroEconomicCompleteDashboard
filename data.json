@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "India Macroeconomic Dashboard - 35 series across 34 indicators, monthly data Oct 2024 to present",
-    "last_updated": "2026-07-07",
+    "last_updated": "2026-07-17",
     "story_schema": "Each month entry may contain a 'story' object with keys: growth_demand (sentence 1), inflation_currency_external (sentence 2), policy_liquidity (sentence 3)"
   },
   "indicators": {
@@ -153,172 +153,174 @@
         "notes": "Not yet released as of Jul 2026"
       }
     },
-    "lumpsum_inflow": {
+    "mutual_fund_aum": {
       "2024-10": {
-        "value_crore": 95342,
+        "value_lakh_crore": 67.26,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_October2024.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹67.26 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2024-11": {
-        "value_crore": 65657,
+        "value_lakh_crore": 68.08,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_November2024.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹68.08 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2024-12": {
-        "value_crore": 78659,
+        "value_lakh_crore": 66.93,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_December2024.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹66.93 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-01": {
-        "value_crore": 75200,
+        "value_lakh_crore": 67.25,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_January2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹67.25 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-02": {
-        "value_crore": 56891,
+        "value_lakh_crore": 64.53,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_February2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹64.53 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-03": {
-        "value_crore": 63065,
+        "value_lakh_crore": 65.74,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_March2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹65.74 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-04": {
-        "value_crore": 68962,
+        "value_lakh_crore": 69.99,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_April2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹69.99 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-05": {
-        "value_crore": 73454,
+        "value_lakh_crore": 72.2,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_May2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹72.2 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-06": {
-        "value_crore": 79366,
+        "value_lakh_crore": 74.41,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_June2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹74.41 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-07": {
-        "value_crore": 98462,
+        "value_lakh_crore": 75.36,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_July2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹75.36 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-08": {
-        "value_crore": 76424,
+        "value_lakh_crore": 75.19,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_August2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹75.19 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-09": {
-        "value_crore": 85879,
+        "value_lakh_crore": 77.14,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_September2025_414d6bb2c3.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹77.14 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-10": {
-        "value_crore": 79994,
+        "value_lakh_crore": 79.87,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Oct_2025_Final_8b27c12107.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹79.87 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-11": {
-        "value_crore": 74918,
+        "value_lakh_crore": 80.55,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_November_2025_5ace781e32.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹80.55 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-12": {
-        "value_crore": 84891,
+        "value_lakh_crore": 80.23,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Dec_2025_4fce34b885.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹80.23 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-01": {
-        "value_crore": 86281,
+        "value_lakh_crore": 81.01,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Jan_2026_f26466f98a.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹81.01 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-02": {
-        "value_crore": 73097,
+        "value_lakh_crore": 82.03,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Feb2026_07ce65814b.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹82.03 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-03": {
-        "value_crore": 89779,
+        "value_lakh_crore": 73.73,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Mar_2026_1f0a1f5c48.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹73.73 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-04": {
-        "value_crore": 89398,
+        "value_lakh_crore": 81.92,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Apr2026_782ed81775.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹81.92 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-05": {
-        "value_crore": 66964,
+        "value_lakh_crore": 81.58,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_May2026_9b756042c5.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
+        "notes": "Total MF industry AUM at end of month: ₹81.58 lakh crore. Source: AMFI Monthly Note PDF, page 1 'Industry AUM' section.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-06": {
-        "value_crore": null,
-        "source": null,
-        "tier": null,
-        "notes": "Not yet released as of Jul 2026"
+        "value_lakh_crore": 82.22,
+        "source": "https://www.amfiindia.com/articles/indian-mutual",
+        "tier": 1,
+        "notes": "AMFI official: 'AUM of Indian Mutual Fund Industry as on June 30, 2026 stood at ₹ 82,22,480 crore'. See amfiindia.com/articles/indian-mutual.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       }
     },
     "rbi_repo_rate": {
@@ -496,163 +498,163 @@
     "system_liquidity": {
       "2024-10": {
         "value_lakh_crore": 1.476,
-        "source": "https://sbi.bank.in/documents/13958/43951007/Liquidity_Management_Framework_SBI_Report.pdf/42de64f5-272e-b4fb-6738-29bd0c00481e?t=1737353736016",
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59246",
         "tier": 2,
-        "notes": "SBI Research Jan-2025 report; monthly avg Net LAF table",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Dec 6 MPC GS (PRID 59246) states Oct-Nov daily avg net LAF surplus ~₹1.5 lakh crore. Value 1.476 is the estimated Oct component; exact monthly avg not directly stated.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2024-11": {
         "value_lakh_crore": 1.354,
-        "source": "https://sbi.bank.in/documents/13958/43951007/Liquidity_Management_Framework_SBI_Report.pdf/42de64f5-272e-b4fb-6738-29bd0c00481e?t=1737353736016",
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59246",
         "tier": 2,
-        "notes": "SBI Research Jan-2025 report; monthly avg Net LAF table",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Dec 6 MPC GS (PRID 59246) states Oct-Nov daily avg net LAF surplus ~₹1.5 lakh crore; Nov 26-28 briefly deficit. Value 1.354 is estimated Nov component.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2024-12": {
         "value_lakh_crore": -0.646,
-        "source": "https://sbi.bank.in/documents/13958/43951007/Liquidity_Management_Framework_SBI_Report.pdf/42de64f5-272e-b4fb-6738-29bd0c00481e?t=1737353736016",
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59694",
         "tier": 2,
-        "notes": "SBI Research Jan-2025 report; partial Dec (report dated Jan 20, 2025)",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Feb 7 MPC GS (PRID 59694) states 'system liquidity turned into deficit during December 2024 and January 2025'. Exact Dec monthly avg not stated; value estimated.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-01": {
         "value_lakh_crore": -1.584,
-        "source": "https://sbi.bank.in/documents/13958/43951007/Liquidity_Management_Framework_SBI_Report.pdf/42de64f5-272e-b4fb-6738-29bd0c00481e?t=1737353736016",
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60177",
         "tier": 2,
-        "notes": "SBI Research Jan-2025 report; partial Jan (through Jan 15; peak -3.1 on Jan 23)",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Apr 9 MPC GS (PRID 60177) states Jan 23 peak deficit ₹3.1 lakh crore. Monthly avg estimated at -1.584; exact figure not directly stated in source.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-02": {
         "value_lakh_crore": -1.61,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60177",
         "tier": 2,
-        "notes": "T2: Feb 2025 avg system liquidity deficit ~-1.61 lakh crore. Direction confirmed by RBI Apr 9, 2025 GS (PRID 60177): 'deficit tapered' in Feb-Mar. Exact monthly avg not found in primary source.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Apr 9 MPC GS (PRID 60177) states 'deficit tapered during February-March 2025'. Exact Feb avg not stated; value -1.61 is estimated.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-03": {
         "value_lakh_crore": -0.52,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60177",
         "tier": 2,
-        "notes": "T2: Mar 2025 avg system liquidity ~-0.52 lakh crore. Deficit easing as advance tax refunds began. Surplus from Apr 2025 onward.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Apr 9 MPC GS (PRID 60177) states deficit tapered, surplus from Mar 29. Value -0.52 is estimated monthly avg.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-04": {
         "value_lakh_crore": 1.5,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60958",
         "tier": 2,
-        "notes": "Aug-6 Governor's Statement (PRID 60958)",
+        "notes": "RBI Aug 6 GS (PRID 60958): avg daily net LAF absorption ₹1.5 lakh crore in April 2025.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-05": {
         "value_lakh_crore": 1.8,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60958",
         "tier": 2,
-        "notes": "Aug-6 Governor's Statement (PRID 60958)",
+        "notes": "RBI Aug 6 GS (PRID 60958): avg daily net LAF absorption ₹1.8 lakh crore in May 2025.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-06": {
         "value_lakh_crore": 2.82,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60958",
         "tier": 2,
-        "notes": "Aug-6 Governor's Statement (PRID 60958)",
+        "notes": "RBI Aug 6 GS (PRID 60958): avg daily net LAF absorption ₹2.82 lakh crore in June 2025.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-07": {
         "value_lakh_crore": 3.12,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60958",
         "tier": 2,
-        "notes": "Aug-6 Governor's Statement (PRID 60958)",
+        "notes": "RBI Aug 6 GS (PRID 60958): avg daily net LAF absorption ₹3.12 lakh crore in July 2025.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-08": {
         "value_lakh_crore": 2.9,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61750",
         "tier": 2,
-        "notes": "Dec-5 Governor's Statement (PRID 61750)",
+        "notes": "RBI Dec 5 GS (PRID 61750): avg daily net LAF absorption ₹2.9 lakh crore in August 2025.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-09": {
         "value_lakh_crore": 1.6,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61750",
         "tier": 2,
-        "notes": "Dec-5 Governor's Statement (PRID 61750)",
+        "notes": "RBI Dec 5 GS (PRID 61750): avg daily net LAF absorption ₹1.6 lakh crore in September 2025.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-10": {
         "value_lakh_crore": 0.9,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61750",
         "tier": 2,
-        "notes": "Dec-5 Governor's Statement (PRID 61750); confirmed in Feb-6 GS (PRID 62170)",
+        "notes": "RBI Dec 5 GS (PRID 61750): avg daily net LAF absorption ₹0.9 lakh crore in October 2025.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-11": {
         "value_lakh_crore": 1.9,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61750",
         "tier": 2,
-        "notes": "Dec-5 Governor's Statement (PRID 61750); confirmed in Feb-6 GS (PRID 62170)",
+        "notes": "RBI Dec 5 GS (PRID 61750): avg daily net LAF absorption ₹1.9 lakh crore in November 2025.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-12": {
         "value_lakh_crore": 0.82,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62515",
         "tier": 2,
-        "notes": "Apr-8 Governor's Statement (PRID 62515)",
+        "notes": "RBI Apr 8 GS (PRID 62515): avg daily net LAF absorption ₹0.82 lakh crore in December 2025.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-01": {
         "value_lakh_crore": 0.79,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62515",
         "tier": 2,
-        "notes": "Apr-8 Governor's Statement (PRID 62515)",
+        "notes": "RBI Apr 8 GS (PRID 62515): avg daily net LAF absorption ₹0.79 lakh crore in January 2026 (stated as 0.8, data shows 0.79).",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-02": {
         "value_lakh_crore": 2.6,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62515",
         "tier": 2,
-        "notes": "Apr-8 Governor's Statement (PRID 62515)",
+        "notes": "RBI Apr 8 GS (PRID 62515): avg daily net LAF absorption ₹2.6 lakh crore in February 2026.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-03": {
         "value_lakh_crore": 1.7,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62515",
         "tier": 2,
-        "notes": "Apr-8 Governor's Statement (PRID 62515); confirmed in Jun-5 GS (PRID 62864)",
+        "notes": "RBI Apr 8 GS (PRID 62515): avg daily net LAF absorption ₹1.7 lakh crore in March 2026. Confirmed in Jun 5 GS (PRID 62864).",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-04": {
         "value_lakh_crore": 3.9,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62864",
         "tier": 2,
-        "notes": "Jun-5 Governor's Statement (PRID 62864)",
+        "notes": "RBI Jun 5 GS (PRID 62864): avg daily net LAF absorption ₹3.9 lakh crore in April 2026.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-05": {
         "value_lakh_crore": 1.7,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62864",
         "tier": 2,
-        "notes": "Jun-5 Governor's Statement (PRID 62864)",
+        "notes": "RBI Jun 5 GS (PRID 62864): avg daily net LAF absorption moderated to ₹1.7 lakh crore in May 2026.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-06": {
         "value_lakh_crore": null,
@@ -858,146 +860,146 @@
       "2024-10": {
         "value_pct": 11.5,
         "data_date": null,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59147",
+        "source": null,
         "tier": 2,
-        "notes": "T2: No RBI GS fortnight-end figure found for Oct 2024. Backward extrapolation from Nov-24 (11.6%, PRID 59246); deposit growth was trending ~11-12% in H2 FY25.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Interpolated — no RBI fortnight-end figure for Oct 2024. Sep 2024 was 12.0% (PRID 58851), Nov 2024 was 11.6% (PRID 59246). Value 11.5% is estimated between these.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2024-11": {
         "value_pct": 11.6,
         "data_date": "November 15",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59246",
         "tier": 1,
-        "notes": "MPC GS (PRID 59246): 'Aggregate bank credit and deposits registered growth of 12.4 per cent and 11.6 per cent, respectively, as on November 15, 2024'",
+        "notes": "RBI Dec 6 MPC GS (PRID 59246): 'deposits registered growth of 11.6 per cent as on November 15, 2024'.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2024-12": {
         "value_pct": 11.1,
         "data_date": null,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+        "source": null,
         "tier": 2,
-        "notes": "T2: Linear interp between 2024-11 (11.6%) and 2025-01 (10.6%). No RBI GS fortnight-end figure published for this month.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Interpolated — no RBI fortnight-end figure for Dec 2024. Between Nov-24 (11.6%) and Jan-25 (10.6%). Value 11.1% is estimated.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-01": {
         "value_pct": 10.6,
         "data_date": "2025-01-24",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59694",
         "tier": 1,
-        "notes": "Feb 7 GS (PRID 59694): 'aggregate deposits grew 10.6% as on Jan 24, 2025'",
+        "notes": "RBI Feb 7 MPC GS (PRID 59694): 'deposits registered growth of 10.6 per cent as on January 24, 2025'.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-02": {
         "value_pct": 10.39,
         "data_date": null,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+        "source": null,
         "tier": 2,
-        "notes": "T2: Linear interp between 2025-01 (10.6%) and 2025-03 (10.18%). No RBI GS fortnight-end figure published for this month.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Interpolated — no RBI fortnight-end figure for Feb 2025. Between Jan-25 (10.6%) and Mar-25 (10.18%). Value 10.39% is estimated.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-03": {
         "value_pct": 10.18,
         "data_date": "2025-03-31",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60605",
         "tier": 1,
-        "notes": "Jun 6 GS (PRID 60605): 'deposit increased 10.18% between March-24 and March-25'",
+        "notes": "RBI Jun 6 GS (PRID 60605): 'deposit increased 10.18% between March-24 and March-25'.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-04": {
         "value_pct": 10.55,
         "data_date": null,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+        "source": null,
         "tier": 2,
-        "notes": "T2: Linear interp between 2025-03 (10.18%) and 2025-06 (11.3%). No RBI GS fortnight-end figure published for this month.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Interpolated — no RBI fortnight-end figure for Apr 2025. Between Mar-25 (10.18%) and Jun-25 (11.3%). Value 10.55% is estimated.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-05": {
         "value_pct": 10.93,
         "data_date": null,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+        "source": null,
         "tier": 2,
-        "notes": "T2: Linear interp between 2025-03 (10.18%) and 2025-06 (11.3%). No RBI GS fortnight-end figure published for this month.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Interpolated — no RBI fortnight-end figure for May 2025. Between Mar-25 (10.18%) and Jun-25 (11.3%). Value 10.93% is estimated.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-06": {
         "value_pct": 11.3,
         "data_date": "2025-06-30",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61333",
         "tier": 1,
-        "notes": "Oct 1 GS (PRID 61333): 'deposit increased 11.3% (y-o-y), between June-24 and June-25'",
+        "notes": "RBI Oct 1 GS (PRID 61333): 'deposit increased 11.3% (y-o-y), between June-24 and June-25'.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-07": {
         "value_pct": 10.7,
         "data_date": null,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+        "source": null,
         "tier": 2,
-        "notes": "T2: Linear interp between 2025-06 (11.3%) and 2025-08 (10.1%). No RBI GS fortnight-end figure published for this month.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Interpolated — no RBI fortnight-end figure for Jul 2025. Between Jun-25 (11.3%) and Aug-25 (10.1%). Value 10.7% is estimated.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-08": {
         "value_pct": 10.1,
         "data_date": "2025-08-08",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61118",
         "tier": 2,
-        "notes": "WSS (PRID 61118, Aug 29 release): deposits YoY 10.1%, fortnight ended Aug 8, 2025",
+        "notes": "RBI WSS (PRID 61118): deposits YoY 10.1%, fortnight ended Aug 8, 2025.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-09": {
         "value_pct": 9.92,
         "data_date": null,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+        "source": null,
         "tier": 2,
-        "notes": "T2: Linear interp between 2025-08 (10.1%) and 2025-10 (9.74%). No RBI GS fortnight-end figure published for this month.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Interpolated — no RBI fortnight-end figure for Sep 2025. Between Aug-25 (10.1%) and Oct-25 (9.74%). Value 9.92% is estimated.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-10": {
         "value_pct": 9.74,
         "data_date": "2025-10-31",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61750",
         "tier": 1,
-        "notes": "Dec 5 GS (PRID 61750): 'deposits increased 9.74% (y-o-y), between October-24 and October-25'",
+        "notes": "RBI Dec 5 GS (PRID 61750): 'deposits increased 9.74% (y-o-y), between October-24 and October-25'.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-11": {
         "value_pct": 10.2,
         "data_date": "2025-11-14",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61750",
         "tier": 1,
-        "notes": "Dec 5 GS (PRID 61750): 'deposits registered growth of 10.2% as on November 14, 2025'",
+        "notes": "RBI Dec 5 GS (PRID 61750): 'deposits registered growth of 10.2% as on November 14, 2025'.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2025-12": {
         "value_pct": 12.68,
         "data_date": "2025-12-31",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62170",
         "tier": 1,
-        "notes": "Feb 6 GS (PRID 62170): 'deposits increased 12.68% (y-o-y), between December 2024 and December 2025'",
+        "notes": "RBI Feb 6 GS (PRID 62170): 'deposits increased 12.68% (y-o-y), between December 2024 and December 2025'.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-01": {
         "value_pct": 10.6,
         "data_date": "2026-01-15",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62170",
         "tier": 1,
-        "notes": "Feb 6 GS (PRID 62170): 'deposit growth at 10.6% as on January 15, 2026'",
+        "notes": "RBI Feb 6 GS (PRID 62170): 'deposit growth at 10.6% as on January 15, 2026'.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-02": {
         "value_pct": 11.17,
@@ -1024,9 +1026,9 @@
         "data_date": "2026-04-30",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62864",
         "tier": 1,
-        "notes": "Jun 5 GS (PRID 62864): 'deposit increased 12.09% (y-o-y), between April-25 and April-26'",
+        "notes": "RBI Jun 5 GS (PRID 62864): 'deposit increased 12.09% (y-o-y), between April-25 and April-26'.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-17"
       },
       "2026-05": {
         "value_pct": 10.83,
@@ -1041,11 +1043,11 @@
       "2026-06": {
         "value_pct": null,
         "data_date": null,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx",
+        "source": null,
         "tier": 2,
         "notes": "Jun 2026 deposit growth not yet available.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       }
     },
     "cd_ratio": {
@@ -1055,8 +1057,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59012",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 17238250 crore / Aggregate Deposits 21807565 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (17238250 ÷ 21807565) × 100 = 79.05%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2024-11": {
         "value_pct": 79.45,
@@ -1064,17 +1067,19 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59252",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 17362301 crore / Aggregate Deposits 21854018 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (17362301 ÷ 21854018) × 100 = 79.45%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2024-12": {
         "value_pct": 80.42,
         "data_date": "2024-12-27",
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59498",
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 17742873 crore / Aggregate Deposits 22063132 crore.",
+        "notes": "Derived from RBI SCB data: (17742873 ÷ 22063132) × 100 = 80.42%. Source page shows credit & deposit figures; ratio is calculated.",
         "tier": 1,
-        "source_status": "fixed"
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2025-01": {
         "value_pct": 80.78,
@@ -1082,8 +1087,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59701",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 17874756 crore / Aggregate Deposits 22128932 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (17874756 ÷ 22128932) × 100 = 80.78%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2025-02": {
         "value_pct": 80.73,
@@ -1091,8 +1097,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59927",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 17989988 crore / Aggregate Deposits 22284446 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (17989988 ÷ 22284446) × 100 = 80.73%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2025-03": {
         "value_pct": 80.81,
@@ -1100,8 +1107,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60152",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 18243936 crore / Aggregate Deposits 22574982 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (18243936 ÷ 22574982) × 100 = 80.81%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2025-04": {
         "value_pct": 79.55,
@@ -1109,8 +1117,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60351",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 18186759 crore / Aggregate Deposits 22860857 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (18186759 ÷ 22860857) × 100 = 79.55%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2025-05": {
         "value_pct": 78.92,
@@ -1118,8 +1127,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60648",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 18287596.63 crore / Aggregate Deposits 23172559.9 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (18287596.63 ÷ 23172559.9) × 100 = 78.92%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2025-06": {
         "value_pct": 78.9,
@@ -1127,8 +1137,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60814",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 18483098 crore / Aggregate Deposits 23425644 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (18483098 ÷ 23425644) × 100 = 78.9%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2025-07": {
         "value_pct": 79.24,
@@ -1136,8 +1147,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=60986",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 18501872 crore / Aggregate Deposits 23349278 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (18501872 ÷ 23349278) × 100 = 79.24%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2025-08": {
         "value_pct": 79.33,
@@ -1145,8 +1157,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61163",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 18644997 crore / Aggregate Deposits 23504101 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (18644997 ÷ 23504101) × 100 = 79.33%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2025-09": {
         "value_pct": 80.28,
@@ -1154,8 +1167,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61408",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 18902934 crore / Aggregate Deposits 23545571 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (18902934 ÷ 23545571) × 100 = 80.28%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2025-10": {
         "value_pct": 80.21,
@@ -1163,8 +1177,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61619",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 19390499.71 crore / Aggregate Deposits 24173858.18 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (19390499.71 ÷ 24173858.18) × 100 = 80.21%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2025-11": {
         "value_pct": 80.49,
@@ -1172,8 +1187,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=61805",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 19527313.07 crore / Aggregate Deposits 24260039.72 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (19527313.07 ÷ 24260039.72) × 100 = 80.49%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2025-12": {
         "value_pct": 81.75,
@@ -1181,8 +1197,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62037",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 20322515.47 crore / Aggregate Deposits 24859857.16 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (20322515.47 ÷ 24859857.16) × 100 = 81.75%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2026-01": {
         "value_pct": 82.29,
@@ -1190,8 +1207,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62260",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 20475382 crore / Aggregate Deposits 24881954 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (20475382 ÷ 24881954) × 100 = 82.29%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2026-02": {
         "value_pct": 82.47,
@@ -1199,8 +1217,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62341",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 20432107 crore / Aggregate Deposits 24773901 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (20432107 ÷ 24773901) × 100 = 82.47%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2026-03": {
         "value_pct": 81.44,
@@ -1208,8 +1227,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62561",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 21361434.74 crore / Aggregate Deposits 26230485.73 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (21361434.74 ÷ 26230485.73) × 100 = 81.44%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2026-04": {
         "value_pct": 82.01,
@@ -1217,8 +1237,9 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62744",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 21211828 crore / Aggregate Deposits 25864099 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (21211828 ÷ 25864099) × 100 = 82.01%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2026-05": {
         "value_pct": 82.48,
@@ -1226,17 +1247,19 @@
         "source_type": "RBI SCB",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62825",
         "tier": 1,
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 21186890.44 crore / Aggregate Deposits 25688820.55 crore.",
-        "source_status": "fixed"
+        "notes": "Derived from RBI SCB data: (21186890.44 ÷ 25688820.55) × 100 = 82.48%. Source page shows credit & deposit figures; ratio is calculated.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       },
       "2026-06": {
         "value_pct": 83.38,
         "data_date": "2026-06-15",
         "source_type": "RBI SCB",
-        "notes": "T1: RBI scheduled commercial banks data; CD ratio = Bank Credit 21547116 crore / Aggregate Deposits 25841605 crore.",
+        "notes": "Derived from RBI SCB data: (21547116 ÷ 25841605) × 100 = 83.38%. Source page shows credit & deposit figures; ratio is calculated.",
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63081",
         "tier": 1,
-        "source_status": "fixed"
+        "source_status": "fixed",
+        "last_verified": "2026-07-17"
       }
     },
     "fii_net_flow": {
@@ -5674,167 +5697,169 @@
         "value_crore": 61915,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_October2024.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹61,915 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2024-11": {
         "value_crore": 50910,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_November2024.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹50,910 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2024-12": {
         "value_crore": 59592,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_December2024.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹59,592 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-01": {
         "value_crore": 53144,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_January2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹53,144 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-02": {
         "value_crore": 46783,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_February2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹46,783 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-03": {
         "value_crore": 64856,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_March2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹64,856 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-04": {
         "value_crore": 57078,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_April2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹57,078 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-05": {
         "value_crore": 60363,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_May2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹60,363 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-06": {
         "value_crore": 59826,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_June2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹59,826 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-07": {
         "value_crore": 63345,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_July2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹63,345 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-08": {
         "value_crore": 55965,
         "source": "https://www.amfiindia.com/Themes/Theme1/downloads/AMFIMonthlyNote_August2025.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹55,965 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-09": {
         "value_crore": 75421,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_September2025_414d6bb2c3.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹75,421 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-10": {
         "value_crore": 70677,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Oct_2025_Final_8b27c12107.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹70,677 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-11": {
         "value_crore": 61153,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_November_2025_5ace781e32.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹61,153 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2025-12": {
         "value_crore": 77083,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Dec_2025_4fce34b885.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹77,083 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2026-01": {
         "value_crore": 75899,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Jan_2026_f26466f98a.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹75,899 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2026-02": {
         "value_crore": 64981,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Feb2026_07ce65814b.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹64,981 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2026-03": {
         "value_crore": 97954,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Mar_2026_1f0a1f5c48.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹97,954 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2026-04": {
         "value_crore": 61507,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_Apr2026_782ed81775.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹61,507 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2026-05": {
         "value_crore": 64450,
         "source": "https://www.amfiindia.com/uploads/AMFI_Monthly_Note_May2026_9b756042c5.pdf",
         "tier": 1,
-        "notes": "Source link updated from broken AMFI portal XLS URL to the same-month AMFI Monthly Note PDF.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "AMFI Monthly Note PDF → 'Table: Category-wise Net Inflows'. Value ₹64,450 Cr = sum of Equity + Hybrid category Redemptions/Repurchases. Verify by opening the PDF and checking the category-wise table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       },
       "2026-06": {
         "value_crore": null,
         "source": null,
         "tier": null,
-        "notes": "Not yet released as of Jul 2026"
+        "notes": "Not yet released.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-17"
       }
     },
     "pv_vehicle_sales_yoy": {
