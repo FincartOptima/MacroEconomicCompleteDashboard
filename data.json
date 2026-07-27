@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "India Macroeconomic Dashboard - 35 series across 34 indicators, monthly data Oct 2024 to present",
-    "last_updated": "2026-07-17",
+    "last_updated": "2026-07-28",
     "story_schema": "Each month entry may contain a 'story' object with keys: growth_demand (sentence 1), inflation_currency_external (sentence 2), policy_liquidity (sentence 3)"
   },
   "indicators": {
@@ -147,10 +147,12 @@
         "last_verified": "2026-07-07"
       },
       "2026-06": {
-        "value_crore": null,
-        "source": null,
-        "tier": null,
-        "notes": "Not yet released as of Jul 2026"
+        "value_crore": 31781,
+        "source": "https://www.amfiindia.com/articles/mutual-fund",
+        "tier": 1,
+        "notes": "AMFI official statement: Total amount collected through SIP during June 2026 was Rs 31,781 crore (Rs 31,781.20 Cr precisely). Up from Rs 30,954 Cr in May 2026.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-28"
       }
     },
     "mutual_fund_aum": {
@@ -658,11 +660,11 @@
       },
       "2026-06": {
         "value_lakh_crore": null,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLView.aspx",
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62864",
         "tier": 2,
-        "notes": "Jun 2026 average system liquidity to be extracted from RBI daily LAF operations. Not yet computed.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Jun 5, 2026 GS (PRID 62864) only gave a partial-month figure: system liquidity averaged Rs 1.3 lakh crore in June up to June 3. The full June 2026 monthly average will be confirmed in the next MPC Governor Statement (Aug 3-5, 2026 meeting, announcement due Aug 5), which has not yet occurred as of 2026-07-28.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-28"
       }
     },
     "bank_credit_growth_yoy": {
@@ -838,22 +840,22 @@
         "last_verified": "2026-07-07"
       },
       "2026-05": {
-        "value_pct": 16.2,
-        "release_date": "2026-06-05",
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62864",
+        "value_pct": 17.4,
+        "release_date": "2026-06-30",
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63052",
         "tier": 1,
-        "notes": "RBI Jun 5, 2026 GS (PRID 62864): 'credit increased 16.52% between April-25 and April-26' (Apr data); May 2026 Sectoral Deployment PRID ~63000 expected ~Jul 31.",
+        "notes": "CORRECTED: PRID 63052 'Sectoral Deployment of Bank Credit - May 2026' (released Jun 30, 2026) states non-food bank credit grew 17.4% YoY as on fortnight ended May 31, 2026 (vs 8.8% a year ago). Previous value (16.2%) was a placeholder citing the Jun 5 GS (PRID 62864), which actually referenced April data, not May.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-28"
       },
       "2026-06": {
         "value_pct": null,
         "release_date": null,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62827",
-        "tier": 2,
-        "notes": "Jun 2026 Sectoral Deployment release expected ~Jul 31, 2026.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "source": "https://rbi.org.in/Scripts/Data_Sectoral_Deployment.aspx",
+        "tier": 1,
+        "notes": "Not yet released as of 2026-07-28. RBI Sectoral Deployment of Bank Credit for June 2026 (fortnight ended Jun 30, 2026) follows the ~1-month lag pattern (May data was released Jun 30) -> expected around Jul 30-31, 2026.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-28"
       }
     },
     "bank_deposit_growth_yoy": {
@@ -1041,13 +1043,14 @@
         "last_verified": "2026-07-07"
       },
       "2026-06": {
-        "value_pct": null,
-        "data_date": null,
-        "source": null,
+        "value_pct": 13.29,
+        "data_date": "2026-06-30",
+        "source": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63152",
         "tier": 2,
-        "notes": "Jun 2026 deposit growth not yet available.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-07-17"
+        "notes": "T2 self-computed: PRID 63152 'Scheduled Banks Statement of Position as on June 30, 2026': SCB deposits Rs 26,538,493.32 Cr vs SCB deposits Rs 23,425,644 Cr as on Jun 27, 2025 (PRID 60814, used in cd_ratio 2025-06) -> YoY +13.29%. Independently corroborated by press reports citing 13.3% deposit growth for the fortnight ended Jun 27/30, 2026.",
+        "source_type": "RBI SCB",
+        "source_status": "fixed",
+        "last_verified": "2026-07-28"
       }
     },
     "cd_ratio": {
@@ -1252,14 +1255,14 @@
         "last_verified": "2026-07-17"
       },
       "2026-06": {
-        "value_pct": 83.38,
-        "data_date": "2026-06-15",
+        "value_pct": 82.63,
+        "data_date": "2026-06-30",
         "source_type": "RBI SCB",
-        "notes": "Derived from RBI SCB data: (21547116 ÷ 25841605) × 100 = 83.38%. Source page shows credit & deposit figures; ratio is calculated.",
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63081",
+        "source": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63152",
         "tier": 1,
+        "notes": "CORRECTED to end-of-month data for consistency: PRID 63152 (Statement of Position as on June 30, 2026): SCB Credit Rs 21,928,364.69 Cr / SCB Deposits Rs 26,538,493.32 Cr x 100 = 82.63%. Previous value (83.38%) used mid-month (Jun 15) data - not wrong, but inconsistent with the end-of-month convention used elsewhere in this series.",
         "source_status": "fixed",
-        "last_verified": "2026-07-17"
+        "last_verified": "2026-07-28"
       }
     },
     "fii_net_flow": {
@@ -1431,10 +1434,10 @@
         "value_inr_cr": null,
         "period_start_date": null,
         "source": "https://groww.in/fii-dii-data",
-        "tier": null,
-        "notes": "Jun 2026 FII data not yet published by SEBI (published ~15th of following month).",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "tier": 1,
+        "notes": "Full-month June 2026 total could not be confirmed from available sources as of 2026-07-28 (only partial-month/daily figures found, e.g. FII -Rs 43,044 Cr through Jun 19). Check groww.in/fii-dii-data Monthly tab directly for the exact June 2026 total before publishing a number.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-28"
       }
     },
     "dii_net_flow": {
@@ -1606,10 +1609,10 @@
         "value_inr_cr": null,
         "period_start_date": null,
         "source": "https://groww.in/fii-dii-data",
-        "tier": null,
-        "notes": "Jun 2026 DII data not yet published by SEBI.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "tier": 1,
+        "notes": "Full-month June 2026 total could not be confirmed from available sources as of 2026-07-28 (only partial-month/daily figures found, e.g. FII -Rs 43,044 Cr through Jun 19). Check groww.in/fii-dii-data Monthly tab directly for the exact June 2026 total before publishing a number.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-28"
       }
     },
     "forex_reserves": {
@@ -2305,12 +2308,12 @@
         "last_verified": "2026-07-07"
       },
       "2026-06": {
-        "source": "https://www.siam.in/",
-        "tier": 2,
-        "notes": "Jun 2026 SIAM PV wholesale data published first week of Jul 2026. Not yet fetched.",
-        "units": null,
+        "units": 388144,
+        "source": "https://www.siam.in/news-&-updates/press-releases/auto-industry-sales-performance-of-june-2026-and-q1-apriljune-2026/610",
+        "tier": 1,
+        "notes": "SIAM pid=610: 'Passenger Vehicles sales were 3,88,144 units in June 2026.' Q1 FY27 (Apr-Jun 2026) PV sales were a record 1.27 million units, +25.9% YoY.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-28"
       }
     },
     "vehicle_sales_yoy": {
@@ -3202,22 +3205,22 @@
         "last_verified": "2026-07-07"
       },
       "2026-06": {
-        "cpi_yoy_pct": null,
-        "source": "https://www.mospi.gov.in/consumer-price-index",
-        "tier": 2,
-        "notes": "T2: MOSPI CPI Jun 2026 to be released Jul 14, 2026. Not yet available.",
+        "cpi_yoy_pct": 4.38,
+        "source": "https://www.republicworld.com/business/india-retail-inflation-june-2026-cpi-food-prices-mospi-data-2026-07-13-132161",
+        "tier": 1,
+        "notes": "MoSPI/PIB CPI release for June 2026 (published Jul 13, 2026): All-India CPI YoY inflation = 4.38% (Provisional), highest since Dec 2024. Rural 4.74%, Urban 3.92%.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-28"
       }
     },
     "core_inflation": {
       "2026-06": {
-        "core_cpi_yoy_pct": null,
-        "source": "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics#!2_43",
+        "core_cpi_yoy_pct": 4.2,
+        "source": "https://www.sahi.com/news/india-retail-inflation-inches-up-in-june-as-core-inflation-without-precious-metals-stays-low-inflation-PE",
         "tier": 2,
-        "notes": "Source: RBI DBIE CPI excluding food & fuel. T2: Not yet available (MOSPI releases Jun 2026 CPI on Jul 14, 2026). Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "T2: Core CPI (ex food & fuel) ~4.20% in June 2026, up from 3.80% in May 2026 (approximate; MoSPI does not publish a standard core-CPI field, so this is press-derived, not an official release figure).",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-28"
       },
       "2026-03": {
         "core_cpi_yoy_pct": 3.7,
@@ -3542,20 +3545,22 @@
         "last_verified": "2026-07-07"
       },
       "2026-06": {
-        "wpi_yoy_pct": null,
-        "source": null,
-        "tier": null,
-        "notes": "Not yet released as of Jul 2026"
+        "wpi_yoy_pct": 9.87,
+        "source": "https://eaindustry.nic.in/press_release/press_release_202607.pdf",
+        "tier": 1,
+        "notes": "T1: Office of Economic Adviser (DPIIT) WPI press release (Jul 2026, covering June 2026 data): All India WPI YoY inflation = 9.87% (vs 9.68% in May 2026). Note: new WPI series with base year 2022-23 became effective this release.",
+        "source_status": "fixed",
+        "last_verified": "2026-07-28"
       }
     },
     "food_inflation": {
       "2026-06": {
-        "food_cpi_yoy_pct": null,
-        "source": "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics#!2_43",
-        "tier": 2,
-        "notes": "Source: RBI DBIE Consumer Food Price Index. T2: MOSPI CPI Jun 2026 release (released Jul 14, 2026). Not yet available. Source needs confirmation.",
+        "food_cpi_yoy_pct": 5.32,
+        "source": "https://www.republicworld.com/business/india-retail-inflation-june-2026-cpi-food-prices-mospi-data-2026-07-13-132161",
+        "tier": 1,
+        "notes": "T1: PIB/MoSPI CPI release for June 2026 gives CFPI food inflation at 5.32% (up from 4.78% in May 2026), driven by a 50.4% surge in ginger and 31.92% rise in tomato prices.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-28"
       },
       "2026-02": {
         "food_cpi_yoy_pct": 3.27,
@@ -3904,19 +3909,19 @@
         "quarter": "Q1:2026-27 (Apr-Jun 2026)",
         "source": "https://mospi.gov.in/publication/national-accounts-statistics",
         "tier": 2,
-        "notes": "Source: MOSPI National Accounts Statistics. T2: Not yet released as of Jul 2026 (Advance Estimate due Feb 2027) Source needs confirmation. Q1 FY2026-27 GDP was not released as of 2026-07-07.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: MOSPI National Accounts Statistics. Q1 FY2026-27 GDP (Provisional Estimate) not yet released as of 2026-07-28; typically released end-Aug.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-28"
       }
     },
     "unemployment_rate": {
       "2026-06": {
-        "unemployment_pct": null,
-        "source": "https://www.cmie.com",
+        "unemployment_pct": 5.5,
+        "source": "https://tradingeconomics.com/india/unemployment-rate",
         "tier": 2,
-        "notes": "T2: CMIE/PLFS Jun 2026 unemployment rate not yet released (published ~Jul 10).",
+        "notes": "T2: CMIE/MOSPI-sourced (via Trading Economics): unemployment rate unchanged at 5.5% in June 2026 (highest in ~1 year, vs 5.4% expected). Urban 6.6% (up from 6.4%), rural eased 0.1pp.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-28"
       },
       "2024-10": {
         "unemployment_pct": 7.5,
@@ -4933,10 +4938,10 @@
       "2026-06": {
         "capex_crore": null,
         "source": "https://cga.nic.in/MonthlyReport/Published/6/2026-2027.aspx",
-        "tier": 2,
-        "notes": "CGA monthly report not available/parseable for 2026-06: Capital Expenditure row not found. Official CGA value could not be confirmed.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "tier": 1,
+        "notes": "CGA Monthly Accounts for June 2026 not yet released/confirmed as of 2026-07-28 (May 2026 cumulative capex was Rs 2,51,003 Cr). Check cga.nic.in Monthly Accounts Review directly for the June update.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-28"
       },
       "2024-10": {
         "capex_crore": 51579,
@@ -5507,9 +5512,9 @@
         "quarter": "Q1 FY2026-27 (Apr-Jun 2026)",
         "source": "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics#!4_5",
         "tier": 2,
-        "notes": "Source: RBI DBIE Balance of Payments. T2: RBI Balance of Payments quarterly data. CAD Q1 FY2026-27 (Apr-Jun 2026): ~None% of GDP (approximate; positive=deficit). Source needs confirmation. Q1 FY2026-27 BoP/CAD was not released as of 2026-07-07.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI DBIE Balance of Payments. Q1 FY2026-27 CAD not yet released as of 2026-07-28; typically released ~end-September.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-07-28"
       },
       "2024-10": {
         "cad_pct_gdp": 2.5,
@@ -6024,12 +6029,12 @@
         "last_verified": "2026-07-07"
       },
       "2026-06": {
-        "source": "https://www.siam.in/",
-        "tier": 2,
-        "notes": "Jun 2026 SIAM PV YoY not yet available.",
-        "yoy_pct": null,
+        "yoy_pct": 24.1,
+        "source": "https://www.siam.in/news-&-updates/press-releases/auto-industry-sales-performance-of-june-2026-and-q1-apriljune-2026/610",
+        "tier": 1,
+        "notes": "Calculated: Jun 2026 (3,88,144, pid=610) / Jun 2025 (3,12,849, pid=583) - 1 = +24.1%. Matches independently reported +24.1% YoY growth for the month.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-07-28"
       }
     }
   },
