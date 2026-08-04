@@ -1,7 +1,7 @@
 {
   "meta": {
-    "description": "India Macroeconomic Dashboard - 35 series across 34 indicators, monthly data Oct 2024 to present",
-    "last_updated": "2026-07-28",
+    "description": "India Macroeconomic Dashboard - 36 series across 35 indicators, monthly data Oct 2024 to present",
+    "last_updated": "2026-08-04",
     "story_schema": "Each month entry may contain a 'story' object with keys: growth_demand (sentence 1), inflation_currency_external (sentence 2), policy_liquidity (sentence 3)"
   },
   "indicators": {
@@ -6035,6 +6035,176 @@
         "notes": "Calculated: Jun 2026 (3,88,144, pid=610) / Jun 2025 (3,12,849, pid=583) - 1 = +24.1%. Matches independently reported +24.1% YoY growth for the month.",
         "source_status": "fixed",
         "last_verified": "2026-07-28"
+      }
+    },
+    "nifty50_pe": {
+      "2024-10": {
+        "pe_ratio": 23.25,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 22 daily NIFTY 50 P/E closes in October 2024 (min 22.56, max 24.25) = 23.25. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2024-11": {
+        "pe_ratio": 22.13,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in November 2024 (min 21.49, max 22.80) = 22.13. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2024-12": {
+        "pe_ratio": 22.3,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 21 daily NIFTY 50 P/E closes in December 2024 (min 21.71, max 22.80) = 22.30. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2025-01": {
+        "pe_ratio": 21.43,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 23 daily NIFTY 50 P/E closes in January 2025 (min 20.85, max 22.29) = 21.43. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2025-02": {
+        "pe_ratio": 20.65,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 20 daily NIFTY 50 P/E closes in February 2025 (min 19.67, max 21.56) = 20.65. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2025-03": {
+        "pe_ratio": 20.34,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in March 2025 (min 19.63, max 21.37) = 20.34. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2025-04": {
+        "pe_ratio": 21.34,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in April 2025 (min 20.14, max 21.99) = 21.34. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2025-05": {
+        "pe_ratio": 22.18,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 21 daily NIFTY 50 P/E closes in May 2025 (min 21.62, max 22.58) = 22.18. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2025-06": {
+        "pe_ratio": 22.48,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 21 daily NIFTY 50 P/E closes in June 2025 (min 22.07, max 23.04) = 22.48. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2025-07": {
+        "pe_ratio": 22.51,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 23 daily NIFTY 50 P/E closes in July 2025 (min 21.78, max 22.99) = 22.51. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2025-08": {
+        "pe_ratio": 21.75,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in August 2025 (min 21.46, max 22.03) = 21.75. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2025-09": {
+        "pe_ratio": 21.92,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 22 daily NIFTY 50 P/E closes in September 2025 (min 21.59, max 22.33) = 21.92. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2025-10": {
+        "pe_ratio": 22.5,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 21 daily NIFTY 50 P/E closes in October 2025 (min 21.96, max 22.92) = 22.50. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2025-11": {
+        "pe_ratio": 22.55,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in November 2025 (min 22.28, max 22.82) = 22.55. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2025-12": {
+        "pe_ratio": 22.64,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 22 daily NIFTY 50 P/E closes in December 2025 (min 22.43, max 22.80) = 22.64. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2026-01": {
+        "pe_ratio": 22.33,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 20 daily NIFTY 50 P/E closes in January 2026 (min 21.76, max 22.92) = 22.33. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2026-02": {
+        "pe_ratio": 22.35,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 21 daily NIFTY 50 P/E closes in February 2026 (min 21.57, max 22.79) = 22.35. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2026-03": {
+        "pe_ratio": 20.65,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in March 2026 (min 19.62, max 21.76) = 20.65. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2026-04": {
+        "pe_ratio": 20.91,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 20 daily NIFTY 50 P/E closes in April 2026 (min 19.93, max 21.45) = 20.91. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2026-05": {
+        "pe_ratio": 20.64,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in May 2026 (min 20.27, max 21.21) = 20.64. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
+      },
+      "2026-06": {
+        "pe_ratio": 20.43,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2 self-computed: arithmetic mean of the 21 daily NIFTY 50 P/E closes in June 2026 (min 19.96, max 20.85) = 20.43. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-04"
       }
     }
   },

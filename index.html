@@ -102,7 +102,7 @@
     <div class="flex items-end justify-between mb-3">
       <div>
         <h1 class="text-2xl font-bold text-green-950">Macroeconomic Indicators</h1>
-        <p class="text-xs text-green-700 mt-1">Mixed units: YoY rates for credit, vehicle/steel growth, inflation, GDP and GST YoY; monthly levels/flows (not MoM changes) for liquidity, market flows, sales, energy, GST, CapEx and reserves; point-in-time/index values for repo, CD ratio, PMI, unemployment, CAD, yields and FX. Click indicator names for details; click values to open sources. <span id="last-updated"></span></p>
+        <p class="text-xs text-green-700 mt-1">Mixed units: YoY rates for credit, vehicle/steel growth, inflation, GDP and GST YoY; monthly levels/flows (not MoM changes) for liquidity, market flows, sales, energy, GST, CapEx and reserves; point-in-time/index values for repo, CD ratio, PMI, unemployment, CAD, yields and FX; monthly averages of daily closes for NIFTY 50 P/E. Click indicator names for details; click values to open sources. <span id="last-updated"></span></p>
         <div class="source-legend mt-2" aria-label="Source status legend">
           <span class="legend-item"><span class="legend-dot" style="background:#000000"></span>Confirmed source</span>
           <span class="legend-item"><span class="legend-dot" style="background:#f87171"></span>Broken/weak link</span>
@@ -218,6 +218,7 @@ const INDICATOR_META = {
   sip_contribution:                {n:"SIP Contribution",           u:"₹ Cr",       c:"flows",      d:0, f:"cr",  vf:"value_crore",        ch:"bar"},
   mutual_fund_aum:                 {n:"Mutual Fund AUM",            u:"₹ Lakh Cr",  c:"flows",      d:2, f:"num", vf:"value_lakh_crore",   ch:"bar"},
   redemption_equity_hybrid:        {n:"Redemption (Equity+Hybrid)", u:"₹ Cr",       c:"flows",      d:0, f:"cr",  vf:"value_crore",        ch:"bar"},
+  nifty50_pe:                      {n:"NIFTY 50 P/E",               u:"x",          c:"markets",    d:2, f:"num", vf:"pe_ratio",           ch:"line"},
   manufacturing_pmi:               {n:"Manufacturing PMI",          u:"Index",      c:"production", d:1, f:"num", vf:"pmi_value",          ch:"line"},
   services_pmi:                    {n:"Services PMI",               u:"Index",      c:"production", d:1, f:"num", vf:"pmi_value",          ch:"line"},
   pv_vehicle_sales:                {n:"PV Vehicle Sales",           u:"Units",      c:"production", d:0, f:"num", vf:"units",              ch:"bar"},
@@ -256,6 +257,7 @@ const DETAIL_META = {
   sip_contribution: {definition:"Monthly mutual fund SIP contribution amount.", frequency:"Monthly", measure:"Monthly flow"},
   mutual_fund_aum: {definition:"Total Assets Under Management of the Indian mutual fund industry at month-end.", frequency:"Monthly", measure:"Level (₹ Lakh Cr)"},
   redemption_equity_hybrid: {definition:"Monthly redemptions from equity and hybrid mutual fund categories.", frequency:"Monthly", measure:"Monthly flow"},
+  nifty50_pe: {definition:"NIFTY 50 price-to-earnings ratio, shown as the arithmetic mean of the index's daily P/E closes across the month. A valuation multiple: higher values indicate the index trades at a richer multiple of earnings.", frequency:"Daily data, averaged monthly", measure:"Monthly average multiple"},
   manufacturing_pmi: {definition:"Manufacturing Purchasing Managers' Index; values above 50 indicate expansion.", frequency:"Monthly", measure:"Index level"},
   services_pmi: {definition:"Services Purchasing Managers' Index; values above 50 indicate expansion.", frequency:"Monthly", measure:"Index level"},
   pv_vehicle_sales: {definition:"Passenger vehicle sales/retail units for the month.", frequency:"Monthly", measure:"Monthly level"},
@@ -286,6 +288,7 @@ const DETAIL_META = {
 const CATEGORY_META = {
   monetary:   {n:"Monetary & Liquidity",   cl:"#14532d"},
   flows:      {n:"Institutional Flows",    cl:"#16a34a"},
+  markets:    {n:"Equity Markets",         cl:"#22c55e"},
   production: {n:"Production & Activity",  cl:"#059669"},
   inflation:  {n:"Inflation & Prices",     cl:"#65a30d"},
   growth:     {n:"Growth & Employment",    cl:"#0d9488"},
@@ -293,7 +296,7 @@ const CATEGORY_META = {
   yields:     {n:"Money Market & Yields",  cl:"#15803d"},
   forex:      {n:"Currency & Forex",       cl:"#047857"},
 };
-const CATEGORY_ORDER = ["monetary","flows","production","inflation","growth","fiscal","yields","forex"];
+const CATEGORY_ORDER = ["monetary","flows","markets","production","inflation","growth","fiscal","yields","forex"];
 
 const MO = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
@@ -881,6 +884,7 @@ async function refreshData() {
     bank_credit_growth_yoy:"Bank Credit Growth", bank_deposit_growth_yoy:"Bank Deposit Growth",
     cd_ratio:"Credit-Deposit Ratio", fii_net_flow:"FII Net Flow", dii_net_flow:"DII Net Flow",
     sip_contribution:"SIP Contribution", mutual_fund_aum:"Mutual Fund AUM", redemption_equity_hybrid:"Redemption (Equity+Hybrid)",
+    nifty50_pe:"NIFTY 50 P/E",
     manufacturing_pmi:"Manufacturing PMI", services_pmi:"Services PMI",
     pv_vehicle_sales:"PV Vehicle Sales", pv_vehicle_sales_yoy:"PV Vehicle Sales YoY",
     vehicle_sales_yoy:"Total Vehicle Sales YoY", electricity_consumption:"Electricity Consumption",
