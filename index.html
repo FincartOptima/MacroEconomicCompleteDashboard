@@ -298,6 +298,14 @@ const CATEGORY_META = {
 };
 const CATEGORY_ORDER = ["monetary","flows","markets","production","inflation","growth","fiscal","yields","forex"];
 
+// ── DESIGNATED LOOKUP SOURCES FOR MANUAL REFRESH ──
+// These sites block cross-origin requests, so the browser cannot fetch them
+// directly from a static page. Instead, refresh surfaces the link on the
+// indicator's "needs manual entry" chip so the value can be looked up in one click.
+const REFRESH_SOURCES = {
+  cpi_inflation: "https://tradingeconomics.com/india/inflation-cpi",
+};
+
 const MO = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
 
 // ── STATE ──
@@ -904,7 +912,7 @@ async function refreshData() {
     if (!meta) continue;
     const vf = meta.vf;
     const hasValue = entry && typeof entry === 'object' && entry[vf] !== null && entry[vf] !== undefined;
-    if (!hasValue) pending.push(nice);
+    if (!hasValue) pending.push({ name: nice, url: REFRESH_SOURCES[key] || null });
   }
 
   // Reprocess and re-render
@@ -939,8 +947,15 @@ function showResultModal(result) {
   });
   let pendingHtml = "";
   if (pending.length) {
+    const chipCls = "text-[10px] bg-amber-50 text-amber-700 px-2 py-0.5 rounded-full border border-amber-200";
     pendingHtml = `<p class="text-[11px] text-amber-700 font-semibold mt-3 mb-1">Needs manual entry (click any cell in admin mode):</p>
-      <div class="flex flex-wrap gap-1">${pending.map(p => `<span class="text-[10px] bg-amber-50 text-amber-700 px-2 py-0.5 rounded-full border border-amber-200">${p}</span>`).join('')}</div>`;
+      <div class="flex flex-wrap gap-1">${pending.map(p => {
+        const name = (p && typeof p === 'object') ? p.name : p;
+        const url = (p && typeof p === 'object') ? p.url : null;
+        return url
+          ? `<a href="${url}" target="_blank" rel="noopener" class="${chipCls} hover:bg-amber-100 underline decoration-dotted" title="Open source to look up ${name}">${name} ↗</a>`
+          : `<span class="${chipCls}">${name}</span>`;
+      }).join('')}</div>`;
   }
   const html = `<div class="modal-bg" id="result-modal"><div class="modal">
     <h3 class="text-base font-bold mb-1 text-green-950">Refresh result — ${result.month || ''}</h3>

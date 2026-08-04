@@ -3048,169 +3048,169 @@
         "cpi_yoy_pct": 6.25,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 6.25% for 2024-10. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation October 2024 = 6.25% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2024-11": {
         "cpi_yoy_pct": 5.5,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 5.5% for 2024-11. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation November 2024 = 5.5% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2024-12": {
         "cpi_yoy_pct": 5.21,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 5.21% for 2024-12. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation December 2024 = 5.21% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2025-01": {
         "cpi_yoy_pct": 4.06,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 4.06% for 2025-01. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation January 2025 = 4.06% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2025-02": {
         "cpi_yoy_pct": 3.49,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 3.49% for 2025-02. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation February 2025 = 3.49% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2025-03": {
         "cpi_yoy_pct": 3.56,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 3.56% for 2025-03. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation March 2025 = 3.56% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2025-04": {
         "cpi_yoy_pct": 3.34,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 3.34% for 2025-04. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation April 2025 = 3.34% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2025-05": {
         "cpi_yoy_pct": 3.03,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 3.03% for 2025-05. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation May 2025 = 3.03% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2025-06": {
         "cpi_yoy_pct": 2.31,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 2.31% for 2025-06. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation June 2025 = 2.31% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2025-07": {
         "cpi_yoy_pct": 1.62,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 1.62% for 2025-07. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation July 2025 = 1.62% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2025-08": {
         "cpi_yoy_pct": 2.01,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 2.01% for 2025-08. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation August 2025 = 2.01% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2025-09": {
         "cpi_yoy_pct": 1.41,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 1.41% for 2025-09. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation September 2025 = 1.41% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2025-10": {
         "cpi_yoy_pct": 0.04,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 0.04% for 2025-10. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation October 2025 = 0.04% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2025-11": {
         "cpi_yoy_pct": 0.49,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 0.49% for 2025-11. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation November 2025 = 0.49% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2025-12": {
         "cpi_yoy_pct": 1.17,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 1.17% for 2025-12. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation December 2025 = 1.17% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2026-01": {
         "cpi_yoy_pct": 2.73,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 2.73% for 2026-01. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation January 2026 = 2.73% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2026-02": {
         "cpi_yoy_pct": 3.21,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 3.21% for 2026-02. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation February 2026 = 3.21% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2026-03": {
         "cpi_yoy_pct": 3.4,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 3.4% for 2026-03. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation March 2026 = 3.4% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2026-04": {
         "cpi_yoy_pct": 3.48,
         "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "India CPI YoY inflation = 3.48% for 2026-04. Source: rateinflation.com India historical CPI series. Figures represent annual % change in Consumer Price Index (Combined). Underlying data sourced from MOSPI/MoSPI official releases.",
+        "notes": "India CPI inflation April 2026 = 3.48% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2026-05": {
-        "cpi_yoy_pct": 3.93,
-        "source": "https://timesofindia.indiatimes.com/business/india-business/us-iran-war-impact-retail-inflation-rises-marginally-to-3-93-in-may-food-inflation-edges-up-to-4-78/articleshow/131681943.cms",
+        "cpi_yoy_pct": 3.94,
+        "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
         "tier": 2,
-        "notes": "Corrected: CPI inflation was 3.93% in May 2026, up from 3.48% in Apr 2026; source: Times of India citing government data released Jun 12 2026.",
+        "notes": "India CPI inflation May 2026 = 3.94% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-08-04"
       },
       "2026-06": {
         "cpi_yoy_pct": 4.38,
-        "source": "https://www.republicworld.com/business/india-retail-inflation-june-2026-cpi-food-prices-mospi-data-2026-07-13-132161",
-        "tier": 1,
-        "notes": "MoSPI/PIB CPI release for June 2026 (published Jul 13, 2026): All-India CPI YoY inflation = 4.38% (Provisional), highest since Dec 2024. Rural 4.74%, Urban 3.92%.",
+        "source": "https://www.rateinflation.com/inflation-rate/india-historical-inflation-rate/",
+        "tier": 2,
+        "notes": "India CPI inflation June 2026 = 4.38% per rateinflation.com's India historical inflation table (the series shown in the reference table supplied for this dashboard). Note: rateinflation derives its rate from the CPI index, so it can differ by a few basis points from MoSPI's published headline rate for the same month (e.g. MoSPI reported 3.93% for May 2026 against 3.94% here). This series is kept on one consistent basis across all months so the trend is comparable.",
         "source_status": "fixed",
-        "last_verified": "2026-07-28"
+        "last_verified": "2026-08-04"
       }
     },
     "core_inflation": {
