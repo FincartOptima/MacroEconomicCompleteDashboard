@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "India Macroeconomic Dashboard - 36 series across 35 indicators, monthly data Oct 2024 to present",
-    "last_updated": "2026-08-12",
+    "last_updated": "2026-08-22",
     "story_schema": "Each month entry may contain a 'story' object with keys: growth_demand (sentence 1), inflation_currency_external (sentence 2), policy_liquidity (sentence 3)"
   },
   "indicators": {
@@ -896,9 +896,9 @@
         "release_date": null,
         "source": "https://rbi.org.in/Scripts/Data_Sectoral_Deployment.aspx",
         "tier": 1,
-        "notes": "Not yet released as of 2026-08-12. Following the ~1-month lag (June data was released Jul 31), the July 2026 Sectoral Deployment report is expected around Aug 29-31, 2026.",
+        "notes": "Not yet released as of 2026-08-22. Following the ~1-month lag (June data was released Jul 31), the July 2026 Sectoral Deployment report is expected around Aug 29-31, 2026.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "last_verified": "2026-08-22"
       }
     },
     "bank_deposit_growth_yoy": {
@@ -2422,12 +2422,12 @@
         "last_verified": "2026-07-28"
       },
       "2026-07": {
-        "units": null,
-        "source": "https://www.siam.in/news-&-updates/press-releases",
+        "units": 457810,
+        "source": "https://www.autocarpro.in/news/india-auto-sales-rise-in-july-2026-as-pvs-2ws-3ws-grow-134076",
         "tier": 1,
-        "notes": "SIAM's July 2026 monthly release not yet published as of 2026-08-12 (June release came Jul 15, ~15 days after month-end; July release expected around Aug 15).",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "notes": "SIAM: PV domestic sales/dispatch = 4,57,810 units in July 2026, up from 3,40,772 units in July 2025 - India's strongest-ever July for the auto industry, with double-digit growth across PV, 2W and 3W segments.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-22"
       }
     },
     "vehicle_sales_yoy": {
@@ -3362,12 +3362,12 @@
         "last_verified": "2026-08-04"
       },
       "2026-07": {
-        "cpi_yoy_pct": null,
-        "source": null,
-        "tier": null,
-        "notes": "MoSPI CPI press release for July 2026 not yet published as of 2026-08-12 (June release was Jul 13; July release expected imminently, ~Aug 12-14).",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "cpi_yoy_pct": 4.45,
+        "source": "https://www.business-standard.com/markets/capital-market-news/india-s-retail-inflation-at-4-45-in-july-2026-food-inflation-at-5-52-126081201367_1.html",
+        "tier": 1,
+        "notes": "MoSPI/NSO CPI release for July 2026 (published Aug 12, 2026): All-India CPI YoY inflation = 4.45% (19-month high), up from 4.38% in June. Rural 4.84%, Urban 3.96%.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-22"
       }
     },
     "core_inflation": {
@@ -3543,9 +3543,9 @@
         "core_cpi_yoy_pct": null,
         "source": null,
         "tier": null,
-        "notes": "Depends on the July CPI release, not yet published as of 2026-08-12.",
+        "notes": "No specific July 2026 core-CPI (ex food & fuel) figure could be confirmed as of 2026-08-22; MoSPI does not publish a standard core-CPI field, and press coverage of the Aug 12 CPI release described core inflation only qualitatively (\"remained benign\") without a number.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "last_verified": "2026-08-22"
       }
     },
     "wpi_inflation": {
@@ -3718,12 +3718,12 @@
         "last_verified": "2026-07-28"
       },
       "2026-07": {
-        "wpi_yoy_pct": null,
-        "source": "https://eaindustry.nic.in/",
+        "wpi_yoy_pct": 9.78,
+        "source": "https://morungexpress.com/indias-wholesale-price-index-inflation-stands-at-978-pc-for-july",
         "tier": 1,
-        "notes": "Office of Economic Adviser (DPIIT) WPI press release for July 2026 is scheduled for Aug 14, 2026 - not yet released as of 2026-08-12.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "notes": "Office of Economic Adviser (DPIIT) WPI release for July 2026 (published Aug 14, 2026): All-India WPI YoY inflation = 9.78%, eased marginally from 9.87% in June. Fuel & Power group inflation fell sharply to 20.05% (from 27.41%), but Primary Articles rose to 8.52% (from 7%) and Manufactured Products to 8.29% (from 7.48%). WPI Food Index inflation = 6.65% (from 6.14%).",
+        "source_status": "fixed",
+        "last_verified": "2026-08-22"
       }
     },
     "food_inflation": {
@@ -3896,12 +3896,12 @@
         "last_verified": "2026-07-07"
       },
       "2026-07": {
-        "food_cpi_yoy_pct": null,
-        "source": null,
-        "tier": null,
-        "notes": "Depends on the July CPI/CFPI release, not yet published as of 2026-08-12.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "food_cpi_yoy_pct": 5.52,
+        "source": "https://www.business-standard.com/markets/capital-market-news/india-s-retail-inflation-at-4-45-in-july-2026-food-inflation-at-5-52-126081201367_1.html",
+        "tier": 1,
+        "notes": "MoSPI/NSO CFPI (Consumer Food Price Index) for July 2026 = 5.52% YoY, up from 5.32% in June. Rural 5.79%, Urban 5.05%.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-22"
       }
     },
     "gdp_growth_yoy": {
@@ -4099,9 +4099,9 @@
         "quarter": "Q1:2026-27 (Apr-Jun 2026)",
         "source": "https://mospi.gov.in/publication/national-accounts-statistics",
         "tier": 2,
-        "notes": "Official MoSPI Q1 FY2026-27 GDP estimate not yet released as of 2026-08-12 (typically released end-August). Note: SBI Research published a private forecast of ~8% growth on Aug 11, 2026, versus RBI's own ~7% projection - these are estimates, not the official print, and are deliberately excluded here.",
+        "notes": "Official MoSPI Q1 FY2026-27 GDP estimate is scheduled for release Aug 31, 2026 - not yet out as of 2026-08-22. Pre-release estimates ranged from ICRA's 6.4-6.6% to SBI Research's 8%, with RBI itself projecting ~7% - deliberately excluded as these are forecasts, not the official print.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "last_verified": "2026-08-22"
       }
     },
     "unemployment_rate": {
@@ -5167,9 +5167,9 @@
         "yield_pct": null,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63261",
         "tier": 1,
-        "notes": "364-day T-Bill cut-off yield for the Jul 29, 2026 auction (Rs 7,000 Cr notified) was not confirmed from available sources as of 2026-08-12.",
+        "notes": "364-day T-Bill cut-off yield for the Jul 29, 2026 auction (Rs 7,000 Cr notified) still not confirmed from available sources as of 2026-08-22.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "last_verified": "2026-08-22"
       }
     },
     "capex_outlay": {
@@ -5179,7 +5179,7 @@
         "tier": 1,
         "notes": "Press reports put cumulative Apr-Jun FY27 capex at ~28% of the Rs 12.22 lakh crore target (~Rs 3.42 lakh Cr), which would imply a June monthly flow of roughly Rs 90,000-1,00,000 Cr versus May's Rs 61,172 Cr - consistent with reports of capex 'surging 66%' in June - but the exact CGA monthly report figure needed for a precise (non-estimated) monthly flow was not confirmed. Check cga.nic.in Monthly Accounts Review directly.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "last_verified": "2026-08-22"
       },
       "2024-10": {
         "capex_crore": 51579,
@@ -5365,9 +5365,9 @@
         "capex_crore": null,
         "source": "https://cga.nic.in/MonthlyReport/Published/7/2026-2027.aspx",
         "tier": 1,
-        "notes": "CGA Monthly Accounts for July 2026 not yet released/confirmed as of 2026-08-12.",
+        "notes": "CGA Monthly Accounts for July 2026 not yet confirmed as of 2026-08-22.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "last_verified": "2026-08-22"
       }
     },
     "usd_inr": {
@@ -5965,9 +5965,9 @@
         "quarter": "Q1 FY2026-27 (Apr-Jun 2026)",
         "source": "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics#!4_5",
         "tier": 2,
-        "notes": "Official Q1 FY2026-27 CAD/BoP data not yet released as of 2026-08-12 (typically released ~end-September). Note: a widely-cited 'CAD 1.8% of GDP' figure is ICICI Bank's full-year FY27 projection published in June 2026, not actual Q1 data - deliberately excluded here.",
+        "notes": "Official Q1 FY2026-27 CAD/BoP data not yet released as of 2026-08-22 (typically released ~end-September).",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "last_verified": "2026-08-22"
       }
     },
     "redemption_equity_hybrid": {
@@ -6318,12 +6318,12 @@
         "last_verified": "2026-07-28"
       },
       "2026-07": {
-        "yoy_pct": null,
-        "source": "https://www.siam.in/news-&-updates/press-releases",
+        "yoy_pct": 34.3,
+        "source": "https://www.autocarpro.in/news/india-auto-sales-rise-in-july-2026-as-pvs-2ws-3ws-grow-134076",
         "tier": 1,
-        "notes": "Depends on SIAM's July release, not yet published as of 2026-08-12.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "notes": "Calculated: Jul 2026 (4,57,810) / Jul 2025 (3,40,772) - 1 = +34.3%. SIAM states +34.3% YoY.",
+        "source_status": "fixed",
+        "last_verified": "2026-08-22"
       }
     },
     "nifty50_pe": {
