@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "India Macroeconomic Dashboard - 36 series across 35 indicators, monthly data Oct 2024 to present",
-    "last_updated": "2026-08-22",
+    "last_updated": "2026-09-07",
     "story_schema": "Each month entry may contain a 'story' object with keys: growth_demand (sentence 1), inflation_currency_external (sentence 2), policy_liquidity (sentence 3)"
   },
   "indicators": {
@@ -161,6 +161,14 @@
         "notes": "AMFI official statement: SIP contributions in July 2026 = Rs 31,960.66 crore (four-month high), up from Rs 31,781 Cr in June. 10,62,74,060 contributing SIP accounts.",
         "source_status": "fixed",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "value_crore": null,
+        "source": "https://www.amfiindia.com/articles/mutual-fund",
+        "tier": 1,
+        "notes": "AMFI's August 2026 monthly data not yet released as of 2026-09-07; typically published around the 8th-10th of the following month.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "mutual_fund_aum": {
@@ -339,6 +347,14 @@
         "notes": "AMFI portal Excel (Sheet 'MCR'): Row 'Grand Total', column 'Net Assets Under Management as on July 31, 2026'. Raw value Rs 85,75,656.52 Cr = 85.76 lakh crore. Industry recorded Rs 2.35 lakh crore net inflow in July.",
         "source_status": "fixed",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "value_lakh_crore": null,
+        "source": "https://www.amfiindia.com/articles/mutual-fund",
+        "tier": 1,
+        "notes": "AMFI's August 2026 monthly data not yet released as of 2026-09-07; typically published around the 8th-10th of the following month.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "rbi_repo_rate": {
@@ -521,6 +537,16 @@
         "notes": "MPC met Aug 3-5, 2026 (Governor Sanjay Malhotra); repo rate held unchanged at 5.25% (6th consecutive hold since Dec 2025 cut), neutral stance retained. MPC raised FY27 GDP forecast to 6.7% (from 6.6%) and lowered CPI projection to 5% (from 5.1%).",
         "source_status": "needs_confirmation",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "value_pct": 5.25,
+        "change_bps": 0,
+        "effective_date": "2026-08-05",
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63261",
+        "tier": 1,
+        "notes": "Unchanged since the Aug 5, 2026 MPC hold; next MPC meeting is Oct 5-7, 2026.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "system_liquidity": {
@@ -693,12 +719,20 @@
         "last_verified": "2026-07-28"
       },
       "2026-07": {
-        "value_lakh_crore": 1.0,
-        "source": "https://www.business-standard.com/finance/news/rbi-sees-liquidity-surplus-peaking-in-september-before-normal-absorption-126080501501_1.html",
+        "value_lakh_crore": 1.02,
+        "source": "https://www.business-standard.com/finance/news/rbi-s-liquidity-mop-up-auctions-see-tepid-demand-as-surplus-tops-5-trn-126083101359_1.html",
         "tier": 2,
-        "notes": "T2: RBI Aug 5, 2026 post-MPC commentary: system liquidity surplus averaged ~Rs 1.0 lakh crore (Rs 1 trillion) in July 2026, moderate versus June despite elevated core liquidity (~Rs 5.5-6 lakh crore) due to high government cash balances. RBI expects surplus to peak around September. Exact GS PRID not confirmed; sourced via Business Standard report on the statement.",
+        "notes": "T2: Average systemic liquidity surplus in July 2026 was Rs 1.02 lakh crore (refined from an earlier ~Rs 1.0 lakh crore estimate), per money-market reporting that also confirms August's average at Rs 1.49 lakh crore.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "last_verified": "2026-09-07"
+      },
+      "2026-08": {
+        "value_lakh_crore": 1.49,
+        "source": "https://www.business-standard.com/finance/news/rbi-s-liquidity-mop-up-auctions-see-tepid-demand-as-surplus-tops-5-trn-126083101359_1.html",
+        "tier": 2,
+        "notes": "T2: Average systemic liquidity surplus in August 2026 = Rs 1.49 lakh crore, up from Rs 1.02 lakh crore in July; surplus rose to a 4-month high of ~Rs 5.05 lakh crore as of Aug 30.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "bank_credit_growth_yoy": {
@@ -892,13 +926,22 @@
         "last_verified": "2026-08-12"
       },
       "2026-07": {
+        "value_pct": 19.1,
+        "release_date": "2026-08-31",
+        "source": "https://rbi.org.in/Scripts/Data_Sectoral_Deployment.aspx",
+        "tier": 1,
+        "notes": "CORRECTED (was null): RBI Sectoral Deployment report released Aug 31, 2026: non-food bank credit grew 19.1% YoY as on fortnight ended July 31, 2026 (vs 9.9% a year ago) - services +22.9%, industry +20%, agriculture +17%, personal loans +16.2%.",
+        "source_status": "fixed",
+        "last_verified": "2026-09-07"
+      },
+      "2026-08": {
         "value_pct": null,
         "release_date": null,
         "source": "https://rbi.org.in/Scripts/Data_Sectoral_Deployment.aspx",
         "tier": 1,
-        "notes": "Not yet released as of 2026-08-22. Following the ~1-month lag (June data was released Jul 31), the July 2026 Sectoral Deployment report is expected around Aug 29-31, 2026.",
+        "notes": "Not yet released as of 2026-09-07. Following the ~1-month lag (July data was released Aug 31), the August Sectoral Deployment report is expected around Sep 29-30, 2026.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-22"
+        "last_verified": "2026-09-07"
       }
     },
     "bank_deposit_growth_yoy": {
@@ -1104,6 +1147,16 @@
         "source_type": "RBI SCB",
         "source_status": "fixed",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "value_pct": 14.58,
+        "data_date": "2026-08-15",
+        "source": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63471",
+        "tier": 2,
+        "notes": "T2 self-computed: PRID 63471 'Scheduled Banks Statement of Position as on August 15, 2026': SCB deposits Rs 26,931,345.54 Cr vs SCB deposits Rs 23,504,101 Cr as on Aug 22, 2025 (from cd_ratio 2025-08 entry, PRID 61163) -> YoY +14.58%. A sharp jump from July's 12.69% - deposits catching up to credit growth for the first time in months.",
+        "source_type": "RBI SCB",
+        "source_status": "fixed",
+        "last_verified": "2026-09-07"
       }
     },
     "cd_ratio": {
@@ -1326,6 +1379,16 @@
         "notes": "PRID 63261 (Statement of Position as on July 15, 2026): SCB Credit Rs 21,733,382.74 Cr / SCB Deposits Rs 26,284,573.93 Cr x 100 = 82.68%.",
         "source_status": "fixed",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "value_pct": 81.72,
+        "data_date": "2026-08-15",
+        "source_type": "RBI SCB",
+        "source": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63471",
+        "tier": 1,
+        "notes": "PRID 63471 (Statement of Position as on Aug 15, 2026): SCB Credit Rs 22,007,763.94 Cr / SCB Deposits Rs 26,931,345.54 Cr x 100 = 81.72% - eased from July's 82.68% as deposit growth caught up.",
+        "source_status": "fixed",
+        "last_verified": "2026-09-07"
       }
     },
     "fii_net_flow": {
@@ -1510,6 +1573,15 @@
         "notes": "FII net sell = Rs -5,780 Cr in July 2026 (lowest monthly outflow of 2026, moderating from -Rs 55,963 Cr in May and an estimated -Rs 49,030 Cr in June). NOTE: this monthly series (Mar -1,22,540 / Apr -70,140 / May -55,960) matches the dashboard's existing Mar and May figures closely but diverges from the existing Apr figure (-43,706 Cr) - likely a different data vintage (NSDL provisional FPI vs exchange cash-segment data). Treat with that caveat; groww.in/fii-dii-data Monthly tab is the series' primary source and should be checked directly when precision matters.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "value_inr_cr": 29631,
+        "period_start_date": "01 Aug 2026",
+        "source": "https://www.business-standard.com/markets/news/fpis-pump-in-over-rs-27k-cr-in-aug-highest-monthly-flow-since-sept-2024-126082700693_1.html",
+        "tier": 2,
+        "notes": "FII net BUY = Rs 29,631 Cr in August 2026 - the largest monthly inflow in 23 months, and the second straight month of buying after four months of selling. July + August combined: Rs 49,831 Cr net inflow, the first two-month run of FII buying in 2026. Same source-vintage caveat as prior months applies (this series occasionally diverges from the dashboard's earlier monthly figures).",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "dii_net_flow": {
@@ -1694,6 +1766,15 @@
         "notes": "DII net buy = Rs 35,100 Cr in July 2026, again absorbing FII selling. Same source-vintage caveat as fii_net_flow above applies.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "value_inr_cr": 48347,
+        "period_start_date": "01 Aug 2026",
+        "source": "https://www.business-standard.com/markets/news/fpis-pump-in-over-rs-27k-cr-in-aug-highest-monthly-flow-since-sept-2024-126082700693_1.html",
+        "tier": 2,
+        "notes": "DII net buy = Rs 48,347 Cr in August 2026, highest in 3 months; mutual funds alone contributed Rs 35,622 Cr of that.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "forex_reserves": {
@@ -1894,6 +1975,15 @@
         "notes": "RBI Weekly Statistical Supplement, Total Reserves as on 2026-07-31 = USD 692.866 billion (+$10.512 bn on the week, sharpest weekly gain since end-Jan). FCA +$8.75bn to $564.68bn, Gold +$1.685bn to $104.743bn, SDRs +$48mn to $18.666bn.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "value_usd_bn": 740.8,
+        "week_ended": "2026-08-28",
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63471",
+        "tier": 1,
+        "notes": "RBI Weekly Statistical Supplement, Total Reserves as on 2026-08-28 = USD 740.8 billion - a record high, the 9th consecutive weekly rise, adding ~$75bn over that stretch. FCA $600.67bn (+$9.34bn), Gold $116.41bn (+$2.19bn).",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "manufacturing_pmi": {
@@ -2072,6 +2162,14 @@
         "notes": "S&P Global (HSBC-sponsored) India Manufacturing PMI final reading for July 2026 = 53.5, down from June final 54.2 (July flash was 53.9) - weakest expansion in nearly five years.",
         "source_status": "fixed",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "pmi_value": 52.8,
+        "source": "https://www.business-standard.com/economy/news/india-manufacturing-pmi-august-2026-hsbc-demand-jobs-126090100499_1.html",
+        "tier": 1,
+        "notes": "S&P Global (HSBC-sponsored) India Manufacturing PMI final reading for August 2026 = 52.8, down from July's 53.5 - a 5-year low (weakest since Aug 2021). New orders and output grew at their slowest pace in 5 years; manufacturing employment contracted for the first time in 2.5 years.",
+        "source_status": "fixed",
+        "last_verified": "2026-09-07"
       }
     },
     "services_pmi": {
@@ -2250,6 +2348,14 @@
         "notes": "S&P Global (HSBC-sponsored) India Services PMI for July 2026 = 53.3 (revised up from flash 53.1), down sharply from June final 57.4 - softest expansion since Feb 2022. Composite PMI fell to 54.3 from 57.1.",
         "source_status": "fixed",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "pmi_value": 54.1,
+        "source": "https://www.business-standard.com/economy/news/india-services-pmi-august-2026-hsbc-employment-growth-126090300464_1.html",
+        "tier": 1,
+        "notes": "S&P Global (HSBC-sponsored) India Services PMI for August 2026 = 54.1, up from July's 53.3 but still near a 4-year low. New business grew at its second-slowest pace in over 4 years; employment grew at its fastest pace in 15 months.",
+        "source_status": "fixed",
+        "last_verified": "2026-09-07"
       }
     },
     "pv_vehicle_sales": {
@@ -2428,6 +2534,14 @@
         "notes": "SIAM: PV domestic sales/dispatch = 4,57,810 units in July 2026, up from 3,40,772 units in July 2025 - India's strongest-ever July for the auto industry, with double-digit growth across PV, 2W and 3W segments.",
         "source_status": "fixed",
         "last_verified": "2026-08-22"
+      },
+      "2026-08": {
+        "units": null,
+        "source": "https://www.siam.in/news-&-updates/press-releases",
+        "tier": 1,
+        "notes": "SIAM's August 2026 monthly release not yet published as of 2026-09-07.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "vehicle_sales_yoy": {
@@ -2441,28 +2555,31 @@
         "units": 2557234
       },
       "2024-10": {
-        "yoy_pct": 13.2,
-        "source": "https://www.fada.in/sales-statistics",
-        "tier": 2,
-        "notes": "Source: FADA monthly vehicle retail data. T2: SIAM Oct 2024: total industry wholesale ~13% YoY. Source needs confirmation.",
+        "yoy_pct": 32,
+        "units": 2832944,
+        "source": "https://fada.in/images/press-release/1672ae22942b7fFADA%20releases%20October%202024%20Vehicle%20Retail%20Data.pdf",
+        "tier": 1,
+        "notes": "CORRECTED (was 13.2%, sourced to a dead link that actually held SIAM wholesale data mislabeled as FADA): FADA October 2024 total vehicle retail = 28,32,944 units, +32% YoY, +64% MoM - driven by Navratri/Diwali both falling in October. 2W +36% to 20,65,095 units; PV +32%; CV +6%.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-09-07"
       },
       "2024-11": {
-        "yoy_pct": 11.8,
-        "source": "https://www.fada.in/sales-statistics",
+        "yoy_pct": null,
+        "units": null,
+        "source": "https://fada.in/images/press-release/167566418d08beFADA%20releases%20November%202024%20Vehicle%20Retail%20Data.pdf",
         "tier": 2,
-        "notes": "Source: FADA monthly vehicle retail data. T2: SIAM Nov 2024. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "CORRECTED (was 11.8%, sourced to a dead link that actually held SIAM data mislabeled as FADA): the blended total-retail YoY figure could not be confirmed. FADA reported a mixed month by segment: 2W +15.8%, 3W +4.23%, Tractors +29.88%, PV -13.72%, CV -6.08% (81,967 units vs 87,272 a year earlier). Left null rather than estimate a blended total from segment shares.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2024-12": {
-        "yoy_pct": 10.2,
-        "source": "https://www.fada.in/sales-statistics",
-        "tier": 2,
-        "notes": "Source: FADA monthly vehicle retail data. T2: SIAM Dec 2024. Source needs confirmation.",
+        "yoy_pct": -12,
+        "units": 1756419,
+        "source": "https://fada.in/images/press-release/1677c9fa734b0cFADA%20releases%20CY%202024%20and%20December%202024%20Vehicle%20Retail%20Data.pdf",
+        "tier": 1,
+        "notes": "CORRECTED (was +10.2%, sign and magnitude both wrong - sourced to a dead link that actually held SIAM data mislabeled as FADA): FADA December 2024 total vehicle retail = 17,56,419 units, -12% YoY - a genuine decline (not growth) on high post-festive inventory and weak dealer sentiment. 2W -17.6%, 3W -4.5%, PV -2%, CV -5.2%; only Tractors grew, +25.7%.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-09-07"
       },
       "2025-01": {
         "yoy_pct": 9.6,
@@ -2612,6 +2729,15 @@
         "notes": "FADA July 2026 vehicle retail data (best-ever July): total retail 25,91,138 units, +25.89% YoY - a record. 2-wheelers 18.18 lakh (+28.25%), PVs 4.16 lakh (+19.13%, first time crossing 4 lakh in July), 3-wheelers 1.33 lakh (+16.16%), CVs +24.04%. EV retail hit a record 3,27,901 units (+66% YoY).",
         "source_status": "fixed",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "yoy_pct": 17.51,
+        "units": 2423201,
+        "source": "https://www.business-standard.com/industry/auto/india-auto-retail-sales-august-2026-fada-passenger-vehicles-two-wheelers-126090700263_1.html",
+        "tier": 1,
+        "notes": "FADA August 2026 vehicle retail data: total retail 24,23,201 units, +17.51% YoY - India's biggest-ever August, though down 6.48% from July (monsoon lull, festival purchases pushed into September). PVs +16.14% to 4.02 lakh; 2-wheelers +19.69% to 17.15 lakh; CNG+hybrid+EV combined (41.95% of PV retail) edged past petrol/ethanol (40.85%) for the first time.",
+        "source_status": "fixed",
+        "last_verified": "2026-09-07"
       }
     },
     "electricity_consumption": {
@@ -2790,6 +2916,14 @@
         "notes": "All-India power consumption July 2026 = 170.70 BU (+10.93% YoY vs 153.88 BU in July 2025), driven by high humidity/cooling demand. Peak power demand hit 270.20 GW (from 220.74 GW in Jul 2025). Source: Business Standard citing govt/CEA data.",
         "source_status": "fixed",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "consumption_bu": 169.01,
+        "source": "https://www.freepressjournal.in/business/indias-peak-power-demand-hits-record-258-gw-in-august-amid-extreme-heat",
+        "tier": 2,
+        "notes": "All-India power consumption August 2026 = 169.01 BU (+12.85% YoY), with peak demand hitting a record 258.27 GW (+12.4% YoY) - the warmest August since 1901. Coal stocks at several thermal plants ran critically low by month-end.",
+        "source_status": "fixed",
+        "last_verified": "2026-09-07"
       }
     },
     "steel_production_yoy": {
@@ -2990,6 +3124,15 @@
         "notes": "T2: Finished steel production Jul 2026 = 13.7 MT, +1.4% YoY (moderating sharply from June's +6%). Crude steel production +1.2% YoY to 14.3 MT. Finished steel consumption (a different, demand-side metric) rose faster at +6.5% YoY, with India remaining a net importer. Source: Ministry of Steel data via Tribune/Statesman.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "yoy_pct": 0.3,
+        "value_mt": 13.5,
+        "source": "https://www.business-standard.com/markets/capital-market-news/jsw-steel-records-crude-steel-production-of-24-65-lakh-tonnes-in-aug-26-126090500233_1.html",
+        "tier": 2,
+        "notes": "T2: Finished steel production Aug 2026 = 13.5 MT, +0.3% YoY (further slowing from July's +1.4%). Crude steel output actually dipped -0.1% YoY to 14.1 MT. April-August cumulative: crude steel +1.8% to 70.3 MT, finished steel +3.8% to 68.1 MT.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "fuel_consumption": {
@@ -3190,6 +3333,15 @@
         "notes": "T2 preliminary PPAC-sourced data (IOC/BPCL/HPCL sales): petrol Jul 2026 = 3.45 million tonnes (+9.7% YoY vs 3.14 MT Jul-25); diesel = 7.12 million tonnes (+10.7% YoY vs 6.43 MT Jul-25), boosted by delayed-monsoon irrigation demand. NOTE: press reports on this same PSU-OMC basis cite June petrol at ~3.48 MT, versus the dashboard's June entry of 3,768 TMT (3.768 MT) sourced from an earlier Business Standard 'preliminary PPAC' article - the two June citations differ by ~8%, suggesting different data vintages/revisions. Treat July's figure with the same caveat pending a reconciled PPAC final release.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "petrol_tmt": 3820,
+        "diesel_tmt": 7000,
+        "source": "https://www.business-standard.com/industry/news/india-s-lpg-consumption-plunges-16-in-aug-petrol-diesel-demand-robust-126090101307_1.html",
+        "tier": 2,
+        "notes": "T2 preliminary PPAC data: petrol Aug 2026 = 3.82 million tonnes (+7.88% YoY vs 3.54 MT Aug-25); diesel = 7.00 million tonnes (+6.46% YoY vs 6.58 MT Aug-25). LPG consumption fell 16% as more users shifted to piped gas.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "cpi_inflation": {
@@ -3368,6 +3520,14 @@
         "notes": "MoSPI/NSO CPI release for July 2026 (published Aug 12, 2026): All-India CPI YoY inflation = 4.45% (19-month high), up from 4.38% in June. Rural 4.84%, Urban 3.96%.",
         "source_status": "fixed",
         "last_verified": "2026-08-22"
+      },
+      "2026-08": {
+        "cpi_yoy_pct": null,
+        "source": null,
+        "tier": null,
+        "notes": "MoSPI's August CPI release is due ~Sep 12, 2026 (July was released Aug 12) - not yet out.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "core_inflation": {
@@ -3540,12 +3700,20 @@
         "last_verified": "2026-07-07"
       },
       "2026-07": {
+        "core_cpi_yoy_pct": 3.9,
+        "source": "https://www.finnovate.in/learn/blog/india-cpi-inflation-july-2026-rbi-rate-outlook",
+        "tier": 2,
+        "notes": "T2: Analyst-calculated core CPI (ex food & fuel) for July 2026 ~3.9%, suggesting higher food/fuel costs have not yet broadened into underlying inflation. Not an official MoSPI series.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
+      },
+      "2026-08": {
         "core_cpi_yoy_pct": null,
         "source": null,
         "tier": null,
-        "notes": "No specific July 2026 core-CPI (ex food & fuel) figure could be confirmed as of 2026-08-22; MoSPI does not publish a standard core-CPI field, and press coverage of the Aug 12 CPI release described core inflation only qualitatively (\"remained benign\") without a number.",
+        "notes": "Depends on the August CPI release, not yet out.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-22"
+        "last_verified": "2026-09-07"
       }
     },
     "wpi_inflation": {
@@ -3724,6 +3892,14 @@
         "notes": "Office of Economic Adviser (DPIIT) WPI release for July 2026 (published Aug 14, 2026): All-India WPI YoY inflation = 9.78%, eased marginally from 9.87% in June. Fuel & Power group inflation fell sharply to 20.05% (from 27.41%), but Primary Articles rose to 8.52% (from 7%) and Manufactured Products to 8.29% (from 7.48%). WPI Food Index inflation = 6.65% (from 6.14%).",
         "source_status": "fixed",
         "last_verified": "2026-08-22"
+      },
+      "2026-08": {
+        "wpi_yoy_pct": null,
+        "source": "https://eaindustry.nic.in/",
+        "tier": 1,
+        "notes": "Office of Economic Adviser WPI release for August 2026 is due ~Sep 14, 2026 (July was released Aug 14) - not yet out as of 2026-09-07.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "food_inflation": {
@@ -3902,6 +4078,14 @@
         "notes": "MoSPI/NSO CFPI (Consumer Food Price Index) for July 2026 = 5.52% YoY, up from 5.32% in June. Rural 5.79%, Urban 5.05%.",
         "source_status": "fixed",
         "last_verified": "2026-08-22"
+      },
+      "2026-08": {
+        "food_cpi_yoy_pct": null,
+        "source": null,
+        "tier": null,
+        "notes": "Depends on the August CPI/CFPI release, not yet out.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "gdp_growth_yoy": {
@@ -4068,40 +4252,49 @@
         "last_verified": "2026-07-07"
       },
       "2026-04": {
-        "gdp_growth_pct": null,
+        "gdp_growth_pct": 7.8,
         "quarter": "Q1:2026-27 (Apr-Jun 2026)",
-        "source": "https://mospi.gov.in/publication/national-accounts-statistics",
-        "tier": 2,
-        "notes": "Source: MOSPI National Accounts Statistics. T2: Not yet released as of Jul 2026 (Advance Estimate due Feb 2027) Source needs confirmation. Q1 FY2026-27 GDP was not released as of 2026-07-07.",
+        "source": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1788172583113_d65a77cf-240e-4491-82ee-59f78618fa41_Press_Note_on_GDP_Estimates_for_Q1_2026-27.pdf",
+        "tier": 1,
+        "notes": "CORRECTED (was null): MoSPI released Q1 FY2026-27 GDP on Aug 31, 2026: real GDP grew 7.8% YoY (Rs 81.36 lakh Cr vs Rs 75.46 lakh Cr in Q1 FY26), beating RBI's 7% projection and a Reuters poll of 7.1%. Nominal GDP grew 10.3%; real GVA grew 8.2%.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-09-07"
       },
       "2026-05": {
-        "gdp_growth_pct": null,
+        "gdp_growth_pct": 7.8,
         "quarter": "Q1:2026-27 (Apr-Jun 2026)",
-        "source": "https://mospi.gov.in/publication/national-accounts-statistics",
-        "tier": 2,
-        "notes": "Source: MOSPI National Accounts Statistics. T2: Not yet released as of Jul 2026 (Advance Estimate due Feb 2027) Source needs confirmation. Q1 FY2026-27 GDP was not released as of 2026-07-07.",
+        "source": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1788172583113_d65a77cf-240e-4491-82ee-59f78618fa41_Press_Note_on_GDP_Estimates_for_Q1_2026-27.pdf",
+        "tier": 1,
+        "notes": "CORRECTED (was null): MoSPI released Q1 FY2026-27 GDP on Aug 31, 2026: real GDP grew 7.8% YoY (Rs 81.36 lakh Cr vs Rs 75.46 lakh Cr in Q1 FY26), beating RBI's 7% projection and a Reuters poll of 7.1%. Nominal GDP grew 10.3%; real GVA grew 8.2%.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-09-07"
       },
       "2026-06": {
-        "gdp_growth_pct": null,
+        "gdp_growth_pct": 7.8,
         "quarter": "Q1:2026-27 (Apr-Jun 2026)",
-        "source": "https://mospi.gov.in/publication/national-accounts-statistics",
-        "tier": 2,
-        "notes": "Source: MOSPI National Accounts Statistics. Q1 FY2026-27 GDP (Provisional Estimate) not yet released as of 2026-07-28; typically released end-Aug.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-07-28"
+        "source": "https://www.mospi.gov.in/uploads/latestReleases/latest_release_1788172583113_d65a77cf-240e-4491-82ee-59f78618fa41_Press_Note_on_GDP_Estimates_for_Q1_2026-27.pdf",
+        "tier": 1,
+        "notes": "CORRECTED (was null): MoSPI released Q1 FY2026-27 GDP on Aug 31, 2026: real GDP grew 7.8% YoY (Rs 81.36 lakh Cr vs Rs 75.46 lakh Cr in Q1 FY26), beating RBI's 7% projection and a Reuters poll of 7.1%. Nominal GDP grew 10.3%; real GVA grew 8.2%.",
+        "source_status": "fixed",
+        "last_verified": "2026-09-07"
       },
       "2026-07": {
         "gdp_growth_pct": null,
-        "quarter": "Q1:2026-27 (Apr-Jun 2026)",
+        "quarter": "Q2:2026-27 (Jul-Sep 2026)",
         "source": "https://mospi.gov.in/publication/national-accounts-statistics",
         "tier": 2,
-        "notes": "Official MoSPI Q1 FY2026-27 GDP estimate is scheduled for release Aug 31, 2026 - not yet out as of 2026-08-22. Pre-release estimates ranged from ICRA's 6.4-6.6% to SBI Research's 8%, with RBI itself projecting ~7% - deliberately excluded as these are forecasts, not the official print.",
+        "notes": "July falls in Q2 FY2026-27, not Q1 - not yet released as of 2026-09-07 (due ~late Nov 2026). Q1 FY27 (Apr-Jun 2026) was released Aug 31, 2026 at 7.8% - see the April/May/June entries.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-22"
+        "last_verified": "2026-09-07"
+      },
+      "2026-08": {
+        "gdp_growth_pct": null,
+        "quarter": "Q2:2026-27 (Jul-Sep 2026)",
+        "source": "https://mospi.gov.in/publication/national-accounts-statistics",
+        "tier": 2,
+        "notes": "August falls in Q2 FY2026-27 - not yet released as of 2026-09-07 (due ~late Nov 2026).",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "unemployment_rate": {
@@ -4280,6 +4473,14 @@
         "notes": "T2: CMIE/MOSPI-PLFS-sourced (via Trading Economics): unemployment rate eased sharply to 4.9% in July 2026, down from 5.5% in June.",
         "source_status": "fixed",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "unemployment_pct": null,
+        "source": "https://tradingeconomics.com/india/unemployment-rate",
+        "tier": 2,
+        "notes": "August 2026 reading not yet confirmed from available sources as of 2026-09-07.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "gst_collection": {
@@ -4293,123 +4494,123 @@
       },
       "2024-10": {
         "collection_cr": 187346,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 1,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2024-11": {
         "collection_cr": 182269,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 1,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2024-12": {
         "collection_cr": 176857,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 1,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-01": {
         "collection_cr": 196723,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 1,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-02": {
         "collection_cr": 183646,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 1,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-03": {
         "collection_cr": 196141,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 1,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-04": {
         "collection_cr": 237284,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 1,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-05": {
         "collection_cr": 200929,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 1,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-06": {
         "collection_cr": 186873,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-07": {
         "collection_cr": 187940,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-08": {
         "collection_cr": 183088,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-09": {
         "collection_cr": 198657,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-10": {
-        "collection_cr": 193267,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
+        "collection_cr": 195936,
+        "source": "https://www.newsonair.gov.in/gst-collections-rise-4-6-to-over-%E2%82%B91-95-lakh-crore-in-october-despite-rate-cuts/",
+        "tier": 1,
+        "notes": "CORRECTED (was Rs 1,93,267 Cr, sourced to a GST Council archive page that only showed data through 2023-24 and never actually displayed this figure): Gross GST collection October 2025 = Rs 1,95,936 Cr, +4.6% YoY vs Oct 2024 (Rs 1,87,346 Cr, confirmed matching this dataset). Net revenue Rs 1,69,002 Cr (+7.1% YoY).",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-09-07"
       },
       "2025-11": {
         "collection_cr": 182270,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-12": {
         "collection_cr": 194694,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2026-01": {
         "collection_cr": 193384,
@@ -4458,6 +4659,14 @@
         "notes": "Gross GST collection July 2026 = Rs 2,11,205 Cr (+15.4% YoY, fastest monthly growth in 14 months). Net GST (after Rs 27,147 Cr refunds) = Rs 1,84,058 Cr. Domestic gross Rs 1,44,695 Cr (+10.1%), import-based gross Rs 66,511 Cr (+29%).",
         "source_status": "fixed",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "collection_cr": 199853,
+        "source": "https://www.business-standard.com/economy/news/gst-collections-august-2026-gross-revenue-imports-refunds-126090100504_1.html",
+        "tier": 1,
+        "notes": "Gross GST collection August 2026 = Rs 1,99,853 Cr (+14.8% YoY). Domestic gross Rs 1.37L Cr (+9%), import-based gross Rs 62,604 Cr (+29%). Refunds jumped 68% YoY to Rs 31,795 Cr; net collection Rs 1.68L Cr (+8.3%). Apr-Aug FY27 cumulative gross: Rs 10.43 lakh Cr (+11%).",
+        "source_status": "fixed",
+        "last_verified": "2026-09-07"
       }
     },
     "gst_yoy_change": {
@@ -4471,123 +4680,123 @@
       },
       "2024-10": {
         "yoy_pct": 8.9,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 8.9% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 8.9% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2024-11": {
         "yoy_pct": 8.5,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 8.5% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 8.5% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2024-12": {
         "yoy_pct": 7.3,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 7.3% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 7.3% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-01": {
         "yoy_pct": 12.3,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 12.3% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 12.3% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-02": {
         "yoy_pct": 9.9,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 9.9% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 9.9% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-03": {
         "yoy_pct": 9.9,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 9.9% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 9.9% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-04": {
         "yoy_pct": 12.6,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 12.6% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 12.6% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-05": {
         "yoy_pct": 7.3,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 7.3% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 7.3% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-06": {
         "yoy_pct": 6.1,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 6.1% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 6.1% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-07": {
         "yoy_pct": 9.8,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 9.8% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 9.8% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-08": {
         "yoy_pct": 5.4,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 5.4% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 5.4% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-09": {
         "yoy_pct": 7.9,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 7.9% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 7.9% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-10": {
-        "yoy_pct": 4.1,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 4.1% Source needs confirmation.",
+        "yoy_pct": 4.6,
+        "source": "https://www.newsonair.gov.in/gst-collections-rise-4-6-to-over-%E2%82%B91-95-lakh-crore-in-october-despite-rate-cuts/",
+        "tier": 1,
+        "notes": "CORRECTED (was 4.1%, same dead-end GST Council source as the collection figure): GST collection growth was +4.6% YoY in October 2025 (Rs 1,95,936 Cr vs Rs 1,87,346 Cr in Oct 2024), consistent with the corrected gst_collection entry for this month.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-09-07"
       },
       "2025-11": {
         "yoy_pct": 0.1,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 0.1% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 0.1% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-12": {
         "yoy_pct": 7.4,
-        "source": "https://gstcouncil.gov.in/gst-revenue",
+        "source": "https://gstcouncil.gov.in/",
         "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 7.4% Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 7.4% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2026-01": {
         "yoy_pct": 6.2,
@@ -4636,6 +4845,14 @@
         "notes": "GST collection growth accelerated sharply to +15.4% YoY in July 2026 from +3.2% in June - the fastest monthly growth in 14 months.",
         "source_status": "fixed",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "yoy_pct": 14.8,
+        "source": "https://www.business-standard.com/economy/news/gst-collections-august-2026-gross-revenue-imports-refunds-126090100504_1.html",
+        "tier": 1,
+        "notes": "GST collection growth eased slightly to +14.8% YoY in August from July's +15.4%, still the second-fastest month in this dataset.",
+        "source_status": "fixed",
+        "last_verified": "2026-09-07"
       }
     },
     "ten_year_gsec_yield": {
@@ -4814,6 +5031,14 @@
         "notes": "T2: 10Y G-Sec yield rose through July 2026 (17bp to 6.85% by month-end) on higher crude prices, tight liquidity, and the postponed Bloomberg EM-index inclusion. Average over the ~Jun 22-Jul 22 window was 6.762% (range 6.675-6.864%); 6.76% used as the approximate July monthly average, consistent with prior months' methodology. Source needs confirmation against an exact FBIL/CCIL end-of-month benchmark.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "yield_pct": 6.76,
+        "source": "https://www.ceicdata.com/en/india/government-securities-yield-the-clearing-corporation-of-india-limited/ccil-government-securities-yield-benchmark-10-years",
+        "tier": 2,
+        "notes": "T2: CCIL benchmark 10Y G-Sec yield for August 2026 = 6.76%, roughly flat vs July's 6.76% (month-end had touched 6.85% in late July); well below the long-run ~7.58% average.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "t_bill_91d_yield": {
@@ -4843,131 +5068,131 @@
       },
       "2024-12": {
         "yield_pct": 6.5,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-01": {
         "yield_pct": 6.52,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-02": {
         "yield_pct": 6.52,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-03": {
         "yield_pct": 6.52,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-04": {
         "yield_pct": 6.12,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-05": {
         "yield_pct": 6,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-06": {
         "yield_pct": 5.9,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-07": {
         "yield_pct": 5.7,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-08": {
         "yield_pct": 5.72,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-09": {
         "yield_pct": 5.8,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-10": {
         "yield_pct": 5.8,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-11": {
         "yield_pct": 5.75,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-12": {
         "yield_pct": 5.9,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2026-01": {
         "yield_pct": 5.88,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2026-02": {
         "yield_pct": 5.85,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2026-03": {
         "yield_pct": 6.05,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2026-04": {
         "yield_pct": 5.2599,
@@ -4992,6 +5217,14 @@
         "notes": "RBI Treasury Bills Full Auction Result dated Jul 29, 2026 (settled Jul 30): 91-day T-Bill cut-off yield/YTM 5.340%. Rs 9,000 Cr notified.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "yield_pct": 5.264,
+        "source": "https://www.ceicdata.com/en/india/treasury-bills-auction-91-days/treasury-bills-auction-91-days-price-implicit-yield-at-cut-off",
+        "tier": 2,
+        "notes": "T2: 91-day T-Bill cut-off yield for August 2026 auctions = 5.264%.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "t_bill_364d_yield": {
@@ -5021,131 +5254,131 @@
       },
       "2024-12": {
         "yield_pct": 6.6,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-01": {
         "yield_pct": 6.65,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-02": {
         "yield_pct": 6.63,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-03": {
         "yield_pct": 6.63,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-04": {
         "yield_pct": 6.23,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-05": {
         "yield_pct": 6.1,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-06": {
         "yield_pct": 6,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-07": {
         "yield_pct": 5.85,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-08": {
         "yield_pct": 5.87,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-09": {
         "yield_pct": 5.92,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-10": {
         "yield_pct": 5.93,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-11": {
         "yield_pct": 5.88,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2025-12": {
         "yield_pct": 5.99,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2026-01": {
         "yield_pct": 5.98,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2026-02": {
         "yield_pct": 5.95,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2026-03": {
         "yield_pct": 6.12,
-        "source": "https://www.rbi.org.in/Scripts/BS_NSDLResponsePage.aspx",
+        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
         "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). Needs verification. Source needs confirmation.",
-        "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       },
       "2026-04": {
         "yield_pct": 5.6511,
@@ -5170,16 +5403,24 @@
         "notes": "364-day T-Bill cut-off yield for the Jul 29, 2026 auction (Rs 7,000 Cr notified) still not confirmed from available sources as of 2026-08-22.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-08-22"
+      },
+      "2026-08": {
+        "yield_pct": 5.737,
+        "source": "https://www.ceicdata.com/en/india/treasury-bills-auction-364-days/treasury-bills-auction-364-days-price-implicit-yield-at-cut-off",
+        "tier": 2,
+        "notes": "T2: 364-day T-Bill cut-off yield for August 2026 auctions = 5.737%.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "capex_outlay": {
       "2026-06": {
-        "capex_crore": null,
-        "source": "https://cga.nic.in/MonthlyReport/Published/6/2026-2027.aspx",
-        "tier": 1,
-        "notes": "Press reports put cumulative Apr-Jun FY27 capex at ~28% of the Rs 12.22 lakh crore target (~Rs 3.42 lakh Cr), which would imply a June monthly flow of roughly Rs 90,000-1,00,000 Cr versus May's Rs 61,172 Cr - consistent with reports of capex 'surging 66%' in June - but the exact CGA monthly report figure needed for a precise (non-estimated) monthly flow was not confirmed. Check cga.nic.in Monthly Accounts Review directly.",
+        "capex_crore": 91157,
+        "source": "https://www.business-standard.com/economy/news/govt-meets-37-of-fy27-capex-target-as-april-july-spending-jumps-30-126083101214_1.html",
+        "tier": 2,
+        "notes": "T2 estimated: CGA-reported cumulative capex reached ~28% of the Rs 12.22 lakh crore FY27 target by end-June (~Rs 3.42 lakh Cr) and ~37% by end-July (~Rs 4.51 lakh Cr). June flow = Rs 3.42L Cr (Q1 cumulative) minus Rs 2.51L Cr (May cumulative) = ~Rs 91,157 Cr. Derived from rounded percentages, so treat as an estimate (+/- ~15%) pending the exact CGA monthly figure.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-22"
+        "last_verified": "2026-09-07"
       },
       "2024-10": {
         "capex_crore": 51579,
@@ -5362,12 +5603,20 @@
         "cumulative_capex_crore": 251003
       },
       "2026-07": {
-        "capex_crore": null,
-        "source": "https://cga.nic.in/MonthlyReport/Published/7/2026-2027.aspx",
-        "tier": 1,
-        "notes": "CGA Monthly Accounts for July 2026 not yet confirmed as of 2026-08-22.",
+        "capex_crore": 109000,
+        "source": "https://www.business-standard.com/economy/news/govt-meets-37-of-fy27-capex-target-as-april-july-spending-jumps-30-126083101214_1.html",
+        "tier": 2,
+        "notes": "T2 estimated: July flow = Rs 4.51L Cr (Apr-Jul cumulative, ~37% of target) minus ~Rs 3.42L Cr (Apr-Jun cumulative, ~28% of target) = ~Rs 1.09L Cr. Same caveat as June: derived from rounded percentages, treat as an estimate pending the exact CGA monthly figure.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-22"
+        "last_verified": "2026-09-07"
+      },
+      "2026-08": {
+        "capex_crore": null,
+        "source": "https://cga.nic.in/MonthlyReport/Published/8/2026-2027.aspx",
+        "tier": 1,
+        "notes": "CGA Monthly Accounts for August 2026 not yet released/confirmed as of 2026-09-07.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "usd_inr": {
@@ -5568,6 +5817,15 @@
         "notes": "T2: RBI Reference Rate for USD/INR on Jul 31, 2026 = 95.371 (secondary-sourced; consistent with adjacent Aug 3-6, 2026 rates of 95.12-95.35 seen directly on MSEI's reference-rate archive).",
         "source_status": "needs_confirmation",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "inr_per_usd": 95.38,
+        "data_date": "28/08/2026",
+        "source": "https://www.rbi.org.in/Scripts/ReferenceRateArchive.aspx",
+        "tier": 2,
+        "notes": "T2: USD/INR reference rate for Aug 28, 2026 (last business day of August; Aug 31 was a Sunday) = 95.38, per Federal Reserve H.10 cross-reference - essentially flat versus July 31's 95.37.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "gbp_inr": {
@@ -5768,17 +6026,26 @@
         "notes": "T2: RBI Reference Rate for GBP/INR on Jul 31, 2026 = 128.278 (secondary-sourced; consistent with adjacent Aug 3-6, 2026 rates of 127.99-128.26 seen directly on MSEI's reference-rate archive).",
         "source_status": "needs_confirmation",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "inr_per_gbp": 128.21,
+        "data_date": "31/08/2026",
+        "source": "https://www.rbi.org.in/Scripts/ReferenceRateArchive.aspx",
+        "tier": 2,
+        "notes": "T2: GBP/INR closing rate for August 2026 (month-end) = 128.21, essentially flat versus July's 128.28 after an intra-month spike above 131 around Aug 24.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "current_account_deficit_pct_gdp": {
       "2026-06": {
-        "cad_pct_gdp": null,
+        "cad_pct_gdp": 0.5,
         "quarter": "Q1 FY2026-27 (Apr-Jun 2026)",
-        "source": "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics#!4_5",
-        "tier": 2,
-        "notes": "Source: RBI DBIE Balance of Payments. Q1 FY2026-27 CAD not yet released as of 2026-07-28; typically released ~end-September.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-07-28"
+        "source": "https://www.business-standard.com/economy/news/india-s-current-account-deficit-widens-to-4-2-billion-in-q1-rbi-data-126090101205_1.html",
+        "tier": 1,
+        "notes": "CORRECTED (was null): RBI released Q1 FY2026-27 BoP data Sep 1, 2026: current account deficit widened to USD 4.2bn (0.5% of GDP) from USD 3.4bn (0.4%) a year earlier. Merchandise trade deficit widened to USD 86.1bn (from USD 68.9bn); services receipts and remittances both rose; FPI recorded a net outflow of USD 9.6bn for the quarter.",
+        "source_status": "fixed",
+        "last_verified": "2026-09-07"
       },
       "2024-10": {
         "cad_pct_gdp": 2.5,
@@ -5943,31 +6210,40 @@
         "last_verified": "2026-07-07"
       },
       "2026-04": {
-        "cad_pct_gdp": null,
+        "cad_pct_gdp": 0.5,
         "quarter": "Q1 FY2026-27 (Apr-Jun 2026)",
-        "source": "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics#!4_5",
-        "tier": 2,
-        "notes": "Source: RBI DBIE Balance of Payments. T2: RBI Balance of Payments quarterly data. CAD Q1 FY2026-27 (Apr-Jun 2026): ~None% of GDP (approximate; positive=deficit). Source needs confirmation. Q1 FY2026-27 BoP/CAD was not released as of 2026-07-07.",
+        "source": "https://www.business-standard.com/economy/news/india-s-current-account-deficit-widens-to-4-2-billion-in-q1-rbi-data-126090101205_1.html",
+        "tier": 1,
+        "notes": "CORRECTED (was null): RBI released Q1 FY2026-27 BoP data Sep 1, 2026: current account deficit widened to USD 4.2bn (0.5% of GDP) from USD 3.4bn (0.4%) a year earlier. Merchandise trade deficit widened to USD 86.1bn (from USD 68.9bn); services receipts and remittances both rose; FPI recorded a net outflow of USD 9.6bn for the quarter.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-09-07"
       },
       "2026-05": {
-        "cad_pct_gdp": null,
+        "cad_pct_gdp": 0.5,
         "quarter": "Q1 FY2026-27 (Apr-Jun 2026)",
-        "source": "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics#!4_5",
-        "tier": 2,
-        "notes": "Source: RBI DBIE Balance of Payments. T2: RBI Balance of Payments quarterly data. CAD Q1 FY2026-27 (Apr-Jun 2026): ~None% of GDP (approximate; positive=deficit). Source needs confirmation. Q1 FY2026-27 BoP/CAD was not released as of 2026-07-07.",
+        "source": "https://www.business-standard.com/economy/news/india-s-current-account-deficit-widens-to-4-2-billion-in-q1-rbi-data-126090101205_1.html",
+        "tier": 1,
+        "notes": "CORRECTED (was null): RBI released Q1 FY2026-27 BoP data Sep 1, 2026: current account deficit widened to USD 4.2bn (0.5% of GDP) from USD 3.4bn (0.4%) a year earlier. Merchandise trade deficit widened to USD 86.1bn (from USD 68.9bn); services receipts and remittances both rose; FPI recorded a net outflow of USD 9.6bn for the quarter.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-09-07"
       },
       "2026-07": {
         "cad_pct_gdp": null,
-        "quarter": "Q1 FY2026-27 (Apr-Jun 2026)",
+        "quarter": "Q2 FY2026-27 (Jul-Sep 2026)",
         "source": "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics#!4_5",
         "tier": 2,
-        "notes": "Official Q1 FY2026-27 CAD/BoP data not yet released as of 2026-08-22 (typically released ~end-September).",
+        "notes": "July falls in Q2 FY2026-27 - not yet released. Q1 FY27 (Apr-Jun 2026) was released Sep 1, 2026 - see the April/May/June entries.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-08-22"
+        "last_verified": "2026-09-07"
+      },
+      "2026-08": {
+        "cad_pct_gdp": null,
+        "quarter": "Q2 FY2026-27 (Jul-Sep 2026)",
+        "source": "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics#!4_5",
+        "tier": 2,
+        "notes": "August falls in Q2 FY2026-27 - not yet released as of 2026-09-07.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "redemption_equity_hybrid": {
@@ -6146,6 +6422,14 @@
         "notes": "AMFI portal Excel (Sheet 'MCR'): Row 'Sub Total - II' (Equity, Rs 44,824.86 Cr) + Row 'Sub Total - III' (Hybrid, Rs 35,135.22 Cr), column 'Repurchase/Redemption for the month of July 2026'. Sum = Rs 79,960 Cr.",
         "source_status": "fixed",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "value_crore": null,
+        "source": "https://www.amfiindia.com/articles/mutual-fund",
+        "tier": 1,
+        "notes": "AMFI's August 2026 monthly data not yet released as of 2026-09-07; typically published around the 8th-10th of the following month.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "pv_vehicle_sales_yoy": {
@@ -6324,6 +6608,14 @@
         "notes": "Calculated: Jul 2026 (4,57,810) / Jul 2025 (3,40,772) - 1 = +34.3%. SIAM states +34.3% YoY.",
         "source_status": "fixed",
         "last_verified": "2026-08-22"
+      },
+      "2026-08": {
+        "yoy_pct": null,
+        "source": "https://www.siam.in/news-&-updates/press-releases",
+        "tier": 1,
+        "notes": "Depends on SIAM's August release, not yet published as of 2026-09-07.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     },
     "nifty50_pe": {
@@ -6502,6 +6794,14 @@
         "notes": "T2: Monthly average NIFTY 50 P/E for July 2026 = 20.70 (craytheon.com Nifty PE Ratio Monthly History table). Unlike Oct 2024-Jun 2026 (self-computed mean of daily closes from an internal workbook), this month's average was taken from a third-party aggregator because the underlying daily series wasn't available; methodology (arithmetic mean of daily closes) is consistent with prior months. Single-day snapshots for July ranged 20.46-20.78 depending on date.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-08-12"
+      },
+      "2026-08": {
+        "pe_ratio": 20.42,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2: Monthly average NIFTY 50 P/E for August 2026 = 20.42 (craytheon.com Nifty PE Ratio Monthly History), ~12.6% below the 10-year average - still screening as fairly valued to slightly cheap.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-09-07"
       }
     }
   },
