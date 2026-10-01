@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "India Macroeconomic Dashboard - 36 series across 35 indicators, monthly data Oct 2024 to present",
-    "last_updated": "2026-09-07",
+    "last_updated": "2026-10-01",
     "story_schema": "Each month entry may contain a 'story' object with keys: growth_demand (sentence 1), inflation_currency_external (sentence 2), policy_liquidity (sentence 3)"
   },
   "indicators": {
@@ -163,12 +163,20 @@
         "last_verified": "2026-08-12"
       },
       "2026-08": {
-        "value_crore": null,
+        "value_crore": 32297,
         "source": "https://www.amfiindia.com/articles/mutual-fund",
         "tier": 1,
-        "notes": "AMFI's August 2026 monthly data not yet released as of 2026-09-07; typically published around the 8th-10th of the following month.",
+        "notes": "AMFI official statement: SIP contributions in August 2026 = Rs 32,297 Cr, an all-time high (+1.1% MoM, +14% YoY). Contributing SIP accounts crossed 10 crore; 10.75 crore active accounts with +13 lakh net new registrations in the month.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "value_crore": null,
+        "source": null,
+        "tier": null,
+        "notes": "AMFI's September 2026 monthly data not yet released as of 2026-10-01; typically published around the 8th-10th of the following month.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
       }
     },
     "mutual_fund_aum": {
@@ -349,12 +357,20 @@
         "last_verified": "2026-08-12"
       },
       "2026-08": {
-        "value_lakh_crore": null,
-        "source": "https://www.amfiindia.com/articles/mutual-fund",
+        "value_lakh_crore": 87.08,
+        "source": "https://portal.amfiindia.com/spages/amaug2026repo.xls",
         "tier": 1,
-        "notes": "AMFI's August 2026 monthly data not yet released as of 2026-09-07; typically published around the 8th-10th of the following month.",
+        "notes": "AMFI portal Excel (Sheet 'MCR'): Row 'Grand Total', column 'Net Assets Under Management as on August 31, 2026'. Raw value Rs 87,07,887.74 Cr = 87.08 lakh crore. Industry recorded Rs 41,353 Cr net inflow in August (equity inflows ~19% higher than July's Rs 24,697 Cr).",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "value_lakh_crore": null,
+        "source": null,
+        "tier": null,
+        "notes": "AMFI's September 2026 monthly data not yet released as of 2026-10-01.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
       }
     },
     "rbi_repo_rate": {
@@ -547,6 +563,16 @@
         "notes": "Unchanged since the Aug 5, 2026 MPC hold; next MPC meeting is Oct 5-7, 2026.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "value_pct": 5.25,
+        "change_bps": 0,
+        "effective_date": "2026-08-05",
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63261",
+        "tier": 1,
+        "notes": "Unchanged since the Aug 5, 2026 MPC hold; no MPC meeting in September. Next meeting is Oct 5-7, 2026.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "system_liquidity": {
@@ -733,6 +759,14 @@
         "notes": "T2: Average systemic liquidity surplus in August 2026 = Rs 1.49 lakh crore, up from Rs 1.02 lakh crore in July; surplus rose to a 4-month high of ~Rs 5.05 lakh crore as of Aug 30.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "value_lakh_crore": null,
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63261",
+        "tier": 2,
+        "notes": "September 2026 average not yet confirmed from available sources as of 2026-10-01; next RBI Governor Statement (Oct 5-7, 2026 MPC) should give the September and early-October liquidity picture.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "bank_credit_growth_yoy": {
@@ -935,13 +969,21 @@
         "last_verified": "2026-09-07"
       },
       "2026-08": {
-        "value_pct": null,
-        "release_date": null,
-        "source": "https://rbi.org.in/Scripts/Data_Sectoral_Deployment.aspx",
+        "value_pct": 18.8,
+        "release_date": "2026-09-30",
+        "source": "https://www.thehansindia.com/business/market-compass/bank-credit-toindustry-up-182-rbi-data-1127464",
         "tier": 1,
-        "notes": "Not yet released as of 2026-09-07. Following the ~1-month lag (July data was released Aug 31), the August Sectoral Deployment report is expected around Sep 29-30, 2026.",
+        "notes": "RBI Sectoral Deployment report released Sep 30, 2026: non-food bank credit grew 18.8% YoY as on fortnight ended Aug 31, 2026 (vs 10.2% a year ago). Industry +18.2%, services +24.3%, agriculture +17.2%.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "value_pct": null,
+        "source": null,
+        "tier": null,
+        "notes": "Not yet released as of 2026-10-01. Following the ~1-month lag (August data was released Sep 30), the September Sectoral Deployment report is expected around Oct 29-31, 2026.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
       }
     },
     "bank_deposit_growth_yoy": {
@@ -1149,14 +1191,22 @@
         "last_verified": "2026-08-12"
       },
       "2026-08": {
-        "value_pct": 14.58,
-        "data_date": "2026-08-15",
-        "source": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63471",
-        "tier": 2,
-        "notes": "T2 self-computed: PRID 63471 'Scheduled Banks Statement of Position as on August 15, 2026': SCB deposits Rs 26,931,345.54 Cr vs SCB deposits Rs 23,504,101 Cr as on Aug 22, 2025 (from cd_ratio 2025-08 entry, PRID 61163) -> YoY +14.58%. A sharp jump from July's 12.69% - deposits catching up to credit growth for the first time in months.",
+        "value_pct": 18.58,
+        "data_date": "2026-08-31",
+        "source": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63590",
+        "tier": 1,
+        "notes": "CORRECTED/refined: PRID 63590 'Scheduled Banks Statement of Position as on August 31, 2026': SCB deposits Rs 27,871,529.68 Cr vs SCB deposits Rs 23,504,101 Cr as on Aug 22, 2025 (PRID 61163) -> YoY +18.58%, a sharp jump driven partly by a late-month FCNR(B) deposit rush (banks reportedly raised ~$60bn in 10 days around end-Aug/early-Sep via swap-linked FX deposits).",
         "source_type": "RBI SCB",
         "source_status": "fixed",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "value_pct": null,
+        "source": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63590",
+        "tier": 2,
+        "notes": "No RBI Scheduled Banks Statement of Position for a September 2026 date was confirmed this round (Aug 31 data, PRID 63590, was the latest found - see the August entry). Left null rather than reuse a stale fortnight.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "cd_ratio": {
@@ -1381,14 +1431,23 @@
         "last_verified": "2026-08-12"
       },
       "2026-08": {
-        "value_pct": 81.72,
-        "data_date": "2026-08-15",
+        "value_pct": 80.32,
+        "data_date": "2026-08-31",
         "source_type": "RBI SCB",
-        "source": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63471",
+        "source": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63590",
         "tier": 1,
-        "notes": "PRID 63471 (Statement of Position as on Aug 15, 2026): SCB Credit Rs 22,007,763.94 Cr / SCB Deposits Rs 26,931,345.54 Cr x 100 = 81.72% - eased from July's 82.68% as deposit growth caught up.",
+        "notes": "PRID 63590 (Statement of Position as on Aug 31, 2026): SCB Credit Rs 22,387,566.99 Cr / SCB Deposits Rs 27,871,529.68 Cr x 100 = 80.32% - eased sharply from 81.72% (Aug 15) on the FCNR(B)-driven deposit surge.",
         "source_status": "fixed",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "value_pct": null,
+        "source_type": "RBI SCB",
+        "source": "https://www.rbi.org.in/scripts/BS_PressReleaseDisplay.aspx?prid=63590",
+        "tier": 1,
+        "notes": "No RBI Scheduled Banks Statement of Position for a September 2026 date was confirmed this round - see the August entry (PRID 63590) for the latest available. Left null rather than reuse a stale fortnight.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "fii_net_flow": {
@@ -1582,6 +1641,15 @@
         "notes": "FII net BUY = Rs 29,631 Cr in August 2026 - the largest monthly inflow in 23 months, and the second straight month of buying after four months of selling. July + August combined: Rs 49,831 Cr net inflow, the first two-month run of FII buying in 2026. Same source-vintage caveat as prior months applies (this series occasionally diverges from the dashboard's earlier monthly figures).",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "value_inr_cr": -18531,
+        "period_start_date": "01 Sep 2026",
+        "source": "https://www.multibagg.ai/market-pulse/articles/dii-net-buying-fii-selling-cmu3txegk00082nm5utw40hu5",
+        "tier": 2,
+        "notes": "FII net sell = Rs -18,531 Cr in September 2026 - selling resumed after August's rare positive month (+Rs 29,631 Cr). Same source-vintage caveat as prior months applies to this series.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "dii_net_flow": {
@@ -1775,6 +1843,15 @@
         "notes": "DII net buy = Rs 48,347 Cr in August 2026, highest in 3 months; mutual funds alone contributed Rs 35,622 Cr of that.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "value_inr_cr": 52617,
+        "period_start_date": "01 Sep 2026",
+        "source": "https://www.multibagg.ai/market-pulse/articles/dii-net-buying-fii-selling-cmu3txegk00082nm5utw40hu5",
+        "tier": 2,
+        "notes": "DII net buy = Rs 52,617 Cr in September 2026, comfortably absorbing FII selling.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "forex_reserves": {
@@ -1984,6 +2061,15 @@
         "notes": "RBI Weekly Statistical Supplement, Total Reserves as on 2026-08-28 = USD 740.8 billion - a record high, the 9th consecutive weekly rise, adding ~$75bn over that stretch. FCA $600.67bn (+$9.34bn), Gold $116.41bn (+$2.19bn).",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "value_usd_bn": 765.9,
+        "week_ended": "2026-09-18",
+        "source": "https://www.tribuneindia.com/news/currency-assets/indias-forex-reserves-fall-by-usd-14-88-billion-to-usd-765-90-billion-in-week-ended-september-18-rbi",
+        "tier": 1,
+        "notes": "RBI Weekly Statistical Supplement, Total Reserves as on 2026-09-18 = USD 765.90 billion (the week-ended-Sep-25 release is due Oct 2, 2026 - not out yet). An eventful month: reserves hit a lifetime-high $785.71bn in the week ended Sep 4 (a record +$44.9bn single-week jump), then fell -$14.88bn (sharpest weekly fall in ~2 years) by Sep 18 as RBI sold dollars and ran sell-buy swaps to manage the rupee.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "manufacturing_pmi": {
@@ -2170,6 +2256,14 @@
         "notes": "S&P Global (HSBC-sponsored) India Manufacturing PMI final reading for August 2026 = 52.8, down from July's 53.5 - a 5-year low (weakest since Aug 2021). New orders and output grew at their slowest pace in 5 years; manufacturing employment contracted for the first time in 2.5 years.",
         "source_status": "fixed",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "pmi_value": 55.1,
+        "source": "https://www.business-standard.com/amp/economy/news/india-flash-pmi-september-manufacturing-services-output-orders-126092300359_1.html",
+        "tier": 1,
+        "notes": "S&P Global (HSBC-sponsored) India Manufacturing PMI for September 2026 = 55.1, up from August's 52.8 - a 7-month high. New orders grew at the fastest pace in 7 months (stronger electronics, food, pharma and textile demand); export orders also accelerated; factory output grew at the sharpest rate in 4 months.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       }
     },
     "services_pmi": {
@@ -2356,6 +2450,14 @@
         "notes": "S&P Global (HSBC-sponsored) India Services PMI for August 2026 = 54.1, up from July's 53.3 but still near a 4-year low. New business grew at its second-slowest pace in over 4 years; employment grew at its fastest pace in 15 months.",
         "source_status": "fixed",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "pmi_value": null,
+        "source": "https://www.sahi.com/news/hsbc-india-services-pmi-climbs-to-55-8-in-september-from-54-1-previous",
+        "tier": 1,
+        "notes": "Only the FLASH/preliminary estimate (55.8, released Sep 23, data collected Sep 7-18) is out as of 2026-10-01; the final reading is due Oct 6, 2026. Left null rather than use the flash figure, consistent with how this series is sourced in other months (final reading only).",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "pv_vehicle_sales": {
@@ -2536,12 +2638,20 @@
         "last_verified": "2026-08-22"
       },
       "2026-08": {
-        "units": null,
-        "source": "https://www.siam.in/news-&-updates/press-releases",
+        "units": 439309,
+        "source": "https://www.outlookbusiness.com/news/august-domestic-passenger-vehicle-dispatches-rise-365-yoy-to-439309-units-siam",
         "tier": 1,
-        "notes": "SIAM's August 2026 monthly release not yet published as of 2026-09-07.",
+        "notes": "SIAM: PV domestic sales/dispatch = 4,39,309 units in August 2026, vs 3,21,901 in August 2025 - highest-ever August for PV, 3W and 2W segments. 2W +10.5% to 20,34,698 units; 3W +22.8% to 93,764 units. Total production (PV+3W+2W+quadricycle) crossed 31.57 lakh units.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "units": null,
+        "source": null,
+        "tier": null,
+        "notes": "SIAM's September 2026 monthly release not yet published as of 2026-10-01.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
       }
     },
     "vehicle_sales_yoy": {
@@ -2738,6 +2848,15 @@
         "notes": "FADA August 2026 vehicle retail data: total retail 24,23,201 units, +17.51% YoY - India's biggest-ever August, though down 6.48% from July (monsoon lull, festival purchases pushed into September). PVs +16.14% to 4.02 lakh; 2-wheelers +19.69% to 17.15 lakh; CNG+hybrid+EV combined (41.95% of PV retail) edged past petrol/ethanol (40.85%) for the first time.",
         "source_status": "fixed",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "yoy_pct": null,
+        "units": null,
+        "source": "https://fada.in/images/press-release/",
+        "tier": 1,
+        "notes": "FADA's September 2026 release not yet published as of 2026-10-01 (typically published in early October for the previous month). Dealer sentiment survey for Sep-Oct-Nov was positive (81.6% expect growth) but that is a forward outlook, not actual retail data.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "electricity_consumption": {
@@ -2924,6 +3043,14 @@
         "notes": "All-India power consumption August 2026 = 169.01 BU (+12.85% YoY), with peak demand hitting a record 258.27 GW (+12.4% YoY) - the warmest August since 1901. Coal stocks at several thermal plants ran critically low by month-end.",
         "source_status": "fixed",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "consumption_bu": null,
+        "source": null,
+        "tier": null,
+        "notes": "A specific total-BU figure for September 2026 could not be confirmed this round (only peak-demand GW figures were found: a record 269 GW on Sep 10); left null rather than estimated.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "steel_production_yoy": {
@@ -3133,6 +3260,14 @@
         "notes": "T2: Finished steel production Aug 2026 = 13.5 MT, +0.3% YoY (further slowing from July's +1.4%). Crude steel output actually dipped -0.1% YoY to 14.1 MT. April-August cumulative: crude steel +1.8% to 70.3 MT, finished steel +3.8% to 68.1 MT.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "yoy_pct": null,
+        "source": null,
+        "tier": null,
+        "notes": "A September-specific finished-steel production figure could not be confirmed this round (only August data was found, which itself showed conflicting figures across sources); left null.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "fuel_consumption": {
@@ -3342,6 +3477,15 @@
         "notes": "T2 preliminary PPAC data: petrol Aug 2026 = 3.82 million tonnes (+7.88% YoY vs 3.54 MT Aug-25); diesel = 7.00 million tonnes (+6.46% YoY vs 6.58 MT Aug-25). LPG consumption fell 16% as more users shifted to piped gas.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "petrol_tmt": null,
+        "diesel_tmt": null,
+        "source": "https://ppac.gov.in/",
+        "tier": 2,
+        "notes": "A specific September 2026 PPAC petrol/diesel consumption figure could not be confirmed this round; left null rather than estimated.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "cpi_inflation": {
@@ -3522,12 +3666,20 @@
         "last_verified": "2026-08-22"
       },
       "2026-08": {
+        "cpi_yoy_pct": 4.82,
+        "source": "https://www.cnbc.com/2026/09/14/india-inflation-august-iran-war-energy-el-nino.html",
+        "tier": 1,
+        "notes": "MoSPI CPI release for August 2026: All-India CPI YoY inflation = 4.82% - highest since Dec 2024, 10th straight month of increase. Rural 5.23%, Urban 4.31%.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
         "cpi_yoy_pct": null,
         "source": null,
         "tier": null,
-        "notes": "MoSPI's August CPI release is due ~Sep 12, 2026 (July was released Aug 12) - not yet out.",
+        "notes": "MoSPI's September CPI release is due ~Oct 13, 2026 (August was released Sep 14) - not yet out.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
       }
     },
     "core_inflation": {
@@ -3708,12 +3860,20 @@
         "last_verified": "2026-09-07"
       },
       "2026-08": {
+        "core_cpi_yoy_pct": 4.31,
+        "source": "https://www.businesstoday.in/latest/economy/story/india-inflation-hits-4-8-as-price-pressures-broaden-beyond-food-and-fuel-report-558499-2026-09-29",
+        "tier": 2,
+        "notes": "T2: Analyst-calculated core CPI (ex food & fuel) for August 2026 = 4.31%, up from ~3.9% in July - price pressure broadening beyond food/fuel into the core basket. Not an official MoSPI series.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
         "core_cpi_yoy_pct": null,
         "source": null,
         "tier": null,
-        "notes": "Depends on the August CPI release, not yet out.",
+        "notes": "Depends on the September CPI release, not yet out.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
       }
     },
     "wpi_inflation": {
@@ -3894,12 +4054,20 @@
         "last_verified": "2026-08-22"
       },
       "2026-08": {
-        "wpi_yoy_pct": null,
-        "source": "https://eaindustry.nic.in/",
+        "wpi_yoy_pct": 9.92,
+        "source": "https://www.thehansindia.com/business/indias-wholesale-price-index-inflation-stands-at-992-pc-for-august-govt-1121766",
         "tier": 1,
-        "notes": "Office of Economic Adviser WPI release for August 2026 is due ~Sep 14, 2026 (July was released Aug 14) - not yet out as of 2026-09-07.",
+        "notes": "Office of Economic Adviser WPI release for August 2026: All-India WPI YoY inflation = 9.92% (second-highest in the 2022-23-base series), up from 9.78% in July. Fuel & Power 22.93% (from 20.05%), Food 7.05% (from 6.65%), Manufactured Products 8.37% (from 8.29%).",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "wpi_yoy_pct": null,
+        "source": null,
+        "tier": null,
+        "notes": "Office of Economic Adviser WPI release for September 2026 is due ~Oct 14, 2026 - not yet out.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
       }
     },
     "food_inflation": {
@@ -4080,12 +4248,20 @@
         "last_verified": "2026-08-22"
       },
       "2026-08": {
+        "food_cpi_yoy_pct": 5.95,
+        "source": "https://www.finnovate.in/learn/blog/india-cpi-inflation-august-2026",
+        "tier": 1,
+        "notes": "MoSPI CFPI (Consumer Food Price Index) for August 2026 = 5.95% YoY, up from 5.52% in July. Rural food inflation 6.13%, Urban 5.64%.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
         "food_cpi_yoy_pct": null,
         "source": null,
         "tier": null,
-        "notes": "Depends on the August CPI/CFPI release, not yet out.",
+        "notes": "Depends on the September CPI/CFPI release, not yet out.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
       }
     },
     "gdp_growth_yoy": {
@@ -4292,9 +4468,18 @@
         "quarter": "Q2:2026-27 (Jul-Sep 2026)",
         "source": "https://mospi.gov.in/publication/national-accounts-statistics",
         "tier": 2,
-        "notes": "August falls in Q2 FY2026-27 - not yet released as of 2026-09-07 (due ~late Nov 2026).",
+        "notes": "August falls in Q2 FY2026-27 - not yet released as of 2026-10-01 (due ~late Nov 2026).",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "gdp_growth_pct": null,
+        "quarter": "Q2:2026-27 (Jul-Sep 2026)",
+        "source": "https://mospi.gov.in/publication/national-accounts-statistics",
+        "tier": 2,
+        "notes": "September completes Q2 FY2026-27 - not yet released as of 2026-10-01 (due ~late Nov 2026).",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "unemployment_rate": {
@@ -4467,20 +4652,28 @@
         "last_verified": "2026-07-07"
       },
       "2026-07": {
-        "unemployment_pct": 4.9,
-        "source": "https://tradingeconomics.com/india/unemployment-rate",
-        "tier": 2,
-        "notes": "T2: CMIE/MOSPI-PLFS-sourced (via Trading Economics): unemployment rate eased sharply to 4.9% in July 2026, down from 5.5% in June.",
+        "unemployment_pct": 5.1,
+        "source": "https://www.thebridgechronicle.com/news/nation/india-unemployment-rate-5-1-july-2026-labour-participation",
+        "tier": 1,
+        "notes": "CORRECTED (was 4.9%): NSO/PLFS data shows July 2026 unemployment = 5.1% (four-month low), beating a 5.4% forecast, as labour force participation rose. Rural unemployment fell sharply to 4.5% from 5%, offsetting a small urban uptick to 6.7%. The earlier 4.9% figure does not match any primary source found on re-check.",
         "source_status": "fixed",
-        "last_verified": "2026-08-12"
+        "last_verified": "2026-10-01"
       },
       "2026-08": {
-        "unemployment_pct": null,
+        "unemployment_pct": 5.0,
         "source": "https://tradingeconomics.com/india/unemployment-rate",
         "tier": 2,
-        "notes": "August 2026 reading not yet confirmed from available sources as of 2026-09-07.",
+        "notes": "NSO/PLFS-sourced (via Trading Economics): unemployment eased to 5.0% in August 2026 from 5.1% in July, beating a 5.2% forecast.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "unemployment_pct": null,
+        "source": null,
+        "tier": null,
+        "notes": "September 2026 reading not yet confirmed from available sources as of 2026-10-01.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "gst_collection": {
@@ -4526,11 +4719,11 @@
       },
       "2025-02": {
         "collection_cr": 183646,
-        "source": "https://gstcouncil.gov.in/",
+        "source": "https://blog.saginfotech.com/gst-revenue-collection-feb-2025",
         "tier": 1,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "notes": "YoY corrected (was 9.9%): official figure is +9.1% YoY. Collection value (Rs 1,83,646 Cr) was already correct.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2025-03": {
         "collection_cr": 196141,
@@ -4549,12 +4742,12 @@
         "last_verified": "2026-09-07"
       },
       "2025-05": {
-        "collection_cr": 200929,
-        "source": "https://gstcouncil.gov.in/",
+        "collection_cr": 201050,
+        "source": "https://www.tribuneindia.com/news/business/gst-collections-in-may-2025-up-16-4-to-rs-2-01-lakh-crore",
         "tier": 1,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "notes": "YoY corrected (was 7.3%, a large miss): official figure is +16.4% YoY vs May 2024 (Rs 1,72,739 Cr). Collection value refined slightly (200,929 -> 201,050) to match the precise official figure.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2025-06": {
         "collection_cr": 186873,
@@ -4565,28 +4758,28 @@
         "last_verified": "2026-09-07"
       },
       "2025-07": {
-        "collection_cr": 187940,
-        "source": "https://gstcouncil.gov.in/",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "collection_cr": 195735,
+        "source": "https://blog.tatanexarc.com/msme/gst-collection-july-2025-india/",
+        "tier": 1,
+        "notes": "CORRECTED (was Rs 1,87,940 Cr / +9.8%): official July 2025 gross GST collection = Rs 1,95,735 Cr, +7.5% YoY.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2025-08": {
-        "collection_cr": 183088,
-        "source": "https://gstcouncil.gov.in/",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "collection_cr": 186315,
+        "source": "https://www.tribuneindia.com/news/business/gst-collections-rise-6-5-to-rs-1-86-lakh-crore-in-august",
+        "tier": 1,
+        "notes": "CORRECTED (was Rs 1,83,088 Cr / +5.4%): official August 2025 gross GST collection = Rs 1,86,315 Cr, +6.5% YoY vs Rs 1,74,000 Cr (approx) in Aug 2024.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2025-09": {
-        "collection_cr": 198657,
-        "source": "https://gstcouncil.gov.in/",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "collection_cr": 189017,
+        "source": "https://www.tribuneindia.com/news/business/gst-collections-rise-9-1-to-rs-1-89-lakh-crore-in-september-marking-2nd-consecutive-growth",
+        "tier": 1,
+        "notes": "CORRECTED (was Rs 1,98,657 Cr / +7.9%): official September 2025 gross GST collection = Rs 1,89,017 Cr, +9.1% YoY vs Rs 1,73,240 Cr in Sep 2024.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2025-10": {
         "collection_cr": 195936,
@@ -4597,20 +4790,20 @@
         "last_verified": "2026-09-07"
       },
       "2025-11": {
-        "collection_cr": 182270,
-        "source": "https://gstcouncil.gov.in/",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "collection_cr": 170276,
+        "source": "https://www.businesstoday.in/latest/economy/story/gross-gst-collection-up-0-7-percent-to-rs-1-70-lakh-crore-in-november-504447-2025-12-01",
+        "tier": 1,
+        "notes": "CORRECTED (was Rs 1,82,270 Cr / +0.1%): official November 2025 gross GST collection = Rs 1,70,276 Cr, +0.7% YoY vs Rs 1,69,016 Cr in Nov 2024 - the first full month reflecting the GST rate rationalization from late Sep 2025.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2025-12": {
-        "collection_cr": 194694,
-        "source": "https://gstcouncil.gov.in/",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. T2: MoF monthly GST collection. Needs verification from official PIB press release. NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "collection_cr": 174550,
+        "source": "https://themunim.com/blog/gst-collection-december-2025/",
+        "tier": 1,
+        "notes": "CORRECTED (was Rs 1,94,694 Cr / +7.4%, a large miss): official December 2025 gross GST collection = Rs 1,74,550 Cr, +6.1% YoY. Net collection Rs 1,45,570 Cr, +2.2% YoY.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2026-01": {
         "collection_cr": 193384,
@@ -4667,6 +4860,14 @@
         "notes": "Gross GST collection August 2026 = Rs 1,99,853 Cr (+14.8% YoY). Domestic gross Rs 1.37L Cr (+9%), import-based gross Rs 62,604 Cr (+29%). Refunds jumped 68% YoY to Rs 31,795 Cr; net collection Rs 1.68L Cr (+8.3%). Apr-Aug FY27 cumulative gross: Rs 10.43 lakh Cr (+11%).",
         "source_status": "fixed",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "collection_cr": 204000,
+        "source": "https://www.thehansindia.com/business/gross-gst-collection-rises-147-pc-to-almost-rs-204-lakh-crore-in-september-1127590",
+        "tier": 1,
+        "notes": "Gross GST collection September 2026 ~= Rs 2,04,000 Cr (+14.7% YoY vs Rs 1,77,000 Cr in Sep 2025) - third straight month above Rs 2 lakh Cr. Net collection (after refunds) Rs 1.77 lakh Cr, +18.1% YoY. H1 FY27 cumulative gross: Rs 12.46 lakh Cr (+11.6% YoY).",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "gst_yoy_change": {
@@ -4711,12 +4912,12 @@
         "last_verified": "2026-09-07"
       },
       "2025-02": {
-        "yoy_pct": 9.9,
-        "source": "https://gstcouncil.gov.in/",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 9.9% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yoy_pct": 9.1,
+        "source": "https://blog.saginfotech.com/gst-revenue-collection-feb-2025",
+        "tier": 1,
+        "notes": "YoY corrected (was 9.9%): official figure is +9.1% YoY. Collection value (Rs 1,83,646 Cr) was already correct.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2025-03": {
         "yoy_pct": 9.9,
@@ -4735,12 +4936,12 @@
         "last_verified": "2026-09-07"
       },
       "2025-05": {
-        "yoy_pct": 7.3,
-        "source": "https://gstcouncil.gov.in/",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 7.3% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yoy_pct": 16.4,
+        "source": "https://www.tribuneindia.com/news/business/gst-collections-in-may-2025-up-16-4-to-rs-2-01-lakh-crore",
+        "tier": 1,
+        "notes": "YoY corrected (was 7.3%, a large miss): official figure is +16.4% YoY vs May 2024 (Rs 1,72,739 Cr). Collection value refined slightly (200,929 -> 201,050) to match the precise official figure.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2025-06": {
         "yoy_pct": 6.1,
@@ -4751,28 +4952,28 @@
         "last_verified": "2026-09-07"
       },
       "2025-07": {
-        "yoy_pct": 9.8,
-        "source": "https://gstcouncil.gov.in/",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 9.8% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yoy_pct": 7.5,
+        "source": "https://blog.tatanexarc.com/msme/gst-collection-july-2025-india/",
+        "tier": 1,
+        "notes": "CORRECTED (was Rs 1,87,940 Cr / +9.8%): official July 2025 gross GST collection = Rs 1,95,735 Cr, +7.5% YoY.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2025-08": {
-        "yoy_pct": 5.4,
-        "source": "https://gstcouncil.gov.in/",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 5.4% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yoy_pct": 6.5,
+        "source": "https://www.tribuneindia.com/news/business/gst-collections-rise-6-5-to-rs-1-86-lakh-crore-in-august",
+        "tier": 1,
+        "notes": "CORRECTED (was Rs 1,83,088 Cr / +5.4%): official August 2025 gross GST collection = Rs 1,86,315 Cr, +6.5% YoY vs Rs 1,74,000 Cr (approx) in Aug 2024.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2025-09": {
-        "yoy_pct": 7.9,
-        "source": "https://gstcouncil.gov.in/",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 7.9% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yoy_pct": 9.1,
+        "source": "https://www.tribuneindia.com/news/business/gst-collections-rise-9-1-to-rs-1-89-lakh-crore-in-september-marking-2nd-consecutive-growth",
+        "tier": 1,
+        "notes": "CORRECTED (was Rs 1,98,657 Cr / +7.9%): official September 2025 gross GST collection = Rs 1,89,017 Cr, +9.1% YoY vs Rs 1,73,240 Cr in Sep 2024.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2025-10": {
         "yoy_pct": 4.6,
@@ -4783,20 +4984,20 @@
         "last_verified": "2026-09-07"
       },
       "2025-11": {
-        "yoy_pct": 0.1,
-        "source": "https://gstcouncil.gov.in/",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 0.1% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yoy_pct": 0.7,
+        "source": "https://www.businesstoday.in/latest/economy/story/gross-gst-collection-up-0-7-percent-to-rs-1-70-lakh-crore-in-november-504447-2025-12-01",
+        "tier": 1,
+        "notes": "CORRECTED (was Rs 1,82,270 Cr / +0.1%): official November 2025 gross GST collection = Rs 1,70,276 Cr, +0.7% YoY vs Rs 1,69,016 Cr in Nov 2024 - the first full month reflecting the GST rate rationalization from late Sep 2025.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2025-12": {
-        "yoy_pct": 7.4,
-        "source": "https://gstcouncil.gov.in/",
-        "tier": 2,
-        "notes": "Source: GST Council official revenue page. YoY computed from monthly collection. T2: YoY change in GST collection vs same month prior year = 7.4% NOTE: the original sub-page (gstcouncil.gov.in/gst-revenue) does not display this figure (it only shows an archive through 2023-24) - swapped to the GST Council homepage as a working starting point, but this specific month value has not been independently re-verified against an official PIB press release and should be treated as needing confirmation.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yoy_pct": 6.1,
+        "source": "https://themunim.com/blog/gst-collection-december-2025/",
+        "tier": 1,
+        "notes": "CORRECTED (was Rs 1,94,694 Cr / +7.4%, a large miss): official December 2025 gross GST collection = Rs 1,74,550 Cr, +6.1% YoY. Net collection Rs 1,45,570 Cr, +2.2% YoY.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
       },
       "2026-01": {
         "yoy_pct": 6.2,
@@ -4853,6 +5054,14 @@
         "notes": "GST collection growth eased slightly to +14.8% YoY in August from July's +15.4%, still the second-fastest month in this dataset.",
         "source_status": "fixed",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "yoy_pct": 14.7,
+        "source": "https://www.thehansindia.com/business/gross-gst-collection-rises-147-pc-to-almost-rs-204-lakh-crore-in-september-1127590",
+        "tier": 1,
+        "notes": "GST collection growth was +14.7% YoY in September 2026, easing slightly from August (need to confirm August's own YoY figure separately).",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "ten_year_gsec_yield": {
@@ -5039,6 +5248,14 @@
         "notes": "T2: CCIL benchmark 10Y G-Sec yield for August 2026 = 6.76%, roughly flat vs July's 6.76% (month-end had touched 6.85% in late July); well below the long-run ~7.58% average.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "yield_pct": 7.05,
+        "source": "https://www.ccilindia.com/web/ccil/market-data",
+        "tier": 2,
+        "notes": "T2: FBIL 10Y G-Sec par yield as of Sep 25, 2026 = 7.05%, up sharply from August's 6.76% - the continuation of the yield-curve rise since July (6.28% -> 6.76% -> 7.05%), on persistent inflation and fiscal concerns.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "t_bill_91d_yield": {
@@ -5225,6 +5442,14 @@
         "notes": "T2: 91-day T-Bill cut-off yield for August 2026 auctions = 5.264%.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "yield_pct": 5.39,
+        "source": "https://plutusias.com/rbi-auction-results-91-182-364-day-t-bills-cut-off-yields-explained-for-upsc-3/",
+        "tier": 2,
+        "notes": "T2: 91-day T-Bill cut-off yield for the Sep 2, 2026 auction = 5.39% (cut-off price 98.6740).",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "t_bill_364d_yield": {
@@ -5411,6 +5636,14 @@
         "notes": "T2: 364-day T-Bill cut-off yield for August 2026 auctions = 5.737%.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "yield_pct": 6.0895,
+        "source": "https://plutusias.com/rbi-auction-results-91-182-364-day-t-bills-cut-off-yields-explained-for-upsc-3/",
+        "tier": 2,
+        "notes": "T2: 364-day T-Bill cut-off yield for the Sep 2, 2026 auction = 6.0895% (cut-off price 94.2749) - up sharply from July's 5.6387%, consistent with the broader yield-curve rise seen in the 10Y below.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "capex_outlay": {
@@ -5614,9 +5847,17 @@
         "capex_crore": null,
         "source": "https://cga.nic.in/MonthlyReport/Published/8/2026-2027.aspx",
         "tier": 1,
-        "notes": "CGA Monthly Accounts for August 2026 not yet released/confirmed as of 2026-09-07.",
+        "notes": "CGA reported overall fiscal deficit at 41.9% of the FY27 target by end-August and total expenditure of ~Rs 20.78 lakh Cr (38.9% of BE) for Apr-Aug, but a capex-specific cumulative percentage (as was available for June/July) was not found this round - left null rather than estimated from a different base.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "capex_crore": null,
+        "source": null,
+        "tier": null,
+        "notes": "CGA Monthly Accounts for September 2026 not yet released as of 2026-10-01.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "usd_inr": {
@@ -5826,6 +6067,15 @@
         "notes": "T2: USD/INR reference rate for Aug 28, 2026 (last business day of August; Aug 31 was a Sunday) = 95.38, per Federal Reserve H.10 cross-reference - essentially flat versus July 31's 95.37.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "inr_per_usd": 96.11,
+        "data_date": "30/09/2026",
+        "source": "https://www.rbi.org.in/Scripts/ReferenceRateArchive.aspx",
+        "tier": 2,
+        "notes": "T2: USD/INR reference rate for Sep 30, 2026 ~= 96.11, up from 95.38 in August - rupee continuing its depreciation trend. Secondary-sourced; consistent with adjacent late-Sept rates (95.892 on Sep 25, 95.968 on Sep 28).",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "gbp_inr": {
@@ -6035,6 +6285,15 @@
         "notes": "T2: GBP/INR closing rate for August 2026 (month-end) = 128.21, essentially flat versus July's 128.28 after an intra-month spike above 131 around Aug 24.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "inr_per_gbp": null,
+        "data_date": null,
+        "source": "https://www.rbi.org.in/Scripts/ReferenceRateArchive.aspx",
+        "tier": 2,
+        "notes": "A reliable month-end GBP/INR figure for September 2026 could not be confirmed from available sources this round - left null rather than guessed.",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "current_account_deficit_pct_gdp": {
@@ -6241,9 +6500,18 @@
         "quarter": "Q2 FY2026-27 (Jul-Sep 2026)",
         "source": "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics#!4_5",
         "tier": 2,
-        "notes": "August falls in Q2 FY2026-27 - not yet released as of 2026-09-07.",
+        "notes": "August falls in Q2 FY2026-27 - not yet released as of 2026-10-01.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "cad_pct_gdp": null,
+        "quarter": "Q2 FY2026-27 (Jul-Sep 2026)",
+        "source": "https://dbie.rbi.org.in/DBIE/dbie.rbi?site=statistics#!4_5",
+        "tier": 2,
+        "notes": "September completes Q2 FY2026-27 - not yet released as of 2026-10-01 (typically released ~end-December).",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     },
     "redemption_equity_hybrid": {
@@ -6424,12 +6692,20 @@
         "last_verified": "2026-08-12"
       },
       "2026-08": {
-        "value_crore": null,
-        "source": "https://www.amfiindia.com/articles/mutual-fund",
+        "value_crore": 77966,
+        "source": "https://portal.amfiindia.com/spages/amaug2026repo.xls",
         "tier": 1,
-        "notes": "AMFI's August 2026 monthly data not yet released as of 2026-09-07; typically published around the 8th-10th of the following month.",
+        "notes": "AMFI portal Excel (Sheet 'MCR'): Row 'Sub Total - II' (Equity, Rs 44,285.45 Cr) + Row 'Sub Total - III' (Hybrid, Rs 33,680.29 Cr), column 'Repurchase/Redemption for the month of August 2026'. Sum = Rs 77,966 Cr.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "value_crore": null,
+        "source": null,
+        "tier": null,
+        "notes": "AMFI's September 2026 monthly data not yet released as of 2026-10-01.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
       }
     },
     "pv_vehicle_sales_yoy": {
@@ -6610,12 +6886,20 @@
         "last_verified": "2026-08-22"
       },
       "2026-08": {
-        "yoy_pct": null,
-        "source": "https://www.siam.in/news-&-updates/press-releases",
+        "yoy_pct": 36.5,
+        "source": "https://www.outlookbusiness.com/news/august-domestic-passenger-vehicle-dispatches-rise-365-yoy-to-439309-units-siam",
         "tier": 1,
-        "notes": "Depends on SIAM's August release, not yet published as of 2026-09-07.",
+        "notes": "Calculated: Aug 2026 (4,39,309) / Aug 2025 (3,21,901) - 1 = +36.5%. SIAM states +36.5% YoY.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-01"
+      },
+      "2026-09": {
+        "yoy_pct": null,
+        "source": null,
+        "tier": null,
+        "notes": "Depends on SIAM's September release, not yet published as of 2026-10-01.",
         "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "last_verified": "2026-10-01"
       }
     },
     "nifty50_pe": {
@@ -6802,6 +7086,14 @@
         "notes": "T2: Monthly average NIFTY 50 P/E for August 2026 = 20.42 (craytheon.com Nifty PE Ratio Monthly History), ~12.6% below the 10-year average - still screening as fairly valued to slightly cheap.",
         "source_status": "needs_confirmation",
         "last_verified": "2026-09-07"
+      },
+      "2026-09": {
+        "pe_ratio": 19.9,
+        "source": "https://www.niftyindices.com/reports/historical-data",
+        "tier": 2,
+        "notes": "T2: Monthly average NIFTY 50 P/E for September 2026 = 19.9 (craytheon.com Nifty PE Ratio Monthly History), ~17% below the 10-year average of 23.28 - continuing the gradual de-rating trend (23.25x in Oct 2024).",
+        "source_status": "needs_confirmation",
+        "last_verified": "2026-10-01"
       }
     }
   },
