@@ -240,7 +240,7 @@ const INDICATOR_META = {
   current_account_deficit_pct_gdp: {n:"Current Account Deficit",    u:"% GDP",      c:"fiscal",     d:1, f:"pct", vf:"cad_pct_gdp",        ch:"line"},
   t_bill_91d_yield:                {n:"91-Day T-Bill Yield",        u:"%",          c:"yields",     d:2, f:"pct", vf:"yield_pct",          ch:"line"},
   t_bill_364d_yield:               {n:"364-Day T-Bill Yield",       u:"%",          c:"yields",     d:2, f:"pct", vf:"yield_pct",          ch:"line"},
-  ten_year_gsec_yield:             {n:"10Y G-Sec Yield",            u:"%",          c:"yields",     d:2, f:"pct", vf:"yield_pct",          ch:"line"},
+  ten_year_gsec_yield:             {n:"10Y G-Sec Par Yield",        u:"%",          c:"yields",     d:2, f:"pct", vf:"yield_pct",          ch:"line"},
   usd_inr:                         {n:"USD/INR",                    u:"₹/$",        c:"forex",      d:2, f:"num", vf:"inr_per_usd",        ch:"line"},
   gbp_inr:                         {n:"GBP/INR",                    u:"₹/£",        c:"forex",      d:2, f:"num", vf:"inr_per_gbp",        ch:"line"},
   forex_reserves:                  {n:"Forex Reserves",             u:"USD Bn",     c:"forex",      d:1, f:"num", vf:"value_usd_bn",       ch:"bar"},
@@ -277,9 +277,9 @@ const DETAIL_META = {
   gst_yoy_change: {definition:"Year-on-year growth in gross GST revenue collection.", frequency:"Monthly", measure:"YoY"},
   capex_outlay: {definition:"Central government capital expenditure monthly flow, derived from CGA cumulative capital expenditure actuals.", frequency:"Monthly", measure:"Monthly flow"},
   current_account_deficit_pct_gdp: {definition:"Current account balance as a share of GDP; positive values are deficits and negative values are surpluses.", frequency:"Quarterly", measure:"Percent of GDP"},
-  t_bill_91d_yield: {definition:"91-day Treasury Bill cut-off yield/YTM from RBI auction results where exact source is available.", frequency:"Weekly auction, shown monthly", measure:"Yield level"},
-  t_bill_364d_yield: {definition:"364-day Treasury Bill cut-off yield/YTM from RBI auction results where exact source is available.", frequency:"Weekly auction, shown monthly", measure:"Yield level"},
-  ten_year_gsec_yield: {definition:"10-year Government Security benchmark yield; exact month-end source still needs confirmation when shown in red.", frequency:"Daily market rate, shown monthly", measure:"Yield level"},
+  t_bill_91d_yield: {definition:"Annual yield at the cut-off price for the last successful RBI 91-day Treasury Bill auction in each calendar month. An auction with all bids rejected sets no new yield.", frequency:"Last successful auction of each month", measure:"Auction cut-off yield (%)"},
+  t_bill_364d_yield: {definition:"Annual yield at the cut-off price for the last successful RBI 364-day Treasury Bill auction in each calendar month. An auction with all bids rejected sets no new yield.", frequency:"Last successful auction of each month", measure:"Auction cut-off yield (%)"},
+  ten_year_gsec_yield: {definition:"FBIL's month-end 10-year government bond par yield, quoted on a semi-annual basis and also published by RBI. It represents a standard 10-year bond on the yield curve. It differs from the traded yield of a specific benchmark bond.", frequency:"Month-end", measure:"10-year par yield (%), semi-annual basis"},
   usd_inr: {definition:"RBI USD/INR reference rate for the cited date.", frequency:"Daily, shown monthly", measure:"Exchange-rate level"},
   gbp_inr: {definition:"RBI GBP/INR reference rate for the cited date.", frequency:"Daily, shown monthly", measure:"Exchange-rate level"},
   forex_reserves: {definition:"India's total foreign exchange reserves from RBI Weekly Statistical Supplement.", frequency:"Weekly, shown monthly", measure:"Stock level"},
@@ -510,6 +510,8 @@ function openIndicatorDetails(key) {
       detailRow('Latest Value', valueHtml) +
       detailRow('Source Status', '<span style="color:' + color + ';font-weight:' + (state.bold ? '700' : '400') + '">' + esc(status) + '</span>') +
       detailRow('Source', sourceHtml) +
+      (dp && dp.raw && dp.raw.data_date ? detailRow('Observation Date', esc(dp.raw.data_date)) : '') +
+      (dp && dp.raw && dp.raw.calculation_source ? detailRow('Calculation Inputs', '<a href="' + esc(dp.raw.calculation_source) + '" target="_blank" rel="noopener" class="val-link">View daily source data</a>') : '') +
       detailRow('Last Verified', esc(verified)) +
     '</div>' +
     '<div class="detail-note"><div class="detail-label mb-1">Notes</div><div>' + esc(notes) + '</div></div>';
@@ -571,7 +573,8 @@ function renderTable() {
       } else {
         const txt = fmtCell(dp.v, ind);
         if (dp.s) {
-          html += `<td class="text-right editable-cell${editClass}" onclick="openEdit('${k}',${i})"><a href="${dp.s}" target="_blank" rel="noopener" class="val-link ${state.cls}" title="${state.title}" onclick="event.stopPropagation()">${txt}</a></td>`;
+          const sourceTitle = dp.raw && dp.raw.measurement ? `${state.title}. ${dp.notes}` : state.title;
+          html += `<td class="text-right editable-cell${editClass}" onclick="openEdit('${k}',${i})"><a href="${esc(dp.s)}" target="_blank" rel="noopener" class="val-link ${state.cls}" title="${esc(sourceTitle)}" onclick="event.stopPropagation()">${txt}</a></td>`;
         } else {
           html += `<td class="text-right editable-cell${editClass}" onclick="openEdit('${k}',${i})"><span class="val-link ${state.cls}" title="${state.title}">${txt}</span></td>`;
         }
@@ -902,7 +905,7 @@ async function refreshData() {
     gst_collection:"GST Collection", gst_yoy_change:"GST YoY Change", capex_outlay:"CapEx Outlay",
     current_account_deficit_pct_gdp:"Current Account Deficit",
     t_bill_91d_yield:"91D T-Bill Yield", t_bill_364d_yield:"364D T-Bill Yield",
-    ten_year_gsec_yield:"10Y G-Sec Yield", forex_reserves:"Forex Reserves",
+    ten_year_gsec_yield:"10Y G-Sec Par Yield", forex_reserves:"Forex Reserves",
   };
   const fetchedNames = new Set(updated.map(u => u.name));
   for (const [key, nice] of Object.entries(NICE_NAMES)) {
@@ -980,4 +983,3 @@ window.onload = loadData;
 </script>
 </body>
 </html>
-

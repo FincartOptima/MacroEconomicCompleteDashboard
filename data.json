@@ -5066,584 +5066,731 @@
     },
     "ten_year_gsec_yield": {
       "2026-06": {
-        "yield_pct": 6.28,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Jun 2026 10Y G-Sec avg yield ~6.28%. Post MPC cut yield compression. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.74,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24378",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2026-06: 6.74%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2026-06",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2024-10": {
-        "yield_pct": 6.84,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.81,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23134",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2024-10: 6.81%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2024-10",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2024-11": {
-        "yield_pct": 6.76,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.79,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23134",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2024-11: 6.79%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2024-11",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2024-12": {
-        "yield_pct": 6.77,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.76,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23199",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2024-12: 6.76%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2024-12",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2025-01": {
-        "yield_pct": 6.73,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.71,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23263",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2025-01: 6.71%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2025-01",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2025-02": {
-        "yield_pct": 6.7,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.73,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23330",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2025-02: 6.73%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2025-02",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2025-03": {
-        "yield_pct": 6.58,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.62,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23391",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2025-03: 6.62%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2025-03",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2025-04": {
-        "yield_pct": 6.36,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.4,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23455",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2025-04: 6.40%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2025-04",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2025-05": {
-        "yield_pct": 6.3,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.23,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23519",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2025-05: 6.23%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2025-05",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2025-06": {
-        "yield_pct": 6.28,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.34,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23586",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2025-06: 6.34%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2025-06",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2025-07": {
-        "yield_pct": 6.3,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.41,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23649",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2025-07: 6.41%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2025-07",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2025-08": {
-        "yield_pct": 6.32,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.67,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23718",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2025-08: 6.67%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2025-08",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2025-09": {
-        "yield_pct": 6.28,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.61,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23784",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2025-09: 6.61%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2025-09",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2025-10": {
-        "yield_pct": 6.81,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.5,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23851",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2025-10: 6.50%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2025-10",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2025-11": {
-        "yield_pct": 6.76,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.55,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23913",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2025-11: 6.55%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2025-11",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2025-12": {
-        "yield_pct": 6.75,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.67,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23981",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2025-12: 6.67%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2025-12",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2026-01": {
-        "yield_pct": 6.69,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.77,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24044",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2026-01: 6.77%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2026-01",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2026-02": {
-        "yield_pct": 6.66,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.71,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24110",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2026-02: 6.71%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2026-02",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2026-03": {
-        "yield_pct": 6.61,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 7.11,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24177",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2026-03: 7.11%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2026-03",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2026-04": {
-        "yield_pct": 6.49,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 7.08,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24242",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2026-04: 7.08%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2026-04",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2026-05": {
-        "yield_pct": 6.36,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "Source: CCIL/FBIL benchmark G-Sec yield. T2: Approximate 10-year G-Sec yield (end-of-month). Source: FBIL/CCIL benchmark. Needs verification. Source needs confirmation. Only a generic FBIL/CCIL source page is present; exact end-of-month benchmark source needs confirmation.",
+        "yield_pct": 6.99,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24306",
+        "tier": 1,
+        "notes": "RBI Bulletin, Select Economic Indicators, row 4.14, current-year column for 2026-05: 6.99%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "observation_period": "2026-05",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)"
       },
       "2026-07": {
-        "yield_pct": 6.76,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "T2: 10Y G-Sec yield rose through July 2026 (17bp to 6.85% by month-end) on higher crude prices, tight liquidity, and the postponed Bloomberg EM-index inclusion. Average over the ~Jun 22-Jul 22 window was 6.762% (range 6.675-6.864%); 6.76% used as the approximate July monthly average, consistent with prior months' methodology. Source needs confirmation against an exact FBIL/CCIL end-of-month benchmark.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "yield_pct": 6.84,
+        "source": "https://www.fbil.org.in/wasdm/gsec/downloadPublished?date=2026-07-31",
+        "tier": 1,
+        "notes": "FBIL month-end workbook dated 2026-07-31, Par Yield sheet, tenor 10, YTM% p.a.(Semi-Annual) column: 6.84%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "observation_period": "2026-07",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)",
+        "data_date": "2026-07-31"
       },
       "2026-08": {
-        "yield_pct": 6.76,
-        "source": "https://www.ceicdata.com/en/india/government-securities-yield-the-clearing-corporation-of-india-limited/ccil-government-securities-yield-benchmark-10-years",
-        "tier": 2,
-        "notes": "T2: CCIL benchmark 10Y G-Sec yield for August 2026 = 6.76%, roughly flat vs July's 6.76% (month-end had touched 6.85% in late July); well below the long-run ~7.58% average.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 6.97,
+        "source": "https://www.fbil.org.in/wasdm/gsec/downloadPublished?date=2026-08-31",
+        "tier": 1,
+        "notes": "FBIL month-end workbook dated 2026-08-31, Par Yield sheet, tenor 10, YTM% p.a.(Semi-Annual) column: 6.97%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "observation_period": "2026-08",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)",
+        "data_date": "2026-08-31"
       },
       "2026-09": {
-        "yield_pct": 7.05,
-        "source": "https://www.ccilindia.com/web/ccil/market-data",
-        "tier": 2,
-        "notes": "T2: FBIL 10Y G-Sec par yield as of Sep 25, 2026 = 7.05%, up sharply from August's 6.76% - the continuation of the yield-curve rise since July (6.28% -> 6.76% -> 7.05%), on persistent inflation and fiscal concerns.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-10-01"
+        "yield_pct": 7.19,
+        "source": "https://www.fbil.org.in/wasdm/gsec/downloadPublished?date=2026-09-30",
+        "tier": 1,
+        "notes": "FBIL month-end workbook dated 2026-09-30, Par Yield sheet, tenor 10, YTM% p.a.(Semi-Annual) column: 7.19%. Month-end FBIL 10-year G-Sec par yield on a semi-annual quotation basis. This is a constant-tenor par-curve rate, not the traded yield of a particular benchmark bond or a monthly average.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "observation_period": "2026-09",
+        "measurement": "Month-end FBIL 10Y par yield (semi-annual basis)",
+        "data_date": "2026-09-30"
       }
     },
     "t_bill_91d_yield": {
       "2026-06": {
         "yield_pct": 5.2476,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63005",
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24407",
         "tier": 1,
-        "notes": "T1: RBI Treasury Bills Full Auction Result dated Jun 24, 2026; 91-day T-Bill cut-off yield/YTM 5.2476%.",
+        "notes": "RBI auction dated 2026-06-24: 91-day Treasury Bill implicit yield at cut-off price = 5.2476%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "data_date": "2026-06-24",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2024-10": {
         "yield_pct": 6.5116,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=58998",
         "tier": 1,
-        "notes": "T1: RBI Treasury Bills Full Auction Result dated Oct 30, 2024; 91-day T-Bill cut-off yield/YTM 6.5116%.",
+        "notes": "RBI auction dated 2024-10-30: 91-day Treasury Bill implicit yield at cut-off price = 6.5116%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "data_date": "2024-10-30",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2024-11": {
         "yield_pct": 6.4929,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59191",
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23159",
         "tier": 1,
-        "notes": "T1: RBI Treasury Bills Full Auction Result dated Nov 27, 2024; 91-day T-Bill cut-off yield/YTM 6.4929%.",
+        "notes": "RBI auction dated 2024-11-27: 91-day Treasury Bill implicit yield at cut-off price = 6.4929%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "data_date": "2024-11-27",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2024-12": {
-        "yield_pct": 6.5,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 6.5489,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23224",
+        "tier": 1,
+        "notes": "RBI auction dated 2024-12-26: 91-day Treasury Bill implicit yield at cut-off price = 6.5489%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2024-12-26",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-01": {
-        "yield_pct": 6.52,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 6.5625,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23288",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-01-29: 91-day Treasury Bill implicit yield at cut-off price = 6.5625%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-01-29",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-02": {
-        "yield_pct": 6.52,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 6.449,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23355",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-02-27: 91-day Treasury Bill implicit yield at cut-off price = 6.4490%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-02-27",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-03": {
-        "yield_pct": 6.52,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 6.5199,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23416",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-03-26: 91-day Treasury Bill implicit yield at cut-off price = 6.5199%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-03-26",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-04": {
-        "yield_pct": 6.12,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.9036,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23480",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-04-30: 91-day Treasury Bill implicit yield at cut-off price = 5.9036%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-04-30",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-05": {
-        "yield_pct": 6,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.62,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23544",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-05-28: 91-day Treasury Bill implicit yield at cut-off price = 5.6200%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-05-28",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-06": {
-        "yield_pct": 5.9,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.4094,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23611",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-06-25: 91-day Treasury Bill implicit yield at cut-off price = 5.4094%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-06-25",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-07": {
-        "yield_pct": 5.7,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.397,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23674",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-07-30: 91-day Treasury Bill implicit yield at cut-off price = 5.3970%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-07-30",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-08": {
-        "yield_pct": 5.72,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.5087,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23743",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-08-28: 91-day Treasury Bill implicit yield at cut-off price = 5.5087%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-08-28",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-09": {
-        "yield_pct": 5.8,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.4749,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23811",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-09-24: 91-day Treasury Bill implicit yield at cut-off price = 5.4749%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-09-24",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-10": {
-        "yield_pct": 5.8,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.458,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23878",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-10-29: 91-day Treasury Bill implicit yield at cut-off price = 5.4580%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-10-29",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-11": {
-        "yield_pct": 5.75,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.3633,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23940",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-11-26: 91-day Treasury Bill implicit yield at cut-off price = 5.3633%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-11-26",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-12": {
-        "yield_pct": 5.9,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.2579,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24008",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-12-24: 91-day Treasury Bill implicit yield at cut-off price = 5.2579%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-12-24",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-01": {
-        "yield_pct": 5.88,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.4997,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24071",
+        "tier": 1,
+        "notes": "RBI auction dated 2026-01-28: 91-day Treasury Bill implicit yield at cut-off price = 5.4997%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-01-28",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-02": {
-        "yield_pct": 5.85,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.2998,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24139",
+        "tier": 1,
+        "notes": "RBI auction dated 2026-02-25: 91-day Treasury Bill implicit yield at cut-off price = 5.2998%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-02-25",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-03": {
-        "yield_pct": 6.05,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 91-day T-Bill. T2: Approximate cut-off yield from RBI T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.3278,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24206",
+        "tier": 1,
+        "notes": "RBI auction dated 2026-03-18: 91-day Treasury Bill implicit yield at cut-off price = 5.3278%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield. All bids at the subsequent 25 March 2026 auction were rejected, so no new cut-off yield was set.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-03-18",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-04": {
         "yield_pct": 5.2599,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62644",
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24271",
         "tier": 1,
-        "notes": "T1: RBI Treasury Bills Full Auction Result dated Apr 29, 2026; 91-day T-Bill cut-off yield/YTM 5.2599%.",
+        "notes": "RBI auction dated 2026-04-29: 91-day Treasury Bill implicit yield at cut-off price = 5.2599%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "data_date": "2026-04-29",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-05": {
         "yield_pct": 5.5611,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62813",
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24335",
         "tier": 1,
-        "notes": "T1: RBI Treasury Bills Full Auction Result dated May 27, 2026; 91-day T-Bill cut-off yield/YTM 5.5611%.",
+        "notes": "RBI auction dated 2026-05-27: 91-day Treasury Bill implicit yield at cut-off price = 5.5611%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "data_date": "2026-05-27",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-07": {
-        "yield_pct": 5.34,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63261",
+        "yield_pct": 5.3402,
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63255",
         "tier": 1,
-        "notes": "RBI Treasury Bills Full Auction Result dated Jul 29, 2026 (settled Jul 30): 91-day T-Bill cut-off yield/YTM 5.340%. Rs 9,000 Cr notified.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "notes": "RBI auction dated 2026-07-29: 91-day Treasury Bill implicit yield at cut-off price = 5.3402%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-07-29",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-08": {
         "yield_pct": 5.264,
-        "source": "https://www.ceicdata.com/en/india/treasury-bills-auction-91-days/treasury-bills-auction-91-days-price-implicit-yield-at-cut-off",
-        "tier": 2,
-        "notes": "T2: 91-day T-Bill cut-off yield for August 2026 auctions = 5.264%.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63451",
+        "tier": 1,
+        "notes": "RBI auction dated 2026-08-27: 91-day Treasury Bill implicit yield at cut-off price = 5.2640%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-08-27",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-09": {
-        "yield_pct": 5.39,
-        "source": "https://plutusias.com/rbi-auction-results-91-182-364-day-t-bills-cut-off-yields-explained-for-upsc-3/",
-        "tier": 2,
-        "notes": "T2: 91-day T-Bill cut-off yield for the Sep 2, 2026 auction = 5.39% (cut-off price 98.6740).",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-10-01"
+        "yield_pct": 5.5199,
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63696",
+        "tier": 1,
+        "notes": "RBI auction dated 2026-09-30: 91-day Treasury Bill implicit yield at cut-off price = 5.5199%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-09-30",
+        "measurement": "Last successful auction cut-off yield"
       }
     },
     "t_bill_364d_yield": {
       "2026-06": {
         "yield_pct": 5.6387,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63005",
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24407",
         "tier": 1,
-        "notes": "T1: RBI Treasury Bills Full Auction Result dated Jun 24, 2026; 364-day T-Bill cut-off yield/YTM 5.6387%.",
+        "notes": "RBI auction dated 2026-06-24: 364-day Treasury Bill implicit yield at cut-off price = 5.6387%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "data_date": "2026-06-24",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2024-10": {
         "yield_pct": 6.5991,
         "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=58998",
         "tier": 1,
-        "notes": "T1: RBI Treasury Bills Full Auction Result dated Oct 30, 2024; 364-day T-Bill cut-off yield/YTM 6.5991%.",
+        "notes": "RBI auction dated 2024-10-30: 364-day Treasury Bill implicit yield at cut-off price = 6.5991%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "data_date": "2024-10-30",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2024-11": {
         "yield_pct": 6.6545,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=59191",
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23159",
         "tier": 1,
-        "notes": "T1: RBI Treasury Bills Full Auction Result dated Nov 27, 2024; 364-day T-Bill cut-off yield/YTM 6.6545%.",
+        "notes": "RBI auction dated 2024-11-27: 364-day Treasury Bill implicit yield at cut-off price = 6.6545%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "data_date": "2024-11-27",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2024-12": {
-        "yield_pct": 6.6,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 6.6878,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23224",
+        "tier": 1,
+        "notes": "RBI auction dated 2024-12-26: 364-day Treasury Bill implicit yield at cut-off price = 6.6878%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2024-12-26",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-01": {
-        "yield_pct": 6.65,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 6.6345,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23288",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-01-29: 364-day Treasury Bill implicit yield at cut-off price = 6.6345%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-01-29",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-02": {
-        "yield_pct": 6.63,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 6.5409,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23355",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-02-27: 364-day Treasury Bill implicit yield at cut-off price = 6.5409%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-02-27",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-03": {
-        "yield_pct": 6.63,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 6.4698,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23416",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-03-26: 364-day Treasury Bill implicit yield at cut-off price = 6.4698%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-03-26",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-04": {
-        "yield_pct": 6.23,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.9146,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23480",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-04-30: 364-day Treasury Bill implicit yield at cut-off price = 5.9146%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-04-30",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-05": {
-        "yield_pct": 6.1,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.6288,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23544",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-05-28: 364-day Treasury Bill implicit yield at cut-off price = 5.6288%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-05-28",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-06": {
-        "yield_pct": 6,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.5687,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23611",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-06-25: 364-day Treasury Bill implicit yield at cut-off price = 5.5687%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-06-25",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-07": {
-        "yield_pct": 5.85,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.5673,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23674",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-07-30: 364-day Treasury Bill implicit yield at cut-off price = 5.5673%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-07-30",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-08": {
-        "yield_pct": 5.87,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.6397,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23743",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-08-28: 364-day Treasury Bill implicit yield at cut-off price = 5.6397%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-08-28",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-09": {
-        "yield_pct": 5.92,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.608,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23811",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-09-24: 364-day Treasury Bill implicit yield at cut-off price = 5.6080%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-09-24",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-10": {
-        "yield_pct": 5.93,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.5813,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23878",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-10-29: 364-day Treasury Bill implicit yield at cut-off price = 5.5813%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-10-29",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-11": {
-        "yield_pct": 5.88,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.5347,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=23940",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-11-26: 364-day Treasury Bill implicit yield at cut-off price = 5.5347%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-11-26",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2025-12": {
-        "yield_pct": 5.99,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.5387,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24008",
+        "tier": 1,
+        "notes": "RBI auction dated 2025-12-24: 364-day Treasury Bill implicit yield at cut-off price = 5.5387%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2025-12-24",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-01": {
-        "yield_pct": 5.98,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.7391,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24071",
+        "tier": 1,
+        "notes": "RBI auction dated 2026-01-28: 364-day Treasury Bill implicit yield at cut-off price = 5.7391%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-01-28",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-02": {
-        "yield_pct": 5.95,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.5863,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24139",
+        "tier": 1,
+        "notes": "RBI auction dated 2026-02-25: 364-day Treasury Bill implicit yield at cut-off price = 5.5863%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-02-25",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-03": {
-        "yield_pct": 6.12,
-        "source": "https://dbie.rbihub.in/government/treasury-bill-auctions",
-        "tier": 2,
-        "notes": "Source: RBI auction results for 364-day T-Bill. T2: Approximate cut-off yield from RBI 364-day T-Bill weekly auction (last auction of month). CORRECTED: original source URL (rbi.org.in/.../BS_NSDLResponsePage.aspx) was a dead link (404). Replaced with RBI DBIE Treasury Bill Auctions data page, which carries per-auction cut-off yields; this specific month/tenor figure still needs confirmation against that table.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.645,
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24206",
+        "tier": 1,
+        "notes": "RBI auction dated 2026-03-18: 364-day Treasury Bill implicit yield at cut-off price = 5.6450%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield. All bids at the subsequent 25 March 2026 auction were rejected, so no new cut-off yield was set.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-03-18",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-04": {
         "yield_pct": 5.6511,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62644",
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24271",
         "tier": 1,
-        "notes": "T1: RBI Treasury Bills Full Auction Result dated Apr 29, 2026; 364-day T-Bill cut-off yield/YTM 5.6511%.",
+        "notes": "RBI auction dated 2026-04-29: 364-day Treasury Bill implicit yield at cut-off price = 5.6511%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "data_date": "2026-04-29",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-05": {
         "yield_pct": 6.0273,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=62813",
+        "source": "https://www.rbi.org.in/Scripts/BS_ViewBulletin.aspx?Id=24335",
         "tier": 1,
-        "notes": "T1: RBI Treasury Bills Full Auction Result dated May 27, 2026; 364-day T-Bill cut-off yield/YTM 6.0273%.",
+        "notes": "RBI auction dated 2026-05-27: 364-day Treasury Bill implicit yield at cut-off price = 6.0273%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05",
+        "data_date": "2026-05-27",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-07": {
-        "yield_pct": null,
-        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63261",
+        "yield_pct": 5.7393,
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63255",
         "tier": 1,
-        "notes": "364-day T-Bill cut-off yield for the Jul 29, 2026 auction (Rs 7,000 Cr notified) still not confirmed from available sources as of 2026-08-22.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-08-22"
+        "notes": "RBI auction dated 2026-07-29: 364-day Treasury Bill implicit yield at cut-off price = 5.7393%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-07-29",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-08": {
-        "yield_pct": 5.737,
-        "source": "https://www.ceicdata.com/en/india/treasury-bills-auction-364-days/treasury-bills-auction-364-days-price-implicit-yield-at-cut-off",
-        "tier": 2,
-        "notes": "T2: 364-day T-Bill cut-off yield for August 2026 auctions = 5.737%.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "yield_pct": 5.7968,
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63451",
+        "tier": 1,
+        "notes": "RBI auction dated 2026-08-27: 364-day Treasury Bill implicit yield at cut-off price = 5.7968%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-08-27",
+        "measurement": "Last successful auction cut-off yield"
       },
       "2026-09": {
-        "yield_pct": 6.0895,
-        "source": "https://plutusias.com/rbi-auction-results-91-182-364-day-t-bills-cut-off-yields-explained-for-upsc-3/",
-        "tier": 2,
-        "notes": "T2: 364-day T-Bill cut-off yield for the Sep 2, 2026 auction = 6.0895% (cut-off price 94.2749) - up sharply from July's 5.6387%, consistent with the broader yield-curve rise seen in the 10Y below.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-10-01"
+        "yield_pct": 6.1798,
+        "source": "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=63696",
+        "tier": 1,
+        "notes": "RBI auction dated 2026-09-30: 364-day Treasury Bill implicit yield at cut-off price = 6.1798%. Last successful auction of the calendar month; annual yield, not weighted-average auction yield or secondary-market yield.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-09-30",
+        "measurement": "Last successful auction cut-off yield"
       }
     },
     "capex_outlay": {
@@ -6907,193 +7054,289 @@
         "pe_ratio": 23.25,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 22 daily NIFTY 50 P/E closes in October 2024 (min 22.56, max 24.25) = 23.25. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 22 published daily P/E observations from 2024-10-01 to 2024-10-31 = 23.24954545, rounded to 23.25x. Daily range 22.56–24.25. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2024-10-31",
+        "observation_count": 22,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2024-11": {
         "pe_ratio": 22.13,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in November 2024 (min 21.49, max 22.80) = 22.13. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 19 published daily P/E observations from 2024-11-01 to 2024-11-29 = 22.13368421, rounded to 22.13x. Daily range 21.49–22.80. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2024-11-29",
+        "observation_count": 19,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2024-12": {
         "pe_ratio": 22.3,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 21 daily NIFTY 50 P/E closes in December 2024 (min 21.71, max 22.80) = 22.30. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 21 published daily P/E observations from 2024-12-02 to 2024-12-31 = 22.30476190, rounded to 22.30x. Daily range 21.71–22.80. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2024-12-31",
+        "observation_count": 21,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2025-01": {
         "pe_ratio": 21.43,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 23 daily NIFTY 50 P/E closes in January 2025 (min 20.85, max 22.29) = 21.43. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 23 published daily P/E observations from 2025-01-01 to 2025-01-31 = 21.43347826, rounded to 21.43x. Daily range 20.85–22.29. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2025-01-31",
+        "observation_count": 23,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2025-02": {
         "pe_ratio": 20.65,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 20 daily NIFTY 50 P/E closes in February 2025 (min 19.67, max 21.56) = 20.65. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 20 published daily P/E observations from 2025-02-01 to 2025-02-28 = 20.64500000, rounded to 20.65x. Daily range 19.67–21.56. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2025-02-28",
+        "observation_count": 20,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2025-03": {
         "pe_ratio": 20.34,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in March 2025 (min 19.63, max 21.37) = 20.34. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 19 published daily P/E observations from 2025-03-03 to 2025-03-28 = 20.33736842, rounded to 20.34x. Daily range 19.63–21.37. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2025-03-28",
+        "observation_count": 19,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2025-04": {
         "pe_ratio": 21.34,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in April 2025 (min 20.14, max 21.99) = 21.34. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 19 published daily P/E observations from 2025-04-01 to 2025-04-30 = 21.34105263, rounded to 21.34x. Daily range 20.14–21.99. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2025-04-30",
+        "observation_count": 19,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2025-05": {
         "pe_ratio": 22.18,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 21 daily NIFTY 50 P/E closes in May 2025 (min 21.62, max 22.58) = 22.18. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 21 published daily P/E observations from 2025-05-02 to 2025-05-30 = 22.18238095, rounded to 22.18x. Daily range 21.62–22.58. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2025-05-30",
+        "observation_count": 21,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2025-06": {
         "pe_ratio": 22.48,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 21 daily NIFTY 50 P/E closes in June 2025 (min 22.07, max 23.04) = 22.48. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 21 published daily P/E observations from 2025-06-02 to 2025-06-30 = 22.47952381, rounded to 22.48x. Daily range 22.07–23.04. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2025-06-30",
+        "observation_count": 21,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2025-07": {
         "pe_ratio": 22.51,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 23 daily NIFTY 50 P/E closes in July 2025 (min 21.78, max 22.99) = 22.51. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 23 published daily P/E observations from 2025-07-01 to 2025-07-31 = 22.51173913, rounded to 22.51x. Daily range 21.78–22.99. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2025-07-31",
+        "observation_count": 23,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2025-08": {
         "pe_ratio": 21.75,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in August 2025 (min 21.46, max 22.03) = 21.75. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 19 published daily P/E observations from 2025-08-01 to 2025-08-29 = 21.74894737, rounded to 21.75x. Daily range 21.46–22.03. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2025-08-29",
+        "observation_count": 19,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2025-09": {
         "pe_ratio": 21.92,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 22 daily NIFTY 50 P/E closes in September 2025 (min 21.59, max 22.33) = 21.92. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 22 published daily P/E observations from 2025-09-01 to 2025-09-30 = 21.91681818, rounded to 21.92x. Daily range 21.59–22.33. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2025-09-30",
+        "observation_count": 22,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2025-10": {
         "pe_ratio": 22.5,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 21 daily NIFTY 50 P/E closes in October 2025 (min 21.96, max 22.92) = 22.50. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 21 published daily P/E observations from 2025-10-01 to 2025-10-31 = 22.49619048, rounded to 22.50x. Daily range 21.96–22.92. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2025-10-31",
+        "observation_count": 21,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2025-11": {
         "pe_ratio": 22.55,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in November 2025 (min 22.28, max 22.82) = 22.55. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 19 published daily P/E observations from 2025-11-03 to 2025-11-28 = 22.54631579, rounded to 22.55x. Daily range 22.28–22.82. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2025-11-28",
+        "observation_count": 19,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2025-12": {
         "pe_ratio": 22.64,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 22 daily NIFTY 50 P/E closes in December 2025 (min 22.43, max 22.80) = 22.64. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 22 published daily P/E observations from 2025-12-01 to 2025-12-31 = 22.63500000, rounded to 22.64x. Daily range 22.43–22.80. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2025-12-31",
+        "observation_count": 22,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2026-01": {
         "pe_ratio": 22.33,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 20 daily NIFTY 50 P/E closes in January 2026 (min 21.76, max 22.92) = 22.33. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 20 published daily P/E observations from 2026-01-01 to 2026-01-30 = 22.32700000, rounded to 22.33x. Daily range 21.76–22.92. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2026-01-30",
+        "observation_count": 20,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2026-02": {
         "pe_ratio": 22.35,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 21 daily NIFTY 50 P/E closes in February 2026 (min 21.57, max 22.79) = 22.35. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 21 published daily P/E observations from 2026-02-01 to 2026-02-27 = 22.34904762, rounded to 22.35x. Daily range 21.57–22.79. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2026-02-27",
+        "observation_count": 21,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2026-03": {
         "pe_ratio": 20.65,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in March 2026 (min 19.62, max 21.76) = 20.65. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 19 published daily P/E observations from 2026-03-02 to 2026-03-30 = 20.64842105, rounded to 20.65x. Daily range 19.62–21.76. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2026-03-30",
+        "observation_count": 19,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2026-04": {
         "pe_ratio": 20.91,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 20 daily NIFTY 50 P/E closes in April 2026 (min 19.93, max 21.45) = 20.91. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 20 published daily P/E observations from 2026-04-01 to 2026-04-30 = 20.90850000, rounded to 20.91x. Daily range 19.93–21.45. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2026-04-30",
+        "observation_count": 20,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2026-05": {
         "pe_ratio": 20.64,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 19 daily NIFTY 50 P/E closes in May 2026 (min 20.27, max 21.21) = 20.64. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 19 published daily P/E observations from 2026-05-04 to 2026-05-29 = 20.63631579, rounded to 20.64x. Daily range 20.27–21.21. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2026-05-29",
+        "observation_count": 19,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2026-06": {
         "pe_ratio": 20.43,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2 self-computed: arithmetic mean of the 21 daily NIFTY 50 P/E closes in June 2026 (min 19.96, max 20.85) = 20.43. Daily series sourced from NSE Indices historical P/E data (niftyindices.com > Reports > Historical Data > P/E, P/B & Div Yield) and maintained in the internal workbook 'Monthly Market Metrics.xlsx' (sheet 'Daily NIFTY PE (Source)'); this reproduces that workbook's AVERAGEIFS monthly-average formula. The source page provides the daily inputs, not this monthly average.",
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 21 published daily P/E observations from 2026-06-01 to 2026-06-30 = 20.42571429, rounded to 20.43x. Daily range 19.96–20.85. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
         "source_status": "fixed",
-        "last_verified": "2026-08-04"
+        "last_verified": "2026-10-05",
+        "data_date": "2026-06-30",
+        "observation_count": 21,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2026-07": {
-        "pe_ratio": 20.7,
+        "pe_ratio": 20.72,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2: Monthly average NIFTY 50 P/E for July 2026 = 20.70 (craytheon.com Nifty PE Ratio Monthly History table). Unlike Oct 2024-Jun 2026 (self-computed mean of daily closes from an internal workbook), this month's average was taken from a third-party aggregator because the underlying daily series wasn't available; methodology (arithmetic mean of daily closes) is consistent with prior months. Single-day snapshots for July ranged 20.46-20.78 depending on date.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 23 published daily P/E observations from 2026-07-01 to 2026-07-31 = 20.71826087, rounded to 20.72x. Daily range 20.29–21.06. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-07-31",
+        "observation_count": 23,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2026-08": {
-        "pe_ratio": 20.42,
+        "pe_ratio": 20.61,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2: Monthly average NIFTY 50 P/E for August 2026 = 20.42 (craytheon.com Nifty PE Ratio Monthly History), ~12.6% below the 10-year average - still screening as fairly valued to slightly cheap.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 21 published daily P/E observations from 2026-08-03 to 2026-08-31 = 20.61428571, rounded to 20.61x. Daily range 20.36–21.03. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-08-31",
+        "observation_count": 21,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       },
       "2026-09": {
-        "pe_ratio": 19.9,
+        "pe_ratio": 19.77,
         "source": "https://www.niftyindices.com/reports/historical-data",
         "tier": 2,
-        "notes": "T2: Monthly average NIFTY 50 P/E for September 2026 = 19.9 (craytheon.com Nifty PE Ratio Monthly History), ~17% below the 10-year average of 23.28 - continuing the gradual de-rating trend (23.25x in Oct 2024).",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-10-01"
+        "notes": "NSE Indices historical data, P/E, P/B & Div.Yield values, NIFTY 50: arithmetic mean of 21 published daily P/E observations from 2026-09-01 to 2026-09-30 = 19.77380952, rounded to 19.77x. Daily range 19.20–20.34. Select this calendar month on the source page. The monthly average is calculated here; NSE publishes the daily inputs.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05",
+        "data_date": "2026-09-30",
+        "observation_count": 21,
+        "measurement": "Arithmetic mean of published daily P/E observations",
+        "calculation_source": "data/nifty50-pe-daily.json"
       }
     }
   },

@@ -8,3 +8,9 @@
 !data.json
 !SOP_Dashboard_Setup.html
 !SOURCES.md
+
+# Auditable market-data inputs and validation
+!data/
+!data/nifty50-pe-daily.json
+!scripts/
+!scripts/validate_market_data.py
