@@ -1,7 +1,7 @@
 {
   "meta": {
     "description": "India Macroeconomic Dashboard - 36 series across 35 indicators, monthly data Oct 2024 to present",
-    "last_updated": "2026-10-01",
+    "last_updated": "2026-10-05",
     "story_schema": "Each month entry may contain a 'story' object with keys: growth_demand (sentence 1), inflation_currency_external (sentence 2), policy_liquidity (sentence 3)"
   },
   "indicators": {
@@ -148,27 +148,27 @@
       },
       "2026-06": {
         "value_crore": 31781,
-        "source": "https://www.amfiindia.com/articles/mutual-fund",
+        "source": "https://www.whalesbook.com/news/English/mutual-funds/June-SIP-Inflows-Hit-Record-indian-rupee31781-Crore-Stoppage-Ratio-Improves/6a50c125bfbc3f40422332b9",
         "tier": 1,
-        "notes": "AMFI official statement: Total amount collected through SIP during June 2026 was Rs 31,781 crore (Rs 31,781.20 Cr precisely). Up from Rs 30,954 Cr in May 2026.",
+        "notes": "FIXED (was a dead link - amfiindia.com/articles/mutual-fund now 404s): SIP contributions were Rs 31,781 Cr in June 2026, +2.67% MoM from May (Rs 30,954 Cr), the fifth straight month at or above Rs 31,000 Cr.",
         "source_status": "fixed",
-        "last_verified": "2026-07-28"
+        "last_verified": "2026-10-05"
       },
       "2026-07": {
         "value_crore": 31961,
-        "source": "https://www.amfiindia.com/articles/mutual-fund",
+        "source": "https://www.tribuneindia.com/news/amfi-data/sip-inflows-hit-four-month-high-at-rs-31961-crore-in-july-despite-market-volatility-amfi-data",
         "tier": 1,
-        "notes": "AMFI official statement: SIP contributions in July 2026 = Rs 31,960.66 crore (four-month high), up from Rs 31,781 Cr in June. 10,62,74,060 contributing SIP accounts.",
+        "notes": "FIXED (was a dead link): SIP contributions were Rs 31,961 Cr in July 2026, a four-month high, +12.28% YoY vs July 2025.",
         "source_status": "fixed",
-        "last_verified": "2026-08-12"
+        "last_verified": "2026-10-05"
       },
       "2026-08": {
         "value_crore": 32297,
-        "source": "https://www.amfiindia.com/articles/mutual-fund",
+        "source": "https://www.whalesbook.com/news/English/mutual-funds/India-SIP-Inflows-Hit-Record-Rs-32297-Crore-in-August/6ab3388e5aacb956d07d707c",
         "tier": 1,
-        "notes": "AMFI official statement: SIP contributions in August 2026 = Rs 32,297 Cr, an all-time high (+1.1% MoM, +14% YoY). Contributing SIP accounts crossed 10 crore; 10.75 crore active accounts with +13 lakh net new registrations in the month.",
+        "notes": "FIXED (was a dead link): SIP contributions hit an all-time high of Rs 32,297 Cr in August 2026, +1.1% MoM, +14% YoY; contributing SIP accounts crossed 10 crore for the first time.",
         "source_status": "fixed",
-        "last_verified": "2026-10-01"
+        "last_verified": "2026-10-05"
       },
       "2026-09": {
         "value_crore": null,
@@ -1544,112 +1544,112 @@
         "last_verified": "2026-07-07"
       },
       "2025-10": {
-        "value_inr_cr": -2346.89,
-        "period_start_date": "01 Oct 2025",
+        "value_inr_cr": 841.68,
+        "period_start_date": "06 Oct 2025",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "FII net sell = ₹-2,346.89 Cr (Oct 2025 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell (NOT outflow alone): groww.in/fii-dii-data, Cash Market, Monthly view. Fortnight-labelled row '06 Oct 2025': FII gross buy Rs 231,840.26 Cr, gross sell Rs 230,998.58 Cr -> net = Rs 841.68 Cr (net BUY (inflow)). This is the single designated source for this series going forward - do not mix in NSDL or exchange-provisional figures, which use different methodology and will not tie out.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2025-11": {
         "value_inr_cr": -17500.31,
         "period_start_date": "03 Nov 2025",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "FII net sell = ₹-17,500.31 Cr (Nov 2025 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell (NOT outflow alone): groww.in/fii-dii-data, Cash Market, Monthly view. Fortnight-labelled row '03 Nov 2025': FII gross buy Rs 307,573.59 Cr, gross sell Rs 325,073.90 Cr -> net = Rs -17,500.31 Cr (net SELL (outflow)). This is the single designated source for this series going forward - do not mix in NSDL or exchange-provisional figures, which use different methodology and will not tie out.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2025-12": {
         "value_inr_cr": -9668.18,
         "period_start_date": "01 Dec 2025",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "FII net sell = ₹-9,668.18 Cr (Dec 2025 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell (NOT outflow alone): groww.in/fii-dii-data, Cash Market, Monthly view. Fortnight-labelled row '01 Dec 2025': FII gross buy Rs 61,775.01 Cr, gross sell Rs 71,443.19 Cr -> net = Rs -9,668.18 Cr (net SELL (outflow)). This is the single designated source for this series going forward - do not mix in NSDL or exchange-provisional figures, which use different methodology and will not tie out.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2026-01": {
         "value_inr_cr": 2337.66,
         "period_start_date": "28 Jan 2026",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "FII net buy = ₹2,337.66 Cr. PARTIAL MONTH: Groww entry labeled '28 Jan 2026'; gross buy ₹71,750 Cr vs ₹3,23,250 Cr in Feb 2026 indicates only the last few trading days of January are captured. Full-month January 2026 data unavailable. Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell (NOT outflow alone): groww.in/fii-dii-data, Cash Market, Monthly view. Fortnight-labelled row '28 Jan 2026': FII gross buy Rs 71,750.21 Cr, gross sell Rs 69,412.55 Cr -> net = Rs 2,337.66 Cr (net BUY (inflow)). This is the single designated source for this series going forward - do not mix in NSDL or exchange-provisional figures, which use different methodology and will not tie out.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2026-02": {
         "value_inr_cr": -8895.42,
         "period_start_date": "01 Feb 2026",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "FII net sell = ₹-8,895.42 Cr (Feb 2026 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell (NOT outflow alone): groww.in/fii-dii-data, Cash Market, Monthly view. Fortnight-labelled row '01 Feb 2026': FII gross buy Rs 323,249.82 Cr, gross sell Rs 332,145.24 Cr -> net = Rs -8,895.42 Cr (net SELL (outflow)). This is the single designated source for this series going forward - do not mix in NSDL or exchange-provisional figures, which use different methodology and will not tie out.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2026-03": {
         "value_inr_cr": -122540.41,
         "period_start_date": "02 Mar 2026",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "FII net sell = ₹-1,22,540.41 Cr (Mar 2026 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell (NOT outflow alone): groww.in/fii-dii-data, Cash Market, Monthly view. Fortnight-labelled row '02 Mar 2026': FII gross buy Rs 278,800.39 Cr, gross sell Rs 401,340.80 Cr -> net = Rs -122,540.41 Cr (net SELL (outflow)). This is the single designated source for this series going forward - do not mix in NSDL or exchange-provisional figures, which use different methodology and will not tie out.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2026-04": {
         "value_inr_cr": -43706.01,
         "period_start_date": "07 Apr 2026",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "FII net sell = ₹-43,706.01 Cr (Apr 2026 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell (NOT outflow alone): groww.in/fii-dii-data, Cash Market, Monthly view. Fortnight-labelled row '07 Apr 2026': FII gross buy Rs 265,964.86 Cr, gross sell Rs 309,670.87 Cr -> net = Rs -43,706.01 Cr (net SELL (outflow)). This is the single designated source for this series going forward - do not mix in NSDL or exchange-provisional figures, which use different methodology and will not tie out.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2026-05": {
         "value_inr_cr": -55963.33,
         "period_start_date": "04 May 2026",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "FII net sell = ₹-55,963.33 Cr (May 2026 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell (NOT outflow alone): groww.in/fii-dii-data, Cash Market, Monthly view. Fortnight-labelled row '04 May 2026': FII gross buy Rs 353,913.83 Cr, gross sell Rs 409,877.16 Cr -> net = Rs -55,963.33 Cr (net SELL (outflow)). This is the single designated source for this series going forward - do not mix in NSDL or exchange-provisional figures, which use different methodology and will not tie out.",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2026-06": {
-        "value_inr_cr": null,
-        "period_start_date": null,
+        "value_inr_cr": -49028.63,
+        "period_start_date": "01 Jun 2026",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "Full-month June 2026 total could not be confirmed from available sources as of 2026-07-28 (only partial-month/daily figures found, e.g. FII -Rs 43,044 Cr through Jun 19). Check groww.in/fii-dii-data Monthly tab directly for the exact June 2026 total before publishing a number.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-07-28"
+        "notes": "Net flow = gross buy minus gross sell (NOT outflow alone): groww.in/fii-dii-data, Cash Market, Monthly view. Fortnight-labelled row '01 Jun 2026': FII gross buy Rs 340,120.27 Cr, gross sell Rs 389,148.90 Cr -> net = Rs -49,028.63 Cr (net SELL (outflow)). This is the single designated source for this series going forward - do not mix in NSDL or exchange-provisional figures, which use different methodology and will not tie out.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05"
       },
       "2026-07": {
-        "value_inr_cr": -5780,
+        "value_inr_cr": -5778.99,
         "period_start_date": "01 Jul 2026",
-        "source": "https://www.thehansindia.com/business/july-sees-lowest-monthly-fii-outflow-of-2026-1104288",
-        "tier": 2,
-        "notes": "FII net sell = Rs -5,780 Cr in July 2026 (lowest monthly outflow of 2026, moderating from -Rs 55,963 Cr in May and an estimated -Rs 49,030 Cr in June). NOTE: this monthly series (Mar -1,22,540 / Apr -70,140 / May -55,960) matches the dashboard's existing Mar and May figures closely but diverges from the existing Apr figure (-43,706 Cr) - likely a different data vintage (NSDL provisional FPI vs exchange cash-segment data). Treat with that caveat; groww.in/fii-dii-data Monthly tab is the series' primary source and should be checked directly when precision matters.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "source": "https://groww.in/fii-dii-data",
+        "tier": 1,
+        "notes": "Net flow = gross buy minus gross sell (NOT outflow alone): groww.in/fii-dii-data, Cash Market, Monthly view. Fortnight-labelled row '01 Jul 2026': FII gross buy Rs 328,765.81 Cr, gross sell Rs 334,544.80 Cr -> net = Rs -5,778.99 Cr (net SELL (outflow)). This is the single designated source for this series going forward - do not mix in NSDL or exchange-provisional figures, which use different methodology and will not tie out.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05"
       },
       "2026-08": {
-        "value_inr_cr": 29631,
-        "period_start_date": "01 Aug 2026",
-        "source": "https://www.business-standard.com/markets/news/fpis-pump-in-over-rs-27k-cr-in-aug-highest-monthly-flow-since-sept-2024-126082700693_1.html",
-        "tier": 2,
-        "notes": "FII net BUY = Rs 29,631 Cr in August 2026 - the largest monthly inflow in 23 months, and the second straight month of buying after four months of selling. July + August combined: Rs 49,831 Cr net inflow, the first two-month run of FII buying in 2026. Same source-vintage caveat as prior months applies (this series occasionally diverges from the dashboard's earlier monthly figures).",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "value_inr_cr": -7531.84,
+        "period_start_date": "03 Aug 2026",
+        "source": "https://groww.in/fii-dii-data",
+        "tier": 1,
+        "notes": "Net flow = gross buy minus gross sell (NOT outflow alone): groww.in/fii-dii-data, Cash Market, Monthly view. Fortnight-labelled row '03 Aug 2026': FII gross buy Rs 338,633.53 Cr, gross sell Rs 346,165.37 Cr -> net = Rs -7,531.84 Cr (net SELL (outflow)). This is the single designated source for this series going forward - do not mix in NSDL or exchange-provisional figures, which use different methodology and will not tie out.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05"
       },
       "2026-09": {
-        "value_inr_cr": -18531,
+        "value_inr_cr": -44012.82,
         "period_start_date": "01 Sep 2026",
-        "source": "https://www.multibagg.ai/market-pulse/articles/dii-net-buying-fii-selling-cmu3txegk00082nm5utw40hu5",
-        "tier": 2,
-        "notes": "FII net sell = Rs -18,531 Cr in September 2026 - selling resumed after August's rare positive month (+Rs 29,631 Cr). Same source-vintage caveat as prior months applies to this series.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-10-01"
+        "source": "https://groww.in/fii-dii-data",
+        "tier": 1,
+        "notes": "Net flow = gross buy minus gross sell (NOT outflow alone): groww.in/fii-dii-data, Cash Market, Monthly view. Fortnight-labelled row '01 Sep 2026': FII gross buy Rs 313,522.98 Cr, gross sell Rs 357,535.80 Cr -> net = Rs -44,012.82 Cr (net SELL (outflow)). This is the single designated source for this series going forward - do not mix in NSDL or exchange-provisional figures, which use different methodology and will not tie out.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05"
       }
     },
     "dii_net_flow": {
@@ -1746,112 +1746,112 @@
         "last_verified": "2026-07-07"
       },
       "2025-10": {
-        "value_inr_cr": 52794.02,
-        "period_start_date": "01 Oct 2025",
+        "value_inr_cr": 49388.12,
+        "period_start_date": "06 Oct 2025",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "DII net buy = ₹52,794.02 Cr (Oct 2025 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell: groww.in/fii-dii-data, Cash Market, Monthly view. Row '06 Oct 2025': DII gross buy Rs 284,849.36 Cr, gross sell Rs 235,461.24 Cr -> net = Rs 49,388.12 Cr (net BUY).",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2025-11": {
         "value_inr_cr": 77083.78,
         "period_start_date": "03 Nov 2025",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "DII net buy = ₹77,083.78 Cr (Nov 2025 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell: groww.in/fii-dii-data, Cash Market, Monthly view. Row '03 Nov 2025': DII gross buy Rs 318,136.71 Cr, gross sell Rs 241,052.93 Cr -> net = Rs 77,083.78 Cr (net BUY).",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2025-12": {
         "value_inr_cr": 20161.42,
         "period_start_date": "01 Dec 2025",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "DII net buy = ₹20,161.42 Cr (Dec 2025 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell: groww.in/fii-dii-data, Cash Market, Monthly view. Row '01 Dec 2025': DII gross buy Rs 78,599.58 Cr, gross sell Rs 58,438.16 Cr -> net = Rs 20,161.42 Cr (net BUY).",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2026-01": {
         "value_inr_cr": 5398.32,
         "period_start_date": "28 Jan 2026",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "DII net buy = ₹5,398.32 Cr. PARTIAL MONTH: Groww entry labeled '28 Jan 2026'; gross buy ₹62,592 Cr vs ₹3,33,149 Cr in Feb 2026 indicates only the last few trading days of January are captured. Full-month January 2026 data unavailable. Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell: groww.in/fii-dii-data, Cash Market, Monthly view. Row '28 Jan 2026': DII gross buy Rs 62,592.41 Cr, gross sell Rs 57,194.09 Cr -> net = Rs 5,398.32 Cr (net BUY).",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2026-02": {
         "value_inr_cr": 38418.96,
         "period_start_date": "01 Feb 2026",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "DII net buy = ₹38,418.96 Cr (Feb 2026 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell: groww.in/fii-dii-data, Cash Market, Monthly view. Row '01 Feb 2026': DII gross buy Rs 333,149.23 Cr, gross sell Rs 294,730.27 Cr -> net = Rs 38,418.96 Cr (net BUY).",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2026-03": {
         "value_inr_cr": 142960.37,
         "period_start_date": "02 Mar 2026",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "DII net buy = ₹1,42,960.37 Cr (Mar 2026 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell: groww.in/fii-dii-data, Cash Market, Monthly view. Row '02 Mar 2026': DII gross buy Rs 414,657.07 Cr, gross sell Rs 271,696.70 Cr -> net = Rs 142,960.37 Cr (net BUY).",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2026-04": {
         "value_inr_cr": 28594.96,
         "period_start_date": "07 Apr 2026",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "DII net buy = ₹28,594.96 Cr (Apr 2026 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell: groww.in/fii-dii-data, Cash Market, Monthly view. Row '07 Apr 2026': DII gross buy Rs 320,367.71 Cr, gross sell Rs 291,772.75 Cr -> net = Rs 28,594.96 Cr (net BUY).",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2026-05": {
         "value_inr_cr": 82668.93,
         "period_start_date": "04 May 2026",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "DII net buy = ₹82,668.93 Cr (May 2026 full month). Source: groww.in/fii-dii-data (Monthly tab).",
+        "notes": "Net flow = gross buy minus gross sell: groww.in/fii-dii-data, Cash Market, Monthly view. Row '04 May 2026': DII gross buy Rs 361,325.17 Cr, gross sell Rs 278,656.24 Cr -> net = Rs 82,668.93 Cr (net BUY).",
         "source_status": "fixed",
-        "last_verified": "2026-07-07"
+        "last_verified": "2026-10-05"
       },
       "2026-06": {
-        "value_inr_cr": null,
-        "period_start_date": null,
+        "value_inr_cr": 85800.14,
+        "period_start_date": "01 Jun 2026",
         "source": "https://groww.in/fii-dii-data",
         "tier": 1,
-        "notes": "Full-month June 2026 total could not be confirmed from available sources as of 2026-07-28 (only partial-month/daily figures found, e.g. FII -Rs 43,044 Cr through Jun 19). Check groww.in/fii-dii-data Monthly tab directly for the exact June 2026 total before publishing a number.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-07-28"
+        "notes": "Net flow = gross buy minus gross sell: groww.in/fii-dii-data, Cash Market, Monthly view. Row '01 Jun 2026': DII gross buy Rs 422,821.98 Cr, gross sell Rs 337,021.84 Cr -> net = Rs 85,800.14 Cr (net BUY).",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05"
       },
       "2026-07": {
-        "value_inr_cr": 35100,
+        "value_inr_cr": 35099.25,
         "period_start_date": "01 Jul 2026",
-        "source": "https://www.thehansindia.com/business/july-sees-lowest-monthly-fii-outflow-of-2026-1104288",
-        "tier": 2,
-        "notes": "DII net buy = Rs 35,100 Cr in July 2026, again absorbing FII selling. Same source-vintage caveat as fii_net_flow above applies.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-08-12"
+        "source": "https://groww.in/fii-dii-data",
+        "tier": 1,
+        "notes": "Net flow = gross buy minus gross sell: groww.in/fii-dii-data, Cash Market, Monthly view. Row '01 Jul 2026': DII gross buy Rs 407,189.34 Cr, gross sell Rs 372,090.09 Cr -> net = Rs 35,099.25 Cr (net BUY).",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05"
       },
       "2026-08": {
-        "value_inr_cr": 48347,
-        "period_start_date": "01 Aug 2026",
-        "source": "https://www.business-standard.com/markets/news/fpis-pump-in-over-rs-27k-cr-in-aug-highest-monthly-flow-since-sept-2024-126082700693_1.html",
-        "tier": 2,
-        "notes": "DII net buy = Rs 48,347 Cr in August 2026, highest in 3 months; mutual funds alone contributed Rs 35,622 Cr of that.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-09-07"
+        "value_inr_cr": 58268.15,
+        "period_start_date": "03 Aug 2026",
+        "source": "https://groww.in/fii-dii-data",
+        "tier": 1,
+        "notes": "Net flow = gross buy minus gross sell: groww.in/fii-dii-data, Cash Market, Monthly view. Row '03 Aug 2026': DII gross buy Rs 356,481.41 Cr, gross sell Rs 298,213.26 Cr -> net = Rs 58,268.15 Cr (net BUY).",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05"
       },
       "2026-09": {
-        "value_inr_cr": 52617,
+        "value_inr_cr": 76030.29,
         "period_start_date": "01 Sep 2026",
-        "source": "https://www.multibagg.ai/market-pulse/articles/dii-net-buying-fii-selling-cmu3txegk00082nm5utw40hu5",
-        "tier": 2,
-        "notes": "DII net buy = Rs 52,617 Cr in September 2026, comfortably absorbing FII selling.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-10-01"
+        "source": "https://groww.in/fii-dii-data",
+        "tier": 1,
+        "notes": "Net flow = gross buy minus gross sell: groww.in/fii-dii-data, Cash Market, Monthly view. Row '01 Sep 2026': DII gross buy Rs 367,838.29 Cr, gross sell Rs 291,808.00 Cr -> net = Rs 76,030.29 Cr (net BUY).",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05"
       }
     },
     "forex_reserves": {
@@ -3045,12 +3045,12 @@
         "last_verified": "2026-09-07"
       },
       "2026-09": {
-        "consumption_bu": null,
-        "source": null,
-        "tier": null,
-        "notes": "A specific total-BU figure for September 2026 could not be confirmed this round (only peak-demand GW figures were found: a record 269 GW on Sep 10); left null rather than estimated.",
-        "source_status": "needs_confirmation",
-        "last_verified": "2026-10-01"
+        "consumption_bu": 162.19,
+        "source": "https://www.newsbytesapp.com/news/india/indias-electricity-consumption-rises-1135-to-16219-billion-units/tldr",
+        "tier": 2,
+        "notes": "All-India power consumption September 2026 = 162.19 BU (+11.35% YoY vs 145.66 BU in Sep 2025), driven by continued high cooling demand. Electricity shortage rose to 544 MU (from 98 MU in August) but stayed low at 0.6% of demand, per Grid-India data.",
+        "source_status": "fixed",
+        "last_verified": "2026-10-05"
       }
     },
     "steel_production_yoy": {
